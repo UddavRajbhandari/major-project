@@ -2,3 +2,5 @@ __MACOSX/
 extra/
 nepali-offensive-lang-detection-dataset/
 venv/
+*.pyc
+__pycache__/
