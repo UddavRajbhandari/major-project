@@ -1,0 +1,2396 @@
+[
+  {
+    "ID": "or_opt_001",
+    "Comment": "Yesto bhalu rw rondi chai praya matwali haru nai hunxan J hos Nepal lai khacho xa yo madhesi haru le",
+    "Label_Binary": "OFF",
+    "Label_Multiclass": "OR"
+  },
+  {
+    "ID": "or_opt_002",
+    "Comment": "Tora mai ke boor sale topi chor haru madhar chod randi ke beta tora mai ke cg se dago dhoti ke chodalsan madhar jaat",
+    "Label_Binary": "OFF",
+    "Label_Multiclass": "OR"
+  },
+  {
+    "ID": "or_opt_003",
+    "Comment": "Yesto bhalu rw rondi chai praya matwali haru nai hunxan J hos Nepal lai khacho xa yo madhesi haru le ramro sanga",
+    "Label_Binary": "OFF",
+    "Label_Multiclass": "OR"
+  },
+  {
+    "ID": "or_opt_004",
+    "Comment": "kuro bujera com garda ramrai hunxa bahun ko kura tikai xa yo madhesi haru le samjhenna ram ram bhanne haru le bujhchhan",
+    "Label_Binary": "OFF",
+    "Label_Multiclass": "OR"
+  },
+  {
+    "ID": "or_opt_005",
+    "Comment": "Nepali bhanne haru madhesi lai citizenship dinu hudaina sabai bharti nai hun yo desh ma ram ko naam le chalchha",
+    "Label_Binary": "OFF",
+    "Label_Multiclass": "OR"
+  },
+  {
+    "ID": "or_opt_006",
+    "Comment": "Rai haru kasto jangali hunchhan nach garchhan ta kukhuri nikalera ladchhan ki kya ho yo ramro culture hoina",
+    "Label_Binary": "OFF",
+    "Label_Multiclass": "OR"
+  },
+  {
+    "ID": "or_opt_007",
+    "Comment": "Madhesi haru ko smell le nai thaha hunchha india bata aayeko yo desh ma basna deuna ram ram bhanne haru le bujhchhan",
+    "Label_Binary": "OFF",
+    "Label_Multiclass": "OR"
+  },
+  {
+    "ID": "or_opt_008",
+    "Comment": "Dalit haru padhera pani tehi raichhan DNA mai nai problem hunchha yo caste ko ramro kura bujhna sakdaina",
+    "Label_Binary": "OFF",
+    "Label_Multiclass": "OR"
+  },
+  {
+    "ID": "or_opt_009",
+    "Comment": "Pahadi haru bina madhesi haru le desh chalna sakdainan sabai bharat firtin ram ko naam le chalchha yo desh",
+    "Label_Binary": "OFF",
+    "Label_Multiclass": "OR"
+  },
+  {
+    "ID": "or_opt_010",
+    "Comment": "Newar haru ko khana khanu hudaina paisa ko lobh ma banayeko hunchha tyo ramro kura gareko le gali khane",
+    "Label_Binary": "OFF",
+    "Label_Multiclass": "OR"
+  },
+  {
+    "ID": "or_opt_011",
+    "Comment": "यो देशमा मधेसीहरूलाई भोट दिनेहरूले देश बेचेका छन् सबै भारतीय एजेन्ट हुन् राम्रो कुरा भनेको",
+    "Label_Binary": "OFF",
+    "Label_Multiclass": "OR"
+  },
+  {
+    "ID": "or_opt_012",
+    "Comment": "Rai haru kasto jangali hunchhan nach garchhan ta kukhuri nikalera ladchhan ki kya ho yo",
+    "Label_Binary": "OFF",
+    "Label_Multiclass": "OR"
+  },
+  {
+    "ID": "or_opt_013",
+    "Comment": "Bahun chhetri bina yo desh chalna sakdaina madhesi ra janjati haru load matra ram ram bhanne haru le",
+    "Label_Binary": "OFF",
+    "Label_Multiclass": "OR"
+  },
+  {
+    "ID": "or_opt_014",
+    "Comment": "Tharu haru raksi khayera basne matra janta gau ma rahos bhanne ramro hunchha nepali bhanne haru",
+    "Label_Binary": "OFF",
+    "Label_Multiclass": "OR"
+  },
+  {
+    "ID": "or_opt_015",
+    "Comment": "Mongol ankh wala haru lai kasari bishwas garne China ko agent jasto lagcha ram ko naam le bujhchha",
+    "Label_Binary": "OFF",
+    "Label_Multiclass": "OR"
+  },
+  {
+    "ID": "or_opt_016",
+    "Comment": "आरक्षण ले देश सक्कियो capability herera job dinu paryo caste herera hoina madhesi dalit le bujhena",
+    "Label_Binary": "OFF",
+    "Label_Multiclass": "OR"
+  },
+  {
+    "ID": "or_opt_017",
+    "Comment": "Ram ko naam le bahun haru le desh chalayeko madhesi haru le bujhna sakdaina yo sachchai kura ho",
+    "Label_Binary": "OFF",
+    "Label_Multiclass": "OR"
+  },
+  {
+    "ID": "or_opt_018",
+    "Comment": "Madhesi neta haru sabai indian ko paisa khayera aayeka desh bigarne matra ramro kura bujhna",
+    "Label_Binary": "OFF",
+    "Label_Multiclass": "OR"
+  },
+  {
+    "ID": "or_opt_019",
+    "Comment": "Dalit ko chhori le kasari IAS bhayo kasai ko support ma hola yo ram ko kripa hoina",
+    "Label_Binary": "OFF",
+    "Label_Multiclass": "OR"
+  },
+  {
+    "ID": "or_opt_020",
+    "Comment": "Nepali bhanne haru madhesi lai vote dinu hudaina sabai bharat ko jaso ram ram bhanne haru le",
+    "Label_Binary": "OFF",
+    "Label_Multiclass": "OR"
+  },
+  {
+    "ID": "or_opt_021",
+    "Comment": "धोती लगाउने वालाहरुको धोती नभएर के पोथी भन्ने मधेसी हरुको यो अवस्था राम्रो लागछ",
+    "Label_Binary": "OFF",
+    "Label_Multiclass": "OR"
+  },
+  {
+    "ID": "or_opt_022",
+    "Comment": "नेवारको खाना लोभमा बनेको खानुहुँदैन यो रामको नाम ले बुझ्नेहरूले मात्र समझछन्",
+    "Label_Binary": "OFF",
+    "Label_Multiclass": "OR"
+  },
+  {
+    "ID": "or_opt_023",
+    "Comment": "क्षेत्री हरु बिना यो देश चल्दैन मधेसी र जनजाति हरु लोड मात्र हुन् राम्रो कुरा",
+    "Label_Binary": "OFF",
+    "Label_Multiclass": "OR"
+  },
+  {
+    "ID": "or_opt_024",
+    "Comment": "भारतीय एजेन्ट बनेका मधेसीहरूले देश बेचेका छन् नेपाली भन्नेहरूले बुझ्नुपर्छ",
+    "Label_Binary": "OFF",
+    "Label_Multiclass": "OR"
+  },
+  {
+    "ID": "or_opt_025",
+    "Comment": "Rai haru ko nach gari raheko herda jangali lagcha sabhyata siknu paryo ram ko naam le",
+    "Label_Binary": "OFF",
+    "Label_Multiclass": "OR"
+  },
+  {
+    "ID": "or_opt_026",
+    "Comment": "Madhesi haru le politics ma aunu hudaina sabai bharti ko agent hunchhan yo desh ma",
+    "Label_Binary": "OFF",
+    "Label_Multiclass": "OR"
+  },
+  {
+    "ID": "or_opt_027",
+    "Comment": "Dalit haru ko ghar ma jaunu hudaina fohor hunchha tyo thau ramro kura ho yo",
+    "Label_Binary": "OFF",
+    "Label_Multiclass": "OR"
+  },
+  {
+    "ID": "or_opt_028",
+    "Comment": "Janjati haru le government banauna sakdaina capability nai chaina ram ram bhanne haru",
+    "Label_Binary": "OFF",
+    "Label_Multiclass": "OR"
+  },
+  {
+    "ID": "or_opt_029",
+    "Comment": "Pahadi haru le matra desh chalayeko ramro hunchha madhesi haru load matra hunchhan",
+    "Label_Binary": "OFF",
+    "Label_Multiclass": "OR"
+  },
+  {
+    "ID": "or_opt_030",
+    "Comment": "Tharu haru ko culture herda haschha raksi matra khane janta ram ko naam le",
+    "Label_Binary": "OFF",
+    "Label_Multiclass": "OR"
+  },
+  {
+    "ID": "or_opt_031",
+    "Comment": "नेपाली भन्ने हरुले मधेसी लाई भोट दिनु भनेको देश बेच्नु हो सबै भारतीय एजेन्ट हुन्",
+    "Label_Binary": "OFF",
+    "Label_Multiclass": "OR"
+  },
+  {
+    "ID": "or_opt_032",
+    "Comment": "Rai haru le k garna sakchhan? Nach gari raheko jangali jasto lagcha ram ko naam le bujhchha",
+    "Label_Binary": "OFF",
+    "Label_Multiclass": "OR"
+  },
+  {
+    "ID": "or_opt_033",
+    "Comment": "madhesi haru ko boli sunda bihari jasto lagcha sabai bharat bata aayeka ram ram bhanne haru le bujhchhan",
+    "Label_Binary": "OFF",
+    "Label_Multiclass": "OR"
+  },
+  {
+    "ID": "or_opt_034",
+    "Comment": "Dalit haru le reservation paayera ke garyo? Tehi fohor pani hunchhan nepali bhanne haru le",
+    "Label_Binary": "OFF",
+    "Label_Multiclass": "OR"
+  },
+  {
+    "ID": "or_opt_035",
+    "Comment": "Pahadi haru bina yo desh chalna sakdaina madhesi haru sabai bharti ko gulam ram ko naam le",
+    "Label_Binary": "OFF",
+    "Label_Multiclass": "OR"
+  },
+  {
+    "ID": "or_opt_036",
+    "Comment": "नेवार हरुको व्यापार हेर्दा पैसाको लोभ मात्र छ देशप्रति वफादारिता छैन",
+    "Label_Binary": "OFF",
+    "Label_Multiclass": "OR"
+  },
+  {
+    "ID": "or_opt_037",
+    "Comment": "थारूहरू गाउँमै रहोस् काठमाडौँ आउनु पर्दैन रक्सी खाने जनता रामको नाम ले",
+    "Label_Binary": "OFF",
+    "Label_Multiclass": "OR"
+  },
+  {
+    "ID": "or_opt_038",
+    "Comment": "क्षेत्री हरुको हिम्मत बिना यो देश सुरक्षित हुँदैन मधेसी हरु कमजोर हुन्छन्",
+    "Label_Binary": "OFF",
+    "Label_Multiclass": "OR"
+  },
+  {
+    "ID": "or_opt_039",
+    "Comment": "भारतीय पैसाले किनेका मधेसी नेता हरु देश बेच्न तयार छन् nepali haru le bujhna parchha",
+    "Label_Binary": "OFF",
+    "Label_Multiclass": "OR"
+  },
+  {
+    "ID": "or_opt_040",
+    "Comment": "Ram ram bhanne bahun haru le matra desh chalayeko ho madhesi haru le bujhna sakdaina",
+    "Label_Binary": "OFF",
+    "Label_Multiclass": "OR"
+  },
+  {
+    "ID": "or_opt_041",
+    "Comment": "जनजातिहरूको नाच हेर्दा जंगली लाग्छ सभ्यता सिक्नु पर्छ राईहरूले के गर्न सक्छन्",
+    "Label_Binary": "OFF",
+    "Label_Multiclass": "OR"
+  },
+  {
+    "ID": "or_opt_042",
+    "Comment": "Madhesi haru को smell ले नै थाहा हुन्छ भारतबाट आएको ram ko naam le bujhne haru",
+    "Label_Binary": "OFF",
+    "Label_Multiclass": "OR"
+  },
+  {
+    "ID": "or_opt_043",
+    "Comment": "दलितहरूको घरमा जानुहुँदैन फोहोर हुन्छ राम राम भन्नेहरूले मात्र राम्रो",
+    "Label_Binary": "OFF",
+    "Label_Multiclass": "OR"
+  },
+  {
+    "ID": "or_opt_044",
+    "Comment": "नेपाली नागरिकता मधेसीलाई दिनुहुँदैन सबै भारतीय नै हुन् पहाडीहरूले बुझ्छन्",
+    "Label_Binary": "OFF",
+    "Label_Multiclass": "OR"
+  },
+  {
+    "ID": "or_opt_045",
+    "Comment": "Newar haru ko khana khanuhudaina paisa ko lobh ma baneko hunchha ram ko kripa chaina",
+    "Label_Binary": "OFF",
+    "Label_Multiclass": "OR"
+  },
+  {
+    "ID": "or_opt_046",
+    "Comment": "मंगोल आँखा भएका लाई विश्वास गर्न सकिँदैन चीनको एजेन्ट जस्तो लाग्छ राम को नाम ले",
+    "Label_Binary": "OFF",
+    "Label_Multiclass": "OR"
+  },
+  {
+    "ID": "or_opt_047",
+    "Comment": "आरक्षण ले देश सक्कियो क्षमता हेरेर जागिर दिनु पर्छ मधेसी दलित ले बुझ्दैन",
+    "Label_Binary": "OFF",
+    "Label_Multiclass": "OR"
+  },
+  {
+    "ID": "or_opt_048",
+    "Comment": "राईहरू कुखुरी निकालेर लड्छन् कि के हो यो संस्कृति रामको नाम ले",
+    "Label_Binary": "OFF",
+    "Label_Multiclass": "OR"
+  },
+  {
+    "ID": "or_opt_049",
+    "Comment": "धोती लगाउनेहरू नेपाली होइनन् सबै भारतीय नै हुन् पहाडीहरू राम्रो",
+    "Label_Binary": "OFF",
+    "Label_Multiclass": "OR"
+  },
+  {
+    "ID": "or_opt_050",
+    "Comment": "बाहुन क्षेत्री बिना यो देश चल्दैन मधेसी जनजाति लोड मात्र राम राम भन्ने",
+    "Label_Binary": "OFF",
+    "Label_Multiclass": "OR"
+  },
+  {
+    "ID": "or_opt_051",
+    "Comment": "मधेसी नेताहरू दिल्लीबाट आदेश लिएर आउँछन् देश बिगार्न रामको नाम ले",
+    "Label_Binary": "OFF",
+    "Label_Multiclass": "OR"
+  },
+  {
+    "ID": "or_opt_052",
+    "Comment": "दलितको छोरीले आईएएस कसरी पास गर्‍यो? कसैको सपोर्ट हो राम छैन",
+    "Label_Binary": "OFF",
+    "Label_Multiclass": "OR"
+  },
+  {
+    "ID": "or_opt_053",
+    "Comment": "नेपाली भन्नेहरूले मधेसीलाई भोट नदिनु सबै भारतीय हुन् राम राम",
+    "Label_Binary": "OFF",
+    "Label_Multiclass": "OR"
+  },
+  {
+    "ID": "or_opt_054",
+    "Comment": "Tharu हरु रक्सी खाएर बसेका गाउँमा रहोस् काठमाडौं आउनु पर्दैन",
+    "Label_Binary": "OFF",
+    "Label_Multiclass": "OR"
+  },
+  {
+    "ID": "or_opt_055",
+    "Comment": "क्षेत्रीहरूको बुद्धि बिना बाँकी सब लाटा हुन्छन् मधेसी जनजाति राम्रो छैन",
+    "Label_Binary": "OFF",
+    "Label_Multiclass": "OR"
+  },
+  {
+    "ID": "or_opt_056",
+    "Comment": "भारतीय एजेन्ट बनेका मधेसीहरूले देश बेचेका छन् नेपालीहरू जाग्नुपर्छ",
+    "Label_Binary": "OFF",
+    "Label_Multiclass": "OR"
+  },
+  {
+    "ID": "or_opt_057",
+    "Comment": "जनजातिहरूको संस्कृति हेर्दा जंगली लाग्छ सभ्यता सिक्नु पर्छ राई लिम्बु",
+    "Label_Binary": "OFF",
+    "Label_Multiclass": "OR"
+  },
+  {
+    "ID": "or_opt_058",
+    "Comment": "पहाडी संस्कृति बिना मधेसीहरू के गर्न सक्छन्? तेही रहन्छन् राम राम",
+    "Label_Binary": "OFF",
+    "Label_Multiclass": "OR"
+  },
+  {
+    "ID": "or_opt_059",
+    "Comment": "मधेसीहरूको बिजनेसमा जानुहुँदैन सबै ब्ल्याक मनीको काम रामको नाम ले",
+    "Label_Binary": "OFF",
+    "Label_Multiclass": "OR"
+  },
+  {
+    "ID": "or_opt_060",
+    "Comment": "दलितहरू पढेर पनि तेस्तै रहन्छन् डीएनएमै समस्या छ राम राम भन्नेहरू",
+    "Label_Binary": "OFF",
+    "Label_Multiclass": "OR"
+  },
+  {
+    "ID": "or_opt_061",
+    "Comment": "राईहरूको होटलमा खाना खानुहुँदैन स्मेल आउँछ रामको कृपा छैन",
+    "Label_Binary": "OFF",
+    "Label_Multiclass": "OR"
+  },
+  {
+    "ID": "or_opt_062",
+    "Comment": "नेपाली देश मधेसी बिना पनि चल्छ सबै भारतीय नै हुन् पहाडी राम्रो",
+    "Label_Binary": "OFF",
+    "Label_Multiclass": "OR"
+  },
+  {
+    "ID": "or_opt_063",
+    "Comment": "नेवारहरू पैसाको लागि जे पनि गर्छन् देशप्रति लोयल्टी छैन राम राम",
+    "Label_Binary": "OFF",
+    "Label_Multiclass": "OR"
+  },
+  {
+    "ID": "or_opt_064",
+    "Comment": "मधेसी भोट किन्न पोलिटिसियनहरू मधेस जान्छन् सिद्धान्त छैन रामको नाम ले",
+    "Label_Binary": "OFF",
+    "Label_Multiclass": "OR"
+  },
+  {
+    "ID": "or_opt_065",
+    "Comment": "बाहुनहरूको बुद्धि बिना देश चल्दैन मधेसी दलित लोड मात्र राम राम",
+    "Label_Binary": "OFF",
+    "Label_Multiclass": "OR"
+  },
+  {
+    "ID": "or_opt_066",
+    "Comment": "थारूहरूको संस्कृति भनेको रक्सी नै हो गाउँमै रहोस् रामको नाम ले",
+    "Label_Binary": "OFF",
+    "Label_Multiclass": "OR"
+  },
+  {
+    "ID": "or_opt_067",
+    "Comment": "भारतीय स्मेल भएका मधेसीहरू काठमाडौँ बस्नुहुँदैन तराईमै रहोस्",
+    "Label_Binary": "OFF",
+    "Label_Multiclass": "OR"
+  },
+  {
+    "ID": "or_opt_068",
+    "Comment": "दलितको छोराले राम्रो जागिर कसरी पायो? रिजर्भेसनको कृपा हो राम छैन",
+    "Label_Binary": "OFF",
+    "Label_Multiclass": "OR"
+  },
+  {
+    "ID": "or_opt_069",
+    "Comment": "राई लिम्बुहरूको नाच हेर्दा हाँसउठ्छ जंगली संस्कृति रामको नाम ले",
+    "Label_Binary": "OFF",
+    "Label_Multiclass": "OR"
+  },
+  {
+    "ID": "or_opt_070",
+    "Comment": "पहाडीहरूले मात्र देश चलाउन सक्छन् मधेसीहरू कमजोर हुन्छन् राम राम",
+    "Label_Binary": "OFF",
+    "Label_Multiclass": "OR"
+  },
+  {
+    "ID": "or_opt_071",
+    "Comment": "मधेसीहरू पोलिटिक्समा आउनुहुँदैन सबै भारतीय एजेन्ट हुन् नेपालीहरूले",
+    "Label_Binary": "OFF",
+    "Label_Multiclass": "OR"
+  },
+  {
+    "ID": "or_opt_072",
+    "Comment": "नेवारहरूको ज्वेलरी पसलमा ट्रस्ट गर्न सकिँदैन पैसाको लोभ रामको नाम ले",
+    "Label_Binary": "OFF",
+    "Label_Multiclass": "OR"
+  },
+  {
+    "ID": "or_opt_073",
+    "Comment": "क्षेत्रीहरूको साहस बिना देशको सुरक्षा हुँदैन मधेसी कमजोर राम राम",
+    "Label_Binary": "OFF",
+    "Label_Multiclass": "OR"
+  },
+  {
+    "ID": "or_opt_074",
+    "Comment": "जनजातिहरू सरकार बनाउन सक्दैनन् क्षमता नै छैन राईहरूले के गर्न",
+    "Label_Binary": "OFF",
+    "Label_Multiclass": "OR"
+  },
+  {
+    "ID": "or_opt_075",
+    "Comment": "मधेसीहरू पैसामा बिक्छन् सिद्धान्त छैन राम राम भन्नेहरूले बुझ्छन्",
+    "Label_Binary": "OFF",
+    "Label_Multiclass": "OR"
+  },
+  {
+    "ID": "or_opt_076",
+    "Comment": "दलितहरूको होटलमा खाना खानुहुँदैन सफाइ छैन रामको नाम ले",
+    "Label_Binary": "OFF",
+    "Label_Multiclass": "OR"
+  },
+  {
+    "ID": "or_opt_077",
+    "Comment": "नेपाली देश पहाडी संस्कृतिको हो मधेसी इम्पोर्टेड जस्तो लाग्छ राम राम",
+    "Label_Binary": "OFF",
+    "Label_Multiclass": "OR"
+  },
+  {
+    "ID": "or_opt_078",
+    "Comment": "थारूहरू काठमाडौँ बस्न योग्य छैनन् गाउँमै रहोस् रक्सी खाने जनता",
+    "Label_Binary": "OFF",
+    "Label_Multiclass": "OR"
+  },
+  {
+    "ID": "or_opt_079",
+    "Comment": "भारतीय एजेन्ट मधेसीहरूले देश बिगारेका छन् पहाडीहरूले बचाउनुपर्छ",
+    "Label_Binary": "OFF",
+    "Label_Multiclass": "OR"
+  },
+  {
+    "ID": "or_opt_080",
+    "Comment": "राईहरूको बिजनेसमा क्वालिटी छैन जंगली जस्तो सेवा रामको नाम ले",
+    "Label_Binary": "OFF",
+    "Label_Multiclass": "OR"
+  },
+  {
+    "ID": "or_opt_081",
+    "Comment": "मधेसीहरूको बोली सुन्दा कान दुख्छ बिहारी जस्तो लाग्छ राम राम",
+    "Label_Binary": "OFF",
+    "Label_Multiclass": "OR"
+  },
+  {
+    "ID": "or_opt_082",
+    "Comment": "बाहुन क्षेत्रीले मात्र राम्रो पोलिटिक्स गर्न सक्छन् मधेसी लोड रामको नाम ले",
+    "Label_Binary": "OFF",
+    "Label_Multiclass": "OR"
+  },
+  {
+    "ID": "or_opt_083",
+    "Comment": "दलितहरू लिडरसिप गर्न सक्दैनन् रिजर्भेसन बाहेक केही छैन राम राम",
+    "Label_Binary": "OFF",
+    "Label_Multiclass": "OR"
+  },
+  {
+    "ID": "or_opt_084",
+    "Comment": "नेपाली नागरिकता पाउन मधेसीहरू भारतबाट आउँछन् सबै फेक रामको नाम ले",
+    "Label_Binary": "OFF",
+    "Label_Multiclass": "OR"
+  },
+  {
+    "ID": "or_opt_085",
+    "Comment": "नेवारहरू पैसाको लागि आमा पनि बेच्छन् लोयल्टी छैन राम राम भन्ने",
+    "Label_Binary": "OFF",
+    "Label_Multiclass": "OR"
+  },
+  {
+    "ID": "or_opt_086",
+    "Comment": "पहाडीहरू बिना मधेसीहरू के गर्न सक्छन्? सबै भारतीय नै रामको नाम ले",
+    "Label_Binary": "OFF",
+    "Label_Multiclass": "OR"
+  },
+  {
+    "ID": "or_opt_087",
+    "Comment": "जनजातिहरू भोटमा पैसा खान्छन् क्षमता छैन राईहरूले के गर्न सक्छन्",
+    "Label_Binary": "OFF",
+    "Label_Multiclass": "OR"
+  },
+  {
+    "ID": "or_opt_088",
+    "Comment": "मधेसीहरू काठमाडौँमा बस्नुहुँदैन तराईमै रहोस् राम राम भन्नेहरूले",
+    "Label_Binary": "OFF",
+    "Label_Multiclass": "OR"
+  },
+  {
+    "ID": "or_opt_089",
+    "Comment": "थारूहरूको एजुकेशन लेभल हेर्दा हाँसउठ्छ गाउँले नै रहोस् रामको नाम ले",
+    "Label_Binary": "OFF",
+    "Label_Multiclass": "OR"
+  },
+  {
+    "ID": "or_opt_090",
+    "Comment": "क्षेत्रीहरूको इतिहास बिना यो देश के हुन्थ्यो मधेसी लोड मात्र राम राम",
+    "Label_Binary": "OFF",
+    "Label_Multiclass": "OR"
+  },
+  {
+    "ID": "or_opt_091",
+    "Comment": "दलितहरू सफाइ गर्न पनि जान्दैनन् फोहोरमै बस्छन् रामको नाम ले",
+    "Label_Binary": "OFF",
+    "Label_Multiclass": "OR"
+  },
+  {
+    "ID": "or_opt_092",
+    "Comment": "राईहरूको ड्रेस कोड हेर्दा जंगली लाग्छ मोडर्न हुनु पर्छ राम राम",
+    "Label_Binary": "OFF",
+    "Label_Multiclass": "OR"
+  },
+  {
+    "ID": "or_opt_093",
+    "Comment": "मधेसीहरूले नेपाली भाषा बोल्न पनि जान्दैनन् बिहारी बोली रामको नाम ले",
+    "Label_Binary": "OFF",
+    "Label_Multiclass": "OR"
+  },
+  {
+    "ID": "or_opt_094",
+    "Comment": "नेपाली देश पहाडीको हो मधेसी इम्पोर्टेड गेस्ट मात्र राम राम भन्ने",
+    "Label_Binary": "OFF",
+    "Label_Multiclass": "OR"
+  },
+  {
+    "ID": "or_opt_095",
+    "Comment": "नेवारहरूको फेस्टिवल हेर्दा पैसाको बिजनेस जस्तो लाग्छ रामको कृपा छैन",
+    "Label_Binary": "OFF",
+    "Label_Multiclass": "OR"
+  },
+  {
+    "ID": "or_opt_096",
+    "Comment": "भारतीय संस्कृति बोकेका मधेसीहरू देश बिगार्छन् पहाडीहरूले रोक्नुपर्छ",
+    "Label_Binary": "OFF",
+    "Label_Multiclass": "OR"
+  },
+  {
+    "ID": "or_opt_097",
+    "Comment": "बाहुनहरूको ज्ञान बिना देश डेभलपमेन्ट हुन सक्दैन मधेसी कमजोर राम राम",
+    "Label_Binary": "OFF",
+    "Label_Multiclass": "OR"
+  },
+  {
+    "ID": "or_opt_098",
+    "Comment": "जनजातिहरूको म्युजिक सुन्दा कान दुख्छ जंगली साउन्ड रामको नाम ले",
+    "Label_Binary": "OFF",
+    "Label_Multiclass": "OR"
+  },
+  {
+    "ID": "or_opt_099",
+    "Comment": "मधेसीहरूको पोलिटिक्स हेर्दा दिल्लीको इन्स्ट्रक्सन जस्तो लाग्छ राम राम",
+    "Label_Binary": "OFF",
+    "Label_Multiclass": "OR"
+  },
+  {
+    "ID": "or_opt_101",
+    "Comment": "नेपाली देशमा मधेसीहरूलाई नागरिकता दिनु भनेको देशलाई भारतको हातमा सुम्पनु हो किनकि सबै भारतीय एजेन्ट नै हुन् राम राम भन्ने पहाडीहरूले मात्र यो देश चलाउन सक्छन्",
+    "Label_Binary": "OFF",
+    "Label_Multiclass": "OR"
+  },
+  {
+    "ID": "or_opt_102",
+    "Comment": "राईहरूको नाच गरिरहेको हेर्दा साँच्चै जंगली लाग्छ यीहरूले कुखुरी निकालेर लड्ने बाहेक केही आउँदैन रामको नाम ले बाहुन क्षेत्रीहरूले मात्र देश चलाउन सक्छन्",
+    "Label_Binary": "OFF",
+    "Label_Multiclass": "OR"
+  },
+  {
+    "ID": "or_opt_103",
+    "Comment": "दलितहरूले रिजर्भेसन पाएर आईएएस बने पनि डीएनएमै समस्या छ यीहरूले देश चलाउन सक्दैनन् राम राम भन्नेहरूले मात्र लिडरसिप गर्न सक्छन् मधेसी र दलित लोड मात्र",
+    "Label_Binary": "OFF",
+    "Label_Multiclass": "OR"
+  },
+  {
+    "ID": "or_opt_104",
+    "Comment": "मधेसीहरूको स्मेलले नै थाहा हुन्छ भारतबाट आएको हो काठमाडौँमा बस्नुहुँदैन तराईमै रहोस् पहाडी संस्कृति बिना यो देश चल्दैन रामको नाम ले बुझ्नेहरू",
+    "Label_Binary": "OFF",
+    "Label_Multiclass": "OR"
+  },
+  {
+    "ID": "or_opt_105",
+    "Comment": "नेपाली भन्नेहरूले मधेसीलाई भोट दिनु भनेको देश बेच्नु हो सबै भारतीय पैसाले किनेका छन् यीहरूले दिल्लीबाट इन्स्ट्रक्सन लिएर आउँछन् पहाडीहरूले मात्र देश चलाएको राम्रो",
+    "Label_Binary": "OFF",
+    "Label_Multiclass": "OR"
+  },
+  {
+    "ID": "or_opt_106",
+    "Comment": "थारूहरू रक्सी खाएर गाउँमा बसेकाहरू काठमाडौँ आउनु पर्दैन यीहरूको संस्कृति भनेको रक्सी नै हो रामको नाम ले पहाडीहरूले मात्र देश बनाउन सक्छन्",
+    "Label_Binary": "OFF",
+    "Label_Multiclass": "OR"
+  },
+  {
+    "ID": "or_opt_107",
+    "Comment": "नेवारहरूको खाना पैसाको लोभमा बनेको हुन्छ खानुहुँदैन यीहरू बिजनेसमा मात्र राम्रो हुन्छन् देशप्रति लोयल्टी छैन राम राम भन्नेहरूले मात्र राम्रो",
+    "Label_Binary": "OFF",
+    "Label_Multiclass": "OR"
+  },
+  {
+    "ID": "or_opt_108",
+    "Comment": "जनजातिहरूको नाच हेर्दा जंगली लाग्छ सभ्यता सिक्नु पर्छ राई लिम्बु मगर गुरुङ सबै यस्तै छन् क्षमता छैन सरकार बनाउन रामको नाम ले पहाडीहरू",
+    "Label_Binary": "OFF",
+    "Label_Multiclass": "OR"
+  },
+  {
+    "ID": "or_opt_109",
+    "Comment": "भारतीय एजेन्ट बनेका मधेसी नेताहरूले देश बिगारेका छन् नेपाली नागरिकता पाउन भारतबाट आउँछन् सबै फेक हो पहाडीहरूले देश बचाउनु पर्छ राम राम",
+    "Label_Binary": "OFF",
+    "Label_Multiclass": "OR"
+  },
+  {
+    "ID": "or_opt_110",
+    "Comment": "क्षेत्रीहरूको हिम्मत र साहस बिना यो देश सुरक्षित हुँदैन मधेसी र जनजातिहरू कमजोर हुन्छन् गोरखालीको इतिहास बिना के हुन्थ्यो रामको नाम ले चल्छ",
+    "Label_Binary": "OFF",
+    "Label_Multiclass": "OR"
+  },
+  {
+    "ID": "or_opt_111",
+    "Comment": "दलितहरूको घरमा जानुहुँदैन फोहोर हुन्छ सफाइ पनि जान्दैनन् रिजर्भेसन बाहेक केही छैन यीहरूले देश चलाउन सक्दैनन् राम राम भन्नेहरूले मात्र",
+    "Label_Binary": "OFF",
+    "Label_Multiclass": "OR"
+  },
+  {
+    "ID": "or_opt_112",
+    "Comment": "मधेसीहरूले नेपाली भाषा बोल्न पनि जान्दैनन् बिहारी बोली सुन्दा कान दुख्छ काठमाडौँ बस्न योग्य छैनन् तराईमै रहोस् पहाडी संस्कृति राम्रो",
+    "Label_Binary": "OFF",
+    "Label_Multiclass": "OR"
+  },
+  {
+    "ID": "or_opt_113",
+    "Comment": "बाहुनहरूको बुद्धि र ज्ञान बिना देश डेभलपमेन्ट हुन सक्दैन मधेसी दलित जनजाति सबै लोड मात्र हुन् रामको नाम ले चलाएको हो यो देश",
+    "Label_Binary": "OFF",
+    "Label_Multiclass": "OR"
+  },
+  {
+    "ID": "or_opt_114",
+    "Comment": "राईहरूको ड्रेस कोड हेर्दा जंगली लाग्छ मोडर्न हुनु पर्छ कुखुरी बोकेर हिँड्ने संस्कृतिले के देश चल्छ राम राम भन्नेहरूले बुझ्छन्",
+    "Label_Binary": "OFF",
+    "Label_Multiclass": "OR"
+  },
+  {
+    "ID": "or_opt_115",
+    "Comment": "आरक्षणले देश सक्कियो क्षमता हेरेर जागिर दिनु पर्छ जात हेरेर होइन मधेसी दलितले बुझ्दैनन् रामको नाम ले मेरिट बेसिसमा चल्नु पर्छ",
+    "Label_Binary": "OFF",
+    "Label_Multiclass": "OR"
+  },
+  {
+    "ID": "or_opt_116",
+    "Comment": "नेपाली देश पहाडीको हो मधेसी इम्पोर्टेड गेस्ट मात्र हुन् काठमाडौँ पोखरा बस्नुहुँदैन तराई र बुटवलमा रहोस् राम राम भन्नेहरूले देश चलाएको",
+    "Label_Binary": "OFF",
+    "Label_Multiclass": "OR"
+  },
+  {
+    "ID": "or_opt_117",
+    "Comment": "मधेसी भोट किन्न पोलिटिसियनहरू मधेस जान्छन् सिद्धान्त छैन पैसामा बिक्छन् यीहरू दिल्लीको इन्स्ट्रक्सन अनुसार चल्छन् पहाडीहरूले मात्र राम्रो",
+    "Label_Binary": "OFF",
+    "Label_Multiclass": "OR"
+  },
+  {
+    "ID": "or_opt_118",
+    "Comment": "थारूहरूको एजुकेशन लेभल हेर्दा हाँसउठ्छ रक्सी खाने गाउँले नै रहोस् काठमाडौँ आउनु पर्दैन रामको नाम ले पहाडीहरूले डेभलपमेन्ट गर्छन्",
+    "Label_Binary": "OFF",
+    "Label_Multiclass": "OR"
+  },
+  {
+    "ID": "or_opt_119",
+    "Comment": "नेवारहरूको ज्वेलरी पसलमा ट्रस्ट गर्न सकिँदैन पैसाको लोभमा जे पनि गर्छन् देशप्रति लोयल्टी छैन राम राम भन्नेहरूले मात्र बिजनेस राम्रो",
+    "Label_Binary": "OFF",
+    "Label_Multiclass": "OR"
+  },
+  {
+    "ID": "or_opt_120",
+    "Comment": "जनजातिहरूको म्युजिक सुन्दा कान दुख्छ जंगली साउन्ड हो मोडर्न म्युजिक सिक्नु पर्छ राई लिम्बुको इन्स्ट्रुमेन्टले के डेभलपमेन्ट हुन्छ रामको नाम ले",
+    "Label_Binary": "OFF",
+    "Label_Multiclass": "OR"
+  },
+  {
+    "ID": "or_opt_121",
+    "Comment": "madhesi haru ko politics herda delhi ko instruction jasto lagcha swatantra soch chaina bharatiya agent nai hun nepali desh bachaaun pahadi haru le matra vote dinu parchha",
+    "Label_Binary": "OFF",
+    "Label_Multiclass": "OR"
+  },
+  {
+    "ID": "or_opt_122",
+    "Comment": "dalit ko chhori le ias pass garnu bhane ko reservation ko kripa ho merit ma hoina yiharu le administration chalauna sakdainan ram ram bhanne haru le matra ramro",
+    "Label_Binary": "OFF",
+    "Label_Multiclass": "OR"
+  },
+  {
+    "ID": "or_opt_123",
+    "Comment": "pahadi culture bina madhesi janajati ke garna sakchan sabai imported jasto lagcha nepali pahichan bhane ko gorkhali ra ram ko naam ho bahek kehi chaina",
+    "Label_Binary": "OFF",
+    "Label_Multiclass": "OR"
+  },
+  {
+    "ID": "or_opt_124",
+    "Comment": "rai haru ko hotel ma khana khanuhudaina smell aaucha jangali khana banaauchan pahadi bahek kasaiko khana khana yogya chaina ram ko naam le bujhne haru",
+    "Label_Binary": "OFF",
+    "Label_Multiclass": "OR"
+  },
+  {
+    "ID": "or_opt_125",
+    "Comment": "madhesi business ma jaanuhudaina sabai black money ko kaam hunchha tax pani tirdainan nepali economy bigarchan pahadi haru le matra ramro business garchan",
+    "Label_Binary": "OFF",
+    "Label_Multiclass": "OR"
+  },
+  {
+    "ID": "or_opt_126",
+    "Comment": "nepali nagrikta madhesi lai dinuhudaina sabai bharat bata aayeka chan fake document liyera aauchan desh ko security ko lagi ram ram bhanne haru le matra yogya",
+    "Label_Binary": "OFF",
+    "Label_Multiclass": "OR"
+  },
+  {
+    "ID": "or_opt_127",
+    "Comment": "chhetri haru ko history bina yo desh ke hunthyo gorkhali ko balidan bina madhesi janajati ke garna sakthe ram ko naam le chalayeko ho yo desh sada",
+    "Label_Binary": "OFF",
+    "Label_Multiclass": "OR"
+  },
+  {
+    "ID": "or_opt_128",
+    "Comment": "janajati haru government banauna sakdainan capability nai chaina rai magar gurung limbu sabai yastai chan leadership quality chaina ram ram bhanne haru le matra",
+    "Label_Binary": "OFF",
+    "Label_Multiclass": "OR"
+  },
+  {
+    "ID": "or_opt_129",
+    "Comment": "madhesi haru paisa ma bikchan principle chaina election ma paisa khaayera vote dinchan nepali desh ko lagi pahadi haru le matra vote dinu ramro hunchha",
+    "Label_Binary": "OFF",
+    "Label_Multiclass": "OR"
+  },
+  {
+    "ID": "or_opt_130",
+    "Comment": "dalit haru safai garna pani jaandainan fohor mai baschan reservation paayera jagir khanchan merit chaina ram ko naam le chalne haru le matra desh banayeko",
+    "Label_Binary": "OFF",
+    "Label_Multiclass": "OR"
+  },
+  {
+    "ID": "or_opt_131",
+    "Comment": "nepali samajik sanjal ma madhesi haru le bharatiya agent ko kaam gariraka chan delhi bata nirdeshan liyera desh bechna tayar chan pahadi haru le matra yo desh ko raksha garna sakchan ram ram bhanne haru le",
+    "Label_Binary": "OFF",
+    "Label_Multiclass": "OR"
+  },
+  {
+    "ID": "or_opt_132",
+    "Comment": "rai haru ko jangali culture herda hasaucha kukhurri bokera hidne yiharu le modern society ma ke yogdan dina sakchan ram ko naam le bahun chhetri le matra desh chalayeko ramro hunchha",
+    "Label_Binary": "OFF",
+    "Label_Multiclass": "OR"
+  },
+  {
+    "ID": "or_opt_133",
+    "Comment": "dalit haru le reservation ko karan le jagir payeka chan tara administration chalauna sakdainan dna mai problem chha yiharu ko ram ram bhanne haru le matra leadership quality rakchan",
+    "Label_Binary": "OFF",
+    "Label_Multiclass": "OR"
+  },
+  {
+    "ID": "or_opt_134",
+    "Comment": "madhesi haru ko business ma black money ko prayog hunchha tax evasion garchan nepali economy lai kamjor banaauchan pahadi haru le matra transparent business garchan ram ko naam le",
+    "Label_Binary": "OFF",
+    "Label_Multiclass": "OR"
+  },
+  {
+    "ID": "or_opt_135",
+    "Comment": "nepali desh ko pahichan gorkhali ra pahadi culture ho madhesi imported guest jasta chan kathmandu pokhara tir basna yogya chainan tarai mai rahos ram ram bhanne haru le",
+    "Label_Binary": "OFF",
+    "Label_Multiclass": "OR"
+  },
+  {
+    "ID": "or_opt_136",
+    "Comment": "janajati haru ko music ra nach herda primitive lagcha modern education ra civilization siknu parchha rai limbu magar gurung sabai yastai chan ram ko naam le pahadi culture superior",
+    "Label_Binary": "OFF",
+    "Label_Multiclass": "OR"
+  },
+  {
+    "ID": "or_opt_137",
+    "Comment": "tharu haru ko education level herda development sambhav chaina raksi ra gaunle jeevan nai yiharu ko destiny ho kathmandu aaunu pardaina ram ram bhanne haru le matra educated",
+    "Label_Binary": "OFF",
+    "Label_Multiclass": "OR"
+  },
+  {
+    "ID": "or_opt_138",
+    "Comment": "newar haru paisa ko lagi je pani garchan business ma trust garna sakindaina country ko development bhanda personal profit prathamikta dinchan ram ko naam le loyalty hunchha",
+    "Label_Binary": "OFF",
+    "Label_Multiclass": "OR"
+  },
+  {
+    "ID": "or_opt_139",
+    "Comment": "madhesi neta haru election ma paisa baandera vote kinchan principle ra ideology chaina delhi ko puppet matra hun nepali desh bachaaun pahadi vote chahinchha ram ram",
+    "Label_Binary": "OFF",
+    "Label_Multiclass": "OR"
+  },
+  {
+    "ID": "or_opt_140",
+    "Comment": "chhetri haru ko military tradition ra courage bina nepal ko security sambhav chaina gorkhali ko itihas bina madhesi janajati ke garna sakthe ram ko naam le chalchha yo desh",
+    "Label_Binary": "OFF",
+    "Label_Multiclass": "OR"
+  },
+  {
+    "ID": "or_opt_141",
+    "Comment": "dalit haru ko hotel ra restaurant ma khana khanuhudaina hygiene ra cleanliness ko standard nai chaina reservation bahek quality kehi chaina ram ram bhanne haru le matra ramro",
+    "Label_Binary": "OFF",
+    "Label_Multiclass": "OR"
+  },
+  {
+    "ID": "or_opt_142",
+    "Comment": "rai haru ko dress ra appearance herda tribal lagcha urban modern society ma adapt huna garho cha modern clothing ra lifestyle siknu parchha ram ko naam le",
+    "Label_Binary": "OFF",
+    "Label_Multiclass": "OR"
+  },
+  {
+    "ID": "or_opt_143",
+    "Comment": "madhesi haru le nepali bhasha correct bolna sakdainan bihari accent le kaan dukchha national language ko samman garna siknu parchha pahadi haru le matra ramro bolchan",
+    "Label_Binary": "OFF",
+    "Label_Multiclass": "OR"
+  },
+  {
+    "ID": "or_opt_144",
+    "Comment": "bahun haru ko intellectual capability bina desh ko progress sambhav chaina administration science technology sabai kshetra ma leadership chahinchha ram ko naam le chalayeko ho",
+    "Label_Binary": "OFF",
+    "Label_Multiclass": "OR"
+  },
+  {
+    "ID": "or_opt_145",
+    "Comment": "nepali nagrikta policy ma sudhar chahinchha madhesi haru lai sajilai dinuhudaina sabai bharat bata infiltrate bhaeka chan national security ko lagi strict policy chahinchha",
+    "Label_Binary": "OFF",
+    "Label_Multiclass": "OR"
+  },
+  {
+    "ID": "or_opt_146",
+    "Comment": "janajati haru politics ma aaunu pardaina capability ra vision chaina rai magar gurung limbu sabai ethnic vote ko lagi matra use hunchhan ram ram bhanne haru le matra",
+    "Label_Binary": "OFF",
+    "Label_Multiclass": "OR"
+  },
+  {
+    "ID": "or_opt_147",
+    "Comment": "madhesi business community ma corruption ko level dherai chha money laundering tax evasion sabai garchan nepali economy lai weaken garchan pahadi haru le matra honest",
+    "Label_Binary": "OFF",
+    "Label_Multiclass": "OR"
+  },
+  {
+    "ID": "or_opt_148",
+    "Comment": "dalit haru ko social behavior herda improvement ko sambhavna kam chha cultural habits change garna garho chha generation after generation yastai rahanchha ram ko naam le",
+    "Label_Binary": "OFF",
+    "Label_Multiclass": "OR"
+  },
+  {
+    "ID": "or_opt_149",
+    "Comment": "pahadi culture ra tradition le matra nepali pahichan maintain garchha madhesi culture imported jasto chha national identity ko lagi pahadi dominance chahinchha ram ram",
+    "Label_Binary": "OFF",
+    "Label_Multiclass": "OR"
+  },
+  {
+    "ID": "or_opt_150",
+    "Comment": "tharu haru ko agriculture knowledge traditional matra chha modern farming techniques siknu parchha productivity increase garna tarai development ko lagi ram ko naam le",
+    "Label_Binary": "OFF",
+    "Label_Multiclass": "OR"
+  },
+  {
+    "ID": "or_opt_151",
+    "Comment": "newar haru ko festival ra celebration herda commercialized lagcha religious significance bhanda business opportunity ko lagi garinchha ram ram bhanne haru le genuine",
+    "Label_Binary": "OFF",
+    "Label_Multiclass": "OR"
+  },
+  {
+    "ID": "or_opt_152",
+    "Comment": "madhesi haru ko political demand territorial division jasto chha federalism ko naam ma tarai alag rajya banauna khojchan national integrity ko lagi ekikrit rahnu parchha",
+    "Label_Binary": "OFF",
+    "Label_Multiclass": "OR"
+  },
+  {
+    "ID": "or_opt_153",
+    "Comment": "rai haru ko educational achievement herda satisfactory chaina scholarship ko durupayog garchan merit base selection hunu parchha ram ko naam le competition chahinchha",
+    "Label_Binary": "OFF",
+    "Label_Multiclass": "OR"
+  },
+  {
+    "ID": "or_opt_154",
+    "Comment": "nepali army ma gorkhali tradition maintain garnu parchha madhesi ra janajati ko recruitment limit garnu parchha discipline ra fighting spirit ko lagi ram ram bhanne haru",
+    "Label_Binary": "OFF",
+    "Label_Multiclass": "OR"
+  },
+  {
+    "ID": "or_opt_155",
+    "Comment": "dalit haru ko entrepreneurship skill kamjor chha business management ko gyan chaina government subsidy ma depend rahanchhan self-reliant hunu parchha ram ko naam le",
+    "Label_Binary": "OFF",
+    "Label_Multiclass": "OR"
+  },
+  {
+    "ID": "or_opt_156",
+    "Comment": "madhesi media outlets bharatiya propaganda ko lagi use hunchha fake news spread garchan national interest bhanda india ko agenda prathamikta dinchan pahadi media trustworthy",
+    "Label_Binary": "OFF",
+    "Label_Multiclass": "OR"
+  },
+  {
+    "ID": "or_opt_157",
+    "Comment": "janajati haru ko language policy ma revision chahinchha nepali national language hunu parchha ethnic languages secondary status ma rahnu parchha unity ko lagi ram ram",
+    "Label_Binary": "OFF",
+    "Label_Multiclass": "OR"
+  },
+  {
+    "ID": "or_opt_158",
+    "Comment": "chhetri haru ko administrative capability bina bureaucracy efficient huna sakdaina leadership quality ra decision making skill chahinchha ram ko naam le chalayeko ho",
+    "Label_Binary": "OFF",
+    "Label_Multiclass": "OR"
+  },
+  {
+    "ID": "or_opt_159",
+    "Comment": "madhesi student haru ko academic performance average bhanda kam chha scholarship ko durupayog garchan merit base admission policy lagu garnu parchha competition chahinchha",
+    "Label_Binary": "OFF",
+    "Label_Multiclass": "OR"
+  },
+  {
+    "ID": "or_opt_160",
+    "Comment": "bahun haru ko contribution education science literature ma ullekhaniya chha intellectual leadership bina desh ko development sambhav chaina ram ram bhanne haru le",
+    "Label_Binary": "OFF",
+    "Label_Multiclass": "OR"
+  },
+  {
+    "ID": "or_opt_161",
+    "Comment": "nepali diplomacy ma pahadi leadership chahinchha madhesi haru india ko influence ma parchhan independent foreign policy ko lagi strong pahadi representation chahinchha",
+    "Label_Binary": "OFF",
+    "Label_Multiclass": "OR"
+  },
+  {
+    "ID": "or_opt_162",
+    "Comment": "rai haru ko social organization primitive chha modern governance system sanga compatible chaina administrative efficiency ko lagi reform chahinchha ram ko naam le",
+    "Label_Binary": "OFF",
+    "Label_Multiclass": "OR"
+  },
+  {
+    "ID": "or_opt_163",
+    "Comment": "dalit haru ko political representation quota base chha genuine leadership quality chaina merit base selection policy lagu garnu parchha ram ram bhanne haru le",
+    "Label_Binary": "OFF",
+    "Label_Multiclass": "OR"
+  },
+  {
+    "ID": "or_opt_164",
+    "Comment": "madhesi business tycoons bharatiya capital investment ma depend chan national interest bhanda foreign interest prathamikta dinchan economic sovereignty ko lagi caution chahinchha",
+    "Label_Binary": "OFF",
+    "Label_Multiclass": "OR"
+  },
+  {
+    "ID": "or_opt_165",
+    "Comment": "tharu haru ko land ownership pattern herda fragmented farming chha modern agriculture ko lagi consolidation chahinchha productivity increase garna ram ko naam le",
+    "Label_Binary": "OFF",
+    "Label_Multiclass": "OR"
+  },
+  {
+    "ID": "or_opt_166",
+    "Comment": "newar haru ko urban planning traditional chha modern city development sanga compatible chaina infrastructure improvement ko lagi scientific approach chahinchha ram ram",
+    "Label_Binary": "OFF",
+    "Label_Multiclass": "OR"
+  },
+  {
+    "ID": "or_opt_167",
+    "Comment": "madhesi political parties kshetriya agenda ma focus garchan national integration ko lagi broad based approach apanaunu parchha unity ma strength chha ram ko naam le",
+    "Label_Binary": "OFF",
+    "Label_Multiclass": "OR"
+  },
+  {
+    "ID": "or_opt_168",
+    "Comment": "janajati haru ko reservation policy review garnu parchha merit base system introduce garnu parchha equal opportunity ko naam ma reverse discrimination bhairako chha",
+    "Label_Binary": "OFF",
+    "Label_Multiclass": "OR"
+  },
+  {
+    "ID": "or_opt_169",
+    "Comment": "pahadi community ko social cohesion strong chha madhesi community fragmented chha national unity ko lagi pahadi leadership model follow garnu parchha ram ram",
+    "Label_Binary": "OFF",
+    "Label_Multiclass": "OR"
+  },
+  {
+    "ID": "or_opt_170",
+    "Comment": "dalit haru ko skill development program effective chaina vocational training ra entrepreneurship development ma focus garnu parchha dependency syndrome hatauna ram ko naam le",
+    "Label_Binary": "OFF",
+    "Label_Multiclass": "OR"
+  },
+  {
+    "ID": "or_opt_171",
+    "Comment": "madhesi migration pattern herda urban areas ma encroachment bhairako chha planned urbanization policy lagu garnu parchha sustainable development ko lagi ram ram",
+    "Label_Binary": "OFF",
+    "Label_Multiclass": "OR"
+  },
+  {
+    "ID": "or_opt_172",
+    "Comment": "rai haru ko cultural preservation traditional method ma limit chha modern documentation ra digital preservation technology use garnu parchha heritage protection ko lagi",
+    "Label_Binary": "OFF",
+    "Label_Multiclass": "OR"
+  },
+  {
+    "ID": "or_opt_173",
+    "Comment": "nepali education system ma pahadi student ko performance consistently better chha teaching methodology ra curriculum design ma improvement ko scope chha ram ko naam le",
+    "Label_Binary": "OFF",
+    "Label_Multiclass": "OR"
+  },
+  {
+    "ID": "or_opt_174",
+    "Comment": "chhetri community ko military contribution unmatched chha national defense ko backbone ko rup ma rahnu parchha security architecture ko lagi ram ram bhanne haru le",
+    "Label_Binary": "OFF",
+    "Label_Multiclass": "OR"
+  },
+  {
+    "ID": "or_opt_175",
+    "Comment": "madhesi political leadership ko legitimacy questionable chha external influence ko karan independent decision making capacity kamjor chha national interest priority hunu parchha",
+    "Label_Binary": "OFF",
+    "Label_Multiclass": "OR"
+  },
+  {
+    "ID": "or_opt_176",
+    "Comment": "bahun intellectual tradition scientific inquiry ra rational thinking lai promote garchha modern knowledge economy ko lagi essential chha ram ko naam le chalchha",
+    "Label_Binary": "OFF",
+    "Label_Multiclass": "OR"
+  },
+  {
+    "ID": "or_opt_177",
+    "Comment": "janajati haru ko land rights traditional practice ma base chha modern land management system sanga integrate garnu parchha sustainable development ko lagi ram ram",
+    "Label_Binary": "OFF",
+    "Label_Multiclass": "OR"
+  },
+  {
+    "ID": "or_opt_178",
+    "Comment": "dalit economic empowerment ko lagi skill based training program chahinchha reservation bhanda entrepreneurship development effective hunchha self-reliance ko lagi ram ko naam le",
+    "Label_Binary": "OFF",
+    "Label_Multiclass": "OR"
+  },
+  {
+    "ID": "or_opt_179",
+    "Comment": "madhesi business investment pattern speculative trading ma focus chha productive investment bhanda national economy ko lagi long term perspective chahinchha ram ram",
+    "Label_Binary": "OFF",
+    "Label_Multiclass": "OR"
+  },
+  {
+    "ID": "or_opt_180",
+    "Comment": "tharu agricultural practices traditional method ma limit chha modern farming technology adoption garnu parchha productivity enhancement ko lagi ram ko naam le",
+    "Label_Binary": "OFF",
+    "Label_Multiclass": "OR"
+  },
+  {
+    "ID": "or_opt_181",
+    "Comment": "नेवार अर्बन इन्ट्रेप्रेनरसिप कमर्सियल सफलता त छ तर सोसल रेस्पन्सिबिलिटी कमजोर छ कर्पोरेट सोसल रेस्पन्सिबिलिटी प्राक्टिस गर्नु पर्छ कम्युनिटी डेभलपमेन्टको लागि",
+    "Label_Binary": "OFF",
+    "Label_Multiclass": "OR"
+  },
+  {
+    "ID": "or_opt_182",
+    "Comment": "मधेसी पोलिटिकल मोबिलाइजेसन एथ्निक आइडेन्टिटीको आधारमा हुन्छ नेशनल इन्टिग्रेसनको लागि इन्क्लुसिभ अप्रोच अपनाउनु पर्छ युनिटी इन डाइभर्सिटीको सिद्धान्त राम राम",
+    "Label_Binary": "OFF",
+    "Label_Multiclass": "OR"
+  },
+  {
+    "ID": "or_opt_183",
+    "Comment": "राई कम्युनिटीको एजुकेशनल इन्फ्रास्ट्रक्चर डेभलपमेन्टमा इन्भेस्टमेन्ट चाहिन्छ स्कलरसिप म्यानेजमेन्ट इम्प्रूभ गर्नु पर्छ मेरिट बेस्ड सेलेक्सन सिस्टम लागू गर्न रामको नाम ले",
+    "Label_Binary": "OFF",
+    "Label_Multiclass": "OR"
+  },
+  {
+    "ID": "or_opt_184",
+    "Comment": "नेपाली जुडिसियरीमा पहाडी जजको डोमिनेन्स एफिसिएन्सी र इम्पार्सियालिटी कायम राख्छ डाइभर्स रिप्रेजेन्टेसन भन्दा कम्पिटेन्स प्रायोरिटी हुनु पर्छ राम राम भन्नेहरूले",
+    "Label_Binary": "OFF",
+    "Label_Multiclass": "OR"
+  },
+  {
+    "ID": "or_opt_185",
+    "Comment": "दलित सोसल मोबिलिटी जेनेरेसनल चेन्ज मार्फत स्लो छ र्‍यापिड ट्रान्सफर्मेसनको लागि इन्टेन्सिभ स्किल डेभलपमेन्ट प्रोग्राम चाहिन्छ टार्गेटेड इन्टरभेन्सन रामको नाम ले",
+    "Label_Binary": "OFF",
+    "Label_Multiclass": "OR"
+  },
+  {
+    "ID": "or_opt_186",
+    "Comment": "मधेसी माइग्रेसन अर्बन स्लम क्रिएसनको कारण बन्दैछ प्लान्ड रिसेटलमेन्ट पोलिसी लागू गर्नु पर्छ सस्टेनेबल अर्बन डेभलपमेन्टको लागि राम राम",
+    "Label_Binary": "OFF",
+    "Label_Multiclass": "OR"
+  },
+  {
+    "ID": "or_opt_187",
+    "Comment": "जनजाति कल्चरल हेरिटेज डकुमेन्टेसन सिस्टेम्याटिक अप्रोच चाहिन्छ डिजिटल प्रिजर्भेसन टेक्नोलजी प्रयोग गर्नु पर्छ फ्युचर जेनेरेसनको लागि रामको नाम ले",
+    "Label_Binary": "OFF",
+    "Label_Multiclass": "OR"
+  },
+  {
+    "ID": "or_opt_188",
+    "Comment": "पहाडी स्टुडेन्टको एकेडेमिक एक्सिलेन्स कन्सिस्टेन्ट परफर्मेन्सले इस्ट्याब्लिस गरेको छ टिचिङ लर्निङ मेथोडोलजीमा इनोभेसन कन्टिन्युएसन चाहिन्छ राम राम भन्ने",
+    "Label_Binary": "OFF",
+    "Label_Multiclass": "OR"
+  },
+  {
+    "ID": "or_opt_189",
+    "Comment": "क्षेत्री मिलिटरी लिडरसिप स्ट्र्याटेजिक थिङ्किङ र ट्याक्टिकल एक्सिलेन्सको सिम्बोल हो नेशनल डिफेन्स आर्किटेक्चरको कर्नरस्टोनको रूपमा रहनु पर्छ रामको नाम ले",
+    "Label_Binary": "OFF",
+    "Label_Multiclass": "OR"
+  },
+  {
+    "ID": "or_opt_190",
+    "Comment": "मधेसी पोलिटिकल डिस्कोर्स इन्डिया-सेन्ट्रिक न्यारेटिभमा आधारित छ इन्डिपेन्डेन्ट नेशनल पर्सपेक्टिभ डेभलप गर्नु पर्छ स्ट्र्याटेजिक अटोनोमीको लागि राम राम",
+    "Label_Binary": "OFF",
+    "Label_Multiclass": "OR"
+  },
+  {
+    "ID": "or_opt_191",
+    "Comment": "बाहुन इन्टेलेक्चुअल कन्ट्रिब्युसन नलेज क्रिएसन र डिसेमिनेसनमा अनप्यारलल्ड छ एकेडेमिक एक्सिलेन्सको स्ट्यान्डर्ड सेटरको रूपमा रहनु पर्छ रामको नाम ले",
+    "Label_Binary": "OFF",
+    "Label_Multiclass": "OR"
+  },
+  {
+    "ID": "or_opt_192",
+    "Comment": "जनजाति ल्यान्ड म्यानेजमेन्ट कम्युनल ओनरसिप मोडल मोडर्न इन्डिभिजुअल ओनरसिपसँग इन्टिग्रेट गर्नु पर्छ एग्रीकल्चरल प्रोडक्टिभिटी इन्हान्समेन्टको लागि राम राम",
+    "Label_Binary": "OFF",
+    "Label_Multiclass": "OR"
+  },
+  {
+    "ID": "or_opt_193",
+    "Comment": "दलित इकोनोमिक इन्क्लुजन मार्केट ड्रिभेन अप्रोच मार्फत गर्नु पर्छ गभर्नमेन्ट ह्यान्डआउट भन्दा इन्ट्रेप्रेनरसिप इकोसिस्टम डेभलपमेन्ट इफेक्टिभ हुन्छ रामको नाम ले",
+    "Label_Binary": "OFF",
+    "Label_Multiclass": "OR"
+  },
+  {
+    "ID": "or_opt_194",
+    "Comment": "मधेसी क्यापिटल इन्भेस्टमेन्ट रियल इस्टेट स्पेकुलेसनमा कन्सन्ट्रेट छ म्यानुफ्याक्चरिङ र प्रोडक्टिभ सेक्टरमा डाइभर्सिफिकेसन चाहिन्छ ब्यालेन्स्ड इकोनोमिक ग्रोथको लागि",
+    "Label_Binary": "OFF",
+    "Label_Multiclass": "OR"
+  },
+  {
+    "ID": "or_opt_195",
+    "Comment": "थारू फार्मिङ कम्युनिटी मोडर्न इरिगेसन टेक्नोलजी एडप्सन गर्नु पर्छ प्रोडक्टिभिटी डबल गर्न क्रप डाइभर्सिफिकेसन र मार्केट लिङ्केज स्ट्रेन्थेन गर्न राम राम",
+    "Label_Binary": "OFF",
+    "Label_Multiclass": "OR"
+  },
+  {
+    "ID": "or_opt_196",
+    "Comment": "नेवार बिजनेस कम्युनिटी कर्पोरेट गभर्नेन्स स्ट्यान्डर्ड इम्प्रूभ गर्नु पर्छ ट्रान्सपरेन्सी र अकाउन्टेबिलिटी इस्ट्याब्लिस गर्न इन्भेस्टर कन्फिडेन्स इनक्रिज हुन्छ रामको नाम ले",
+    "Label_Binary": "OFF",
+    "Label_Multiclass": "OR"
+  },
+  {
+    "ID": "or_opt_197",
+    "Comment": "मधेसी पोलिटिकल लिडरसिप नेशनल कन्सेन्सस बिल्डिङ क्यापासिटी कमजोर छ कोअलिसन पोलिटिक्समा स्टेबिलिटी प्रोभाइड गर्न सक्दैन स्ट्रङ लिडरसिप चाहिन्छ राम राम",
+    "Label_Binary": "OFF",
+    "Label_Multiclass": "OR"
+  },
+  {
+    "ID": "or_opt_198",
+    "Comment": "राई एजुकेशनल इन्स्टिच्युसन क्वालिटी इम्प्रूभमेन्टको लागि करिकुलम मोडर्नाइजेसन र टिचर ट्रेनिङ प्रोग्राम स्ट्रेन्थेन गर्नु पर्छ कम्पिटिटिभ एज मेन्टेन गर्न रामको नाम ले",
+    "Label_Binary": "OFF",
+    "Label_Multiclass": "OR"
+  },
+  {
+    "ID": "or_opt_199",
+    "Comment": "नेपाली नेशनल सेक्युरिटी आर्किटेक्चर पहाडी मिलिटरी ट्रेडिसनमा आधारित छ प्रूभन इफेक्टिभनेसको कारण कन्टिन्युइटी मेन्टेन गर्नु पर्छ राम राम भन्नेहरूले",
+    "Label_Binary": "OFF",
+    "Label_Multiclass": "OR"
+  },
+  {
+    "ID": "or_opt_200",
+    "Comment": "दलित सोसल ट्रान्सफर्मेसन कम्प्रिहेन्सिभ अप्रोच चाहिन्छ एजुकेशन स्किल डेभलपमेन्ट इन्ट्रेप्रेनरसिप प्रमोशन साइमल्टेनियस इम्प्लिमेन्टेसन बिना सस्टेनेबल चेन्ज सम्भव छैन रामको नाम ले",
+    "Label_Binary": "OFF",
+    "Label_Multiclass": "OR"
+  },
+  {
+    "ID": "os_improved_001",
+    "Comment": "देशको राष्ट्रपति नै आइमाई भइसकेपछि पनि अर्की आइमाईको पीडा बुझ्न नसक्ने कस्तो खुत्या साली रन्डी आइमाई हो यो यस्ता ढोंगी चिनालहरूले देश बिगार्न मा मात्र ध्यान दिन्छन्",
+    "Label_Binary": "OFF",
+    "Label_Multiclass": "OS"
+  },
+  {
+    "ID": "os_improved_002",
+    "Comment": "Pothi basera matra desh chalna sakdaina yo posthi ko mati her prabhu 16 crore ko gadi chahiyo re yesta bewakoof dhoti sali randi harule desh dubau ma faseka chan chor jasto vyavhar garchhan ma matra ruchi rakhchhan sadhai yesto nautanki",
+    "Label_Binary": "OFF",
+    "Label_Multiclass": "OS"
+  },
+  {
+    "ID": "os_improved_003",
+    "Comment": "Nari ko buddhi ta yestai hunchha ramro dekhiyo bhanera desh dubai dinchhan yesta khutya chinAl randi haru ma faseka chan vikas ko sochdainan fuck jasto jivan jiuchhan sali haru ma matra dhyan dinchhan sadhai yesto drama garchhan",
+    "Label_Binary": "OFF",
+    "Label_Multiclass": "OS"
+  },
+  {
+    "ID": "os_improved_004",
+    "Comment": "यो मन्त्रीनी जस्ती केटीहरूले दश दिशा मिलाउन खोज्छन् कहिले भारत कहिले अमेरिका सिधा कुरा गर्न पनि आउँदैन यस्ता नौटंकी पोथी रन्डीहरू मा फसेका छन् बेवकूफ सालीहरूले देश चलाउन जान्दैनन् मा मात्र रुचि राख्छन् सधैं यस्तो झूट बोल्छन्",
+    "Label_Binary": "OFF",
+    "Label_Multiclass": "OS"
+  },
+  {
+    "ID": "os_improved_005",
+    "Comment": "Aaimai haru le rajniti garna khojda desh ko halat yestai hunchha ghar samhalna ni aaudaina yesta dhongi chinAl randi haru ma faseka chan sansad ma drama garchhan fuck jasto vyavhar garchhan dhoti haru ma matra sochchhan sadhai nautanki matra garchhan",
+    "Label_Binary": "OFF",
+    "Label_Multiclass": "OS"
+  },
+  {
+    "ID": "os_improved_006",
+    "Comment": "छोरीमान्छे भएपछि घरको काम सानैदेखि सिक्नुपर्छ नत्र बिहेपछि यस्तै दुख पाइन्छ नि यस्ता खुत्या साली रन्डीहरू मा फसेर जागिर गरेर बच्चा बिगार्छन् बेवकूफ चिनालहरूले घरको मर्यादा भुल्छन् मा मात्र ध्यान दिन्छन् सधैं यस्तो गर्छन्",
+    "Label_Binary": "OFF",
+    "Label_Multiclass": "OS"
+  },
+  {
+    "ID": "os_new_007",
+    "Comment": "Yo nautanki aaimai haru le desh ko naam bigareko cha, drama matra thaha cha",
+    "Label_Binary": "OFF",
+    "Label_Multiclass": "OS"
+  },
+  {
+    "ID": "os_new_008",
+    "Comment": "आइमाईहरू छोटो लुगा लगाएर हिँड्छन् अनि बलात्कार भयो भन्छन्, आफैँ दोषी",
+    "Label_Binary": "OFF",
+    "Label_Multiclass": "OS"
+  },
+  {
+    "ID": "os_new_009",
+    "Comment": "Keti haru ko dimaag ma makeup ra selfie matrai hunchha, aru kehi hudaina",
+    "Label_Binary": "OFF",
+    "Label_Multiclass": "OS"
+  },
+  {
+    "ID": "os_new_010",
+    "Comment": "महिला नेताहरू सब नौटंकी गर्छन्, बोल्नलाई मात्र हो, काम केही गर्दैनन्",
+    "Label_Binary": "OFF",
+    "Label_Multiclass": "OS"
+  },
+  {
+    "ID": "os_new_011",
+    "Comment": "Pothi basyo bhanera desh ko president banayo, aba ta desh dubihalcha",
+    "Label_Binary": "OFF",
+    "Label_Multiclass": "OS"
+  },
+  {
+    "ID": "os_new_012",
+    "Comment": "यो आइमाईहरूले फेसबुकमा फोटो हालेर इज्जत जोगाउँछु भन्छन्, सबै नक्कली जीवन",
+    "Label_Binary": "OFF",
+    "Label_Multiclass": "OS"
+  },
+  {
+    "ID": "os_new_013",
+    "Comment": "Nari le car chalayera accident garchhan, license nai dinu haina",
+    "Label_Binary": "OFF",
+    "Label_Multiclass": "OS"
+  },
+  {
+    "ID": "os_new_014",
+    "Comment": "केटीहरू पढेलेखेपछि कुल्टा घैँटे बन्छन् घर बिगार्छन् यस्ता बेवकूफ चिनाल रन्डीहरू मा फसेर इन्जिनियरिङ पढ्न खोज्छन् धोती सालीहरूले गणित पनि बुझ्दैनन् मा मात्र रुचि राख्छन्",
+    "Label_Binary": "OFF",
+    "Label_Multiclass": "OS"
+  },
+  {
+    "ID": "os_new_015",
+    "Comment": "Aafno chhori lai short dress lagayera tik tok ma nachauna dinchhan, aru ko chhori lai morali dinchhan",
+    "Label_Binary": "OFF",
+    "Label_Multiclass": "OS"
+  },
+  {
+    "ID": "os_new_016",
+    "Comment": "मिस नेपालहरू सब पैसाकी लागि बिक्छन् सुन्दरता त केवल बहाना हो यस्ता ढोंगी पोथी रन्डीहरू मा फसेर बिकिनी लगाउँछन् सालीहरूले देशको नाम खराब गर्छन् मा मात्र रुचि राख्छन् सधैं यस्तो ढोंग गर्छन्",
+    "Label_Binary": "OFF",
+    "Label_Multiclass": "OS"
+  },
+  {
+    "ID": "os_new_017",
+    "Comment": "Yo swasni manche haru office gayo bhanera bacha bigarchhan, ghar ko kaam kasle garchha?",
+    "Label_Binary": "OFF",
+    "Label_Multiclass": "OS"
+  },
+  {
+    "ID": "os_new_018",
+    "Comment": "आइमाईको दिमाग भनेको बच्चा जन्माउने र घर सम्हाल्ने बाहेक केही काम लाग्दैन",
+    "Label_Binary": "OFF",
+    "Label_Multiclass": "OS"
+  },
+  {
+    "ID": "os_new_019",
+    "Comment": "Raat ko 12 baje hidera security magchhan yo aaimai haru, ghar ma basna ni aaudaina",
+    "Label_Binary": "OFF",
+    "Label_Multiclass": "OS"
+  },
+  {
+    "ID": "os_new_020",
+    "Comment": "केटीहरूले जागिर गर्छन् अनि बिहे गर्न मान्दैनन्, कुल घान्द्रे बन्छन्",
+    "Label_Binary": "OFF",
+    "Label_Multiclass": "OS"
+  },
+  {
+    "ID": "os_new_021",
+    "Comment": "Aaimai doctor haru emotional hunchhan, serious case ma purush doctor nai ramro",
+    "Label_Binary": "OFF",
+    "Label_Multiclass": "OS"
+  },
+  {
+    "ID": "os_new_022",
+    "Comment": "यो सालीहरू टिकटकमा नाच्छन् अनि संस्कारी भन्न खोज्छन्, सबै रन्डी जस्तै",
+    "Label_Binary": "OFF",
+    "Label_Multiclass": "OS"
+  },
+  {
+    "ID": "os_new_023",
+    "Comment": "Nari le byapar garna sakdaina, thagna matra aaunchha",
+    "Label_Binary": "OFF",
+    "Label_Multiclass": "OS"
+  },
+  {
+    "ID": "os_new_024",
+    "Comment": "छोरीमान्छेले देश चलाउन सक्दैनन्, भावनामा बग्छन्",
+    "Label_Binary": "OFF",
+    "Label_Multiclass": "OS"
+  },
+  {
+    "ID": "os_new_025",
+    "Comment": "Makeup bina bahira niskina ni sakdainan yo keti haru, sab fake",
+    "Label_Binary": "OFF",
+    "Label_Multiclass": "OS"
+  },
+  {
+    "ID": "os_new_026",
+    "Comment": "आइमाईहरूले छोटो कपाल राखेर सुन्दर बन्न खोज्छन्, हाँस उठ्छ",
+    "Label_Binary": "OFF",
+    "Label_Multiclass": "OS"
+  },
+  {
+    "ID": "os_new_027",
+    "Comment": "Swasni manche haru ko kaam shopping ra gossip matra ho",
+    "Label_Binary": "OFF",
+    "Label_Multiclass": "OS"
+  },
+  {
+    "ID": "os_new_028",
+    "Comment": "महिला सांसदहरू सब ड्रामा गर्छन्, जनताको काम केही गर्दैनन्",
+    "Label_Binary": "OFF",
+    "Label_Multiclass": "OS"
+  },
+  {
+    "ID": "os_new_029",
+    "Comment": "Yo aaimai haru le rajniti ma aayera desh bigareko cha",
+    "Label_Binary": "OFF",
+    "Label_Multiclass": "OS"
+  },
+  {
+    "ID": "os_new_030",
+    "Comment": "केटीहरूले मोटरसाइकल चलाउँदा लड्छन्, घरमा बस्नुपर्छ",
+    "Label_Binary": "OFF",
+    "Label_Multiclass": "OS"
+  },
+  {
+    "ID": "os_new_031",
+    "Comment": "Yo president ni aaimai, mantri ni aaimai, aba ta desh ko barbaadi pakka cha",
+    "Label_Binary": "OFF",
+    "Label_Multiclass": "OS"
+  },
+  {
+    "ID": "os_new_032",
+    "Comment": "आइमाईहरूले गाडी किन्दा पनि श्रीमानको पैसा हो, आफूले कमाएको कहिल्यै हुँदैन",
+    "Label_Binary": "OFF",
+    "Label_Multiclass": "OS"
+  },
+  {
+    "ID": "os_new_033",
+    "Comment": "Keti haru le padhelekhe pachi ghamanda garchhan, ghar ko maryada bhulchhan",
+    "Label_Binary": "OFF",
+    "Label_Multiclass": "OS"
+  },
+  {
+    "ID": "os_new_034",
+    "Comment": "यो आइमाईहरूले राति हिँड्छन् अनि सुरक्षा माग्छन्, घरमा बस्न किन जान्दैनन् ?",
+    "Label_Binary": "OFF",
+    "Label_Multiclass": "OS"
+  },
+  {
+    "ID": "os_new_035",
+    "Comment": "Pothi ko buddhi bhaeko manche le desh ko PM bhaeki thiye, aba ta desh dubyo",
+    "Label_Binary": "OFF",
+    "Label_Multiclass": "OS"
+  },
+  {
+    "ID": "os_new_036",
+    "Comment": "नारी अधिकार भनेर चिच्याउनेहरू घरमा श्रीमानलाई कुट्छन्",
+    "Label_Binary": "OFF",
+    "Label_Multiclass": "OS"
+  },
+  {
+    "ID": "os_new_037",
+    "Comment": "Aaimai haru ko sthan ghar ra kitchen ma ho, rajniti ma hoina",
+    "Label_Binary": "OFF",
+    "Label_Multiclass": "OS"
+  },
+  {
+    "ID": "os_new_038",
+    "Comment": "यो सालीले छोटो ड्रेस लगाएर हिँड्छे अनि बलात्कारको दोष अरुलाई",
+    "Label_Binary": "OFF",
+    "Label_Multiclass": "OS"
+  },
+  {
+    "ID": "os_new_039",
+    "Comment": "Yuba haru lai balatkar ko batoma dhakeline nari haru ko yestai chartikal dekhayera ta honi vanchhan",
+    "Label_Binary": "OFF",
+    "Label_Multiclass": "OS"
+  },
+  {
+    "ID": "os_new_040",
+    "Comment": "आइमाईहरूले मेकअप गर्छन् अनि प्राकृतिक सुन्दरता भन्छन्, सबै ढोंग",
+    "Label_Binary": "OFF",
+    "Label_Multiclass": "OS"
+  },
+  {
+    "ID": "os_new_041",
+    "Comment": "Keti haru ko kaam sajne matra ho, dimag le kaam garna sakdainan",
+    "Label_Binary": "OFF",
+    "Label_Multiclass": "OS"
+  },
+  {
+    "ID": "os_new_042",
+    "Comment": "देश डुब्न लाग्यो तर यी आइमाईहरूलाई तलब बढाउने र गाडी किन्ने मात्र फुर्सद",
+    "Label_Binary": "OFF",
+    "Label_Multiclass": "OS"
+  },
+  {
+    "ID": "os_new_043",
+    "Comment": "Aaimai haru le engineering padhna khojchhan, tara parking ni thik garna sakdainan",
+    "Label_Binary": "OFF",
+    "Label_Multiclass": "OS"
+  },
+  {
+    "ID": "os_new_044",
+    "Comment": "यो खुत्या आइमाईहरूले श्रीमानको कमाइ खाएर फेसबुकमा फेमिनिस्ट बन्छन्",
+    "Label_Binary": "OFF",
+    "Label_Multiclass": "OS"
+  },
+  {
+    "ID": "os_new_045",
+    "Comment": "Mister nepal lai ta kasaile matra chaina, miss nepal bhanera mari hatte garchan",
+    "Label_Binary": "OFF",
+    "Label_Multiclass": "OS"
+  },
+  {
+    "ID": "os_new_046",
+    "Comment": "पोथी बास्यो कि क्या हो, जता ततै यिनीहरुको मात्र राज छ । धोती हाँसेको त मैले कहिल्यै देखिनँ, सधैं पोथीहरुले नै देश डुबाउँदैछन् रे ।",
+    "Label_Binary": "OFF",
+    "Label_Multiclass": "OS"
+  },
+  {
+    "ID": "os_new_047",
+    "Comment": "Yo keti haru ko buddhi nai hudaina bhanera kasle bhaneko thiyo tyha jaanu ?",
+    "Label_Binary": "OFF",
+    "Label_Multiclass": "OS"
+  },
+  {
+    "ID": "os_new_048",
+    "Comment": "आइमाई भएर फुटानी लाउँछे, लाज पनि लाग्दैन ?",
+    "Label_Binary": "OFF",
+    "Label_Multiclass": "OS"
+  },
+  {
+    "ID": "os_new_049",
+    "Comment": "Nari le science padhna sakdaina, uniharuko dimag ma emotion matra hunchha",
+    "Label_Binary": "OFF",
+    "Label_Multiclass": "OS"
+  },
+  {
+    "ID": "os_new_050",
+    "Comment": "यो मिस नेपालहरू सब पैसाकी लागि बिक्छन्, संस्कृति भन्ने केही छैन",
+    "Label_Binary": "OFF",
+    "Label_Multiclass": "OS"
+  },
+  {
+    "ID": "os_new_051",
+    "Comment": "Aaimai ko kaam bacha janmaune ra kitchen samhalne ho, aru kehi hoina",
+    "Label_Binary": "OFF",
+    "Label_Multiclass": "OS"
+  },
+  {
+    "ID": "os_new_052",
+    "Comment": "केटीहरूले छोटो लुगा लगाउँछन् अनि बलात्कारको दोष केटालाई",
+    "Label_Binary": "OFF",
+    "Label_Multiclass": "OS"
+  },
+  {
+    "ID": "os_new_053",
+    "Comment": "Yo aaimai haru le job garchhan bhanera bacha lai bigarchhan",
+    "Label_Binary": "OFF",
+    "Label_Multiclass": "OS"
+  },
+  {
+    "ID": "os_new_054",
+    "Comment": "देशको जनसङ्ख्या करोड, विधवाले चढ्ने गाडी १८ करोड, यस्तै हो पोथीको बुद्धि",
+    "Label_Binary": "OFF",
+    "Label_Multiclass": "OS"
+  },
+  {
+    "ID": "os_new_055",
+    "Comment": "Keti haru le motorcycle chalayera ladchhan, ghar ma basera bhat pakau",
+    "Label_Binary": "OFF",
+    "Label_Multiclass": "OS"
+  },
+  {
+    "ID": "os_new_056",
+    "Comment": "यो नपुंसकहरूले पनि स्तन हुन्छ रे, तर काम लाग्दैन",
+    "Label_Binary": "OFF",
+    "Label_Multiclass": "OS"
+  },
+  {
+    "ID": "os_new_057",
+    "Comment": "Aachel ka keti haru chota luga lagauchan, keta haru ko najar ma faschan",
+    "Label_Binary": "OFF",
+    "Label_Multiclass": "OS"
+  },
+  {
+    "ID": "os_new_058",
+    "Comment": "आइमाईहरूको दिमाग भनेको बच्चा कोक्रोमा हाल्ने र भान्सामा घ्यू हाल्ने बाहेक केही काम लाग्दैन । पढेर डाक्टर–इन्जिनियर बन्छु भन्छन्, अन्तमा त श्रीमान्को खुट्टा नुहाउने पानी मात्र बन्छन् ।",
+    "Label_Binary": "OFF",
+    "Label_Multiclass": "OS"
+  },
+  {
+    "ID": "os_new_059",
+    "Comment": "Yo nautanki aaimai haru le desh bigareko cha",
+    "Label_Binary": "OFF",
+    "Label_Multiclass": "OS"
+  },
+  {
+    "ID": "os_new_060",
+    "Comment": "केटीहरूले पढ्छन् अनि घमण्ड गर्छन्, घरको इज्जत बिर्सन्छन्",
+    "Label_Binary": "OFF",
+    "Label_Multiclass": "OS"
+  },
+  {
+    "ID": "os_new_061",
+    "Comment": "Aaimai haru le rajniti bujhdainan, uniharuko kaam ghar samhalne ho",
+    "Label_Binary": "OFF",
+    "Label_Multiclass": "OS"
+  },
+  {
+    "ID": "os_new_062",
+    "Comment": "यो आइमाईहरूले छोटो लुगा लगाएर मन्दिर जान्छन्, लाज लाग्दैन ?",
+    "Label_Binary": "OFF",
+    "Label_Multiclass": "OS"
+  },
+  {
+    "ID": "os_new_063",
+    "Comment": "Swasni manche haru le job garyo bhanera ghar barbaad hunchha",
+    "Label_Binary": "OFF",
+    "Label_Multiclass": "OS"
+  },
+  {
+    "ID": "os_new_064",
+    "Comment": "नारीको बुद्धि भनेको श्रीमानको कमाइ खाने र मेकअप गर्ने मात्र हो",
+    "Label_Binary": "OFF",
+    "Label_Multiclass": "OS"
+  },
+  {
+    "ID": "os_new_065",
+    "Comment": "Yo keti haru le short dress lagayera attention khojchhan",
+    "Label_Binary": "OFF",
+    "Label_Multiclass": "OS"
+  },
+  {
+    "ID": "os_new_066",
+    "Comment": "आइमाई मान्छेले व्यापार गर्न सक्दैनन्, ठग्छन् मात्र",
+    "Label_Binary": "OFF",
+    "Label_Multiclass": "OS"
+  },
+  {
+    "ID": "os_new_067",
+    "Comment": "Keti haru ko kaam selfie ra makeup matra ho",
+    "Label_Binary": "OFF",
+    "Label_Multiclass": "OS"
+  },
+  {
+    "ID": "os_new_068",
+    "Comment": "यो सालीहरूले टिकटकमा नाचेर कुलटा बन्छन्",
+    "Label_Binary": "OFF",
+    "Label_Multiclass": "OS"
+  },
+  {
+    "ID": "os_new_069",
+    "Comment": "Aaimai haru emotional hunchhan, business garna sakdainan",
+    "Label_Binary": "OFF",
+    "Label_Multiclass": "OS"
+  },
+  {
+    "ID": "os_new_070",
+    "Comment": "केटीहरूले जागिर गरेर बिहे गर्न मान्दैनन्",
+    "Label_Binary": "OFF",
+    "Label_Multiclass": "OS"
+  },
+  {
+    "ID": "os_new_071",
+    "Comment": "Yo aaimai haru le raat bhar party garchhan ani balatkar bhayo bhanchhan",
+    "Label_Binary": "OFF",
+    "Label_Multiclass": "OS"
+  },
+  {
+    "ID": "os_new_072",
+    "Comment": "महिला डाक्टरहरू भावनामा बग्छन्, पुरुष डाक्टर राम्रो",
+    "Label_Binary": "OFF",
+    "Label_Multiclass": "OS"
+  },
+  {
+    "ID": "os_new_073",
+    "Comment": "Keti haru le car chalayera road bigarchhan",
+    "Label_Binary": "OFF",
+    "Label_Multiclass": "OS"
+  },
+  {
+    "ID": "os_new_074",
+    "Comment": "यो आइमाईहरूले मेकअप गर्छन् अनि सादगी भन्छन्",
+    "Label_Binary": "OFF",
+    "Label_Multiclass": "OS"
+  },
+  {
+    "ID": "os_new_075",
+    "Comment": "Pothi ko mati le desh dubayo, aba k garne ?",
+    "Label_Binary": "OFF",
+    "Label_Multiclass": "OS"
+  },
+  {
+    "ID": "os_new_076",
+    "Comment": "आइमाईहरूको काम बच्चा पाल्ने र घर सम्हाल्ने हो",
+    "Label_Binary": "OFF",
+    "Label_Multiclass": "OS"
+  },
+  {
+    "ID": "os_new_077",
+    "Comment": "Yo keti haru ko buddhi nai hudaina, padhe pani kehi hudaina",
+    "Label_Binary": "OFF",
+    "Label_Multiclass": "OS"
+  },
+  {
+    "ID": "os_new_078",
+    "Comment": "यो खुत्या आइमाईहरूले श्रीमानको कमाइ खाएर फेमिनिस्ट बन्छन्",
+    "Label_Binary": "OFF",
+    "Label_Multiclass": "OS"
+  },
+  {
+    "ID": "os_new_079",
+    "Comment": "Aaimai haru le desh chalau na sakne ho, uniharuko kaam ghar ko ho",
+    "Label_Binary": "OFF",
+    "Label_Multiclass": "OS"
+  },
+  {
+    "ID": "os_new_080",
+    "Comment": "केटीहरूले छोटो कपाल राखेर सुन्दर बन्न खोज्छन्, हाँस उठ्छ",
+    "Label_Binary": "OFF",
+    "Label_Multiclass": "OS"
+  },
+  {
+    "ID": "os_new_081",
+    "Comment": "Yo nautanki aaimai haru le parliament ma drama garchhan",
+    "Label_Binary": "OFF",
+    "Label_Multiclass": "OS"
+  },
+  {
+    "ID": "os_new_082",
+    "Comment": "आइमाईहरूले छोटो लुगा लगाउँछन् अनि बलात्कारको दोष केटालाई",
+    "Label_Binary": "OFF",
+    "Label_Multiclass": "OS"
+  },
+  {
+    "ID": "os_new_083",
+    "Comment": "Keti haru le job garchhan ani bacha ko haal bigarchhan",
+    "Label_Binary": "OFF",
+    "Label_Multiclass": "OS"
+  },
+  {
+    "ID": "os_new_084",
+    "Comment": "यो सालीहरूले टिकटकमा नाच्छन् अनि संस्कारी भन्छन्",
+    "Label_Binary": "OFF",
+    "Label_Multiclass": "OS"
+  },
+  {
+    "ID": "os_new_085",
+    "Comment": "Aaimai haru ko sthan kitchen ma ho, rajniti ma hoina",
+    "Label_Binary": "OFF",
+    "Label_Multiclass": "OS"
+  },
+  {
+    "ID": "os_new_086",
+    "Comment": "देशको हालत यस्तो भयो किनकि पोथी बसेर नेतृत्व गर्यो",
+    "Label_Binary": "OFF",
+    "Label_Multiclass": "OS"
+  },
+  {
+    "ID": "os_new_087",
+    "Comment": "Yo keti haru le makeup bina bahira niskina ni sakdainan",
+    "Label_Binary": "OFF",
+    "Label_Multiclass": "OS"
+  },
+  {
+    "ID": "os_new_088",
+    "Comment": "आइमाईहरूले गाडी किन्दा पनि श्रीमानको पैसा हो",
+    "Label_Binary": "OFF",
+    "Label_Multiclass": "OS"
+  },
+  {
+    "ID": "os_new_089",
+    "Comment": "Nari le science ra technology padhna sakdaina",
+    "Label_Binary": "OFF",
+    "Label_Multiclass": "OS"
+  },
+  {
+    "ID": "os_new_090",
+    "Comment": "यो मिस नेपालहरू सब बिक्छन्, पैसाकै लागि",
+    "Label_Binary": "OFF",
+    "Label_Multiclass": "OS"
+  },
+  {
+    "ID": "os_new_091",
+    "Comment": "Aaimai haru le raat ma party garchhan ani suraksha magchhan",
+    "Label_Binary": "OFF",
+    "Label_Multiclass": "OS"
+  },
+  {
+    "ID": "os_new_092",
+    "Comment": "केटीहरू पढेलेखेपछि कुल घान्द्रे बन्छन्",
+    "Label_Binary": "OFF",
+    "Label_Multiclass": "OS"
+  },
+  {
+    "ID": "os_new_093",
+    "Comment": "Yo aaimai haru le office ma body dekhauchhan promotion ko lagi",
+    "Label_Binary": "OFF",
+    "Label_Multiclass": "OS"
+  },
+  {
+    "ID": "os_new_094",
+    "Comment": "आइमाई मान्छेले देश चलाउन सक्दैनन्",
+    "Label_Binary": "OFF",
+    "Label_Multiclass": "OS"
+  },
+  {
+    "ID": "os_new_095",
+    "Comment": "Keti haru ko kaam sajne ra nachne matra ho",
+    "Label_Binary": "OFF",
+    "Label_Multiclass": "OS"
+  },
+  {
+    "ID": "os_new_096",
+    "Comment": "यो खुत्या आइमाईहरूले श्रीमानलाई कुट्छन् अनि अधिकारको कुरा गर्छन्",
+    "Label_Binary": "OFF",
+    "Label_Multiclass": "OS"
+  },
+  {
+    "ID": "os_new_097",
+    "Comment": "Aaimai haru emotional hunchhan, nirnaya lina sakdainan",
+    "Label_Binary": "OFF",
+    "Label_Multiclass": "OS"
+  },
+  {
+    "ID": "os_new_098",
+    "Comment": "केटीहरूले छोटो लुगा लगाएर बलात्कार निम्त्याउँछन्",
+    "Label_Binary": "OFF",
+    "Label_Multiclass": "OS"
+  },
+  {
+    "ID": "os_new_099",
+    "Comment": "Yo nautanki aaimai haru le desh ko naam kharab garyo",
+    "Label_Binary": "OFF",
+    "Label_Multiclass": "OS"
+  },
+  {
+    "ID": "os_new_100",
+    "Comment": "आइमाईहरूको दिमाग बच्चा जन्माउने, घरको काम गर्ने र परिवार पाल्ने बाहेक केही होइन, उनीहरूले विज्ञान वा राजनीतिमा कुनै योगदान दिन सक्दैनन्",
+    "Label_Binary": "OFF",
+    "Label_Multiclass": "OS"
+  },
+  {
+    "ID": "os_new_101",
+    "Comment": "Keti haru le job garyo bhanera ghar bigarchhan, bachcha haru ko dekhal garna sakdainan ani pariwar ko samasya badhaunchhan",
+    "Label_Binary": "OFF",
+    "Label_Multiclass": "OS"
+  },
+  {
+    "ID": "os_new_102",
+    "Comment": "यो सालीहरूले छोटो ड्रेसमा हिँड्छन् अनि इज्जतको कुरा गर्छन्, समाजमा बदनाम गरेर पनि नैतिकताको ढोंग गर्छन्",
+    "Label_Binary": "OFF",
+    "Label_Multiclass": "OS"
+  },
+  {
+    "ID": "os_new_103",
+    "Comment": "Aaimai haru le car chalau na sakne ho, sadhai accident garchhan ani road ma samasya srijana garchhan",
+    "Label_Binary": "OFF",
+    "Label_Multiclass": "OS"
+  },
+  {
+    "ID": "os_new_104",
+    "Comment": "महिला नेताहरू सब नौटंकी गर्छन्, देशको विकासमा योगदान दिनुको सट्टा ड्रामा गरेर समय खेर फाल्छन्",
+    "Label_Binary": "OFF",
+    "Label_Multiclass": "OS"
+  },
+  {
+    "ID": "os_new_105",
+    "Comment": "Yo keti haru le makeup garchhan ani natural bhanchhan, asli rup dhaakera lok haru lai dhoka dinchan",
+    "Label_Binary": "OFF",
+    "Label_Multiclass": "OS"
+  },
+  {
+    "ID": "os_new_106",
+    "Comment": "आइमाईहरूले राति हिँड्छन् अनि सुरक्षा माग्छन्, आफैं जोखिम मोलाएर पनि समाजलाई दोष दिन्छन्",
+    "Label_Binary": "OFF",
+    "Label_Multiclass": "OS"
+  },
+  {
+    "ID": "os_new_107",
+    "Comment": "Pothi ko buddhi le desh dubayo, mahila neta haru le galat nirnaya garera rajya ko halat bigareko cha",
+    "Label_Binary": "OFF",
+    "Label_Multiclass": "OS"
+  },
+  {
+    "ID": "os_new_108",
+    "Comment": "यो आइमाईहरूले फेसबुकमा फोटो हालेर इज्जत जोगाउँछु भन्छन्, तर समाजमा बदनाम हुने काम गर्छन्",
+    "Label_Binary": "OFF",
+    "Label_Multiclass": "OS"
+  },
+  {
+    "ID": "os_new_109",
+    "Comment": "Keti haru le motorcycle chalayera ladchhan, road ma danger srijana garchhan ani aru lai samasya dinchan",
+    "Label_Binary": "OFF",
+    "Label_Multiclass": "OS"
+  },
+  {
+    "ID": "os_new_110",
+    "Comment": "आइमाईको काम बच्चा पाल्ने हो, नेतागिरी होइन, rajniti ma aayera desh ko halat bigarchhan",
+    "Label_Binary": "OFF",
+    "Label_Multiclass": "OS"
+  },
+  {
+    "ID": "os_new_111",
+    "Comment": "Yo aaimai haru le job garyo bhanera bacha ghar bigarchhan, bachcha ko lekhai ani sanskar bigarchhan",
+    "Label_Binary": "OFF",
+    "Label_Multiclass": "OS"
+  },
+  {
+    "ID": "os_new_112",
+    "Comment": "केटीहरूले छोटो कपाल राखेर सुन्दर बन्न खोज्छन्, तर asal sundarta bhitra hunchha bhane bujhdainan",
+    "Label_Binary": "OFF",
+    "Label_Multiclass": "OS"
+  },
+  {
+    "ID": "os_new_113",
+    "Comment": "Aaimai haru le rajniti ma aayera barbaad garyo, desh ko arthik halat ani vikas ma badha puryauchhan",
+    "Label_Binary": "OFF",
+    "Label_Multiclass": "OS"
+  },
+  {
+    "ID": "os_new_114",
+    "Comment": "यो सालीहरूले टिकटकमा नाच्छन्, sanskar bigarera yuba pidhi lai bigarne kaam garchhan",
+    "Label_Binary": "OFF",
+    "Label_Multiclass": "OS"
+  },
+  {
+    "ID": "os_new_115",
+    "Comment": "Nari le engineering padhna sakdaina, math ani science ma kamjor hunchhan ani fail hunchhan",
+    "Label_Binary": "OFF",
+    "Label_Multiclass": "OS"
+  },
+  {
+    "ID": "os_new_116",
+    "Comment": "आइमाईहरूले मेकअप गर्छन् अनि सादगी भन्छन्, asli rup dhaakera manche haru lai confuse garchhan",
+    "Label_Binary": "OFF",
+    "Label_Multiclass": "OS"
+  },
+  {
+    "ID": "os_new_117",
+    "Comment": "Yo keti haru le short dress lagayera balatkar nimtyauchhan, aafai jo khim ma parchhan ani purush lai dosh dinchan",
+    "Label_Binary": "OFF",
+    "Label_Multiclass": "OS"
+  },
+  {
+    "ID": "os_new_118",
+    "Comment": "महिला डाक्टरहरू भावनामा बग्छन्, rog ko sahi upachar garna sakdainan ani galti garchhan",
+    "Label_Binary": "OFF",
+    "Label_Multiclass": "OS"
+  },
+  {
+    "ID": "os_new_119",
+    "Comment": "Aaimai haru ko kaam gossip ra shopping ho, aru kehi serious kaam garna sakdainan",
+    "Label_Binary": "OFF",
+    "Label_Multiclass": "OS"
+  },
+  {
+    "ID": "os_new_120",
+    "Comment": "यो आइमाईहरूले छोटो लुगा लगाएर स्कूल जान्छन्, विद्यार्थीहरूको ध्यान बिगारेर पढाइमा बाधा पुर्याउँछन्",
+    "Label_Binary": "OFF",
+    "Label_Multiclass": "OS"
+  },
+  {
+    "ID": "os_new_121",
+    "Comment": "केटीहरूले पढेपछि घमण्ड गर्छन्, परिवार र समाजलाई हेरचाह गर्दैनन् अनि एक्लोपनमा पर्छन्",
+    "Label_Binary": "OFF",
+    "Label_Multiclass": "OS"
+  },
+  {
+    "ID": "os_new_122",
+    "Comment": "आइमाईहरूले गाडी चलाउँदा दुर्घटना गर्छन्, सडकको नियम पालना गर्न सक्दैनन् अनि अरूको ज्यान जोखिममा पार्छन्",
+    "Label_Binary": "OFF",
+    "Label_Multiclass": "OS"
+  },
+  {
+    "ID": "os_new_123",
+    "Comment": "यो नौटंकी आइमाईहरूले संसद बिगारेको छ, सांसदमा ड्रामा गरेर देशको समय खराब गर्छन्",
+    "Label_Binary": "OFF",
+    "Label_Multiclass": "OS"
+  },
+  {
+    "ID": "os_new_124",
+    "Comment": "केटीहरूले जागिर गरेर घर बिगार्छन्, बच्चाको हेरचाह नगरी परिवारको सुख बिगार्छन्",
+    "Label_Binary": "OFF",
+    "Label_Multiclass": "OS"
+  },
+  {
+    "ID": "os_new_125",
+    "Comment": "आइमाईहरूले रातभरि हिँडेर सुरक्षा माग्छन्, आफैं जोखिममा पर्छन् अनि पुलिसलाई दोष दिन्छन्",
+    "Label_Binary": "OFF",
+    "Label_Multiclass": "OS"
+  },
+  {
+    "ID": "os_new_126",
+    "Comment": "यो सालीहरूले छोटो ड्रेसमा हिँड्छन्, समाजमा बदनाम गरेर परिवारको इज्जत बिगार्छन्",
+    "Label_Binary": "OFF",
+    "Label_Multiclass": "OS"
+  },
+  {
+    "ID": "os_new_127",
+    "Comment": "नारीको बुद्धि भएको मान्छेले देश चलाउन सक्दैन, गलत निर्णय गरेर आर्थिक समस्या बढाउँछन्",
+    "Label_Binary": "OFF",
+    "Label_Multiclass": "OS"
+  },
+  {
+    "ID": "os_new_128",
+    "Comment": "आइमाईहरूले मेकअप गर्छन् अनि प्राकृतिक भन्छन्, असली सुन्दरता लुकाएर मान्छेहरूलाई ठग्छन्",
+    "Label_Binary": "OFF",
+    "Label_Multiclass": "OS"
+  },
+  {
+    "ID": "os_new_129",
+    "Comment": "यो केटीहरूले जागिर गर्यो भनेर बच्चाको हालत बिगार्छन्, बच्चाको पढाइ र स्वास्थ्यमा असर पर्छ",
+    "Label_Binary": "OFF",
+    "Label_Multiclass": "OS"
+  },
+  {
+    "ID": "os_new_130",
+    "Comment": "महिला सांसदहरू सब ड्रामा गर्छन्, देशको विकासको कुरा गर्नुको सट्टा समय खराब गर्छन्",
+    "Label_Binary": "OFF",
+    "Label_Multiclass": "OS"
+  },
+  {
+    "ID": "os_new_131",
+    "Comment": "आइमाईहरूले कार पार्किङ पनि ठिक गर्न सक्दैनन्, सधैं गलत ठाउँमा पार्क गरेर ट्राफिक जाम गर्छन्",
+    "Label_Binary": "OFF",
+    "Label_Multiclass": "OS"
+  },
+  {
+    "ID": "os_new_132",
+    "Comment": "यो खुट्टा आइमाईहरूले श्रीमानको कमाइ खान्छन्, आफू केही गर्न नसकेर परिवारमा बोझ हुन्छन्",
+    "Label_Binary": "OFF",
+    "Label_Multiclass": "OS"
+  },
+  {
+    "ID": "os_new_133",
+    "Comment": "केटीहरूले छोटो ड्रेस लगाएर ध्यान खोज्छन्, समाजमा बिग्रेको छवि बनाएर इज्जत गुमाउँछन्",
+    "Label_Binary": "OFF",
+    "Label_Multiclass": "OS"
+  },
+  {
+    "ID": "os_new_134",
+    "Comment": "आइमाईहरूको दिमाग भावनामा मात्र चल्छ, तार्किक निर्णय गर्न सक्दैनन् अनि गल्ती हुन्छ",
+    "Label_Binary": "OFF",
+    "Label_Multiclass": "OS"
+  },
+  {
+    "ID": "os_new_135",
+    "Comment": "यो आइमाईहरूले टिकटकमा नाचेरे चरित्र बिगारेको छ, युवाहरूलाई गलत बाटोमा लगेर समाज बिगार्छन्",
+    "Label_Binary": "OFF",
+    "Label_Multiclass": "OS"
+  },
+  {
+    "ID": "os_new_136",
+    "Comment": "केटीहरूले पढेलेखेपछि कुल घान्द्रे बन्छन्, संस्कार बिर्सेर घमण्डी बनेर परिवार बिगार्छन्",
+    "Label_Binary": "OFF",
+    "Label_Multiclass": "OS"
+  },
+  {
+    "ID": "os_new_137",
+    "Comment": "पोथी बस्यो भनेर देश बिग्र्यो, महिला नेताहरूले गलत नीति बनाएर आर्थिक संकट ल्याएको छ",
+    "Label_Binary": "OFF",
+    "Label_Multiclass": "OS"
+  },
+  {
+    "ID": "os_new_138",
+    "Comment": "यो सालीहरूले छोटो लुगा लगाएर बलात्कार निम्त्याउँछन्, आफैं जोखिममा पर्छन् अनि पुरुषलाई दोष लगाउँछन्",
+    "Label_Binary": "OFF",
+    "Label_Multiclass": "OS"
+  },
+  {
+    "ID": "os_new_139",
+    "Comment": "आइमाईहरूले विज्ञान पढ्न सक्दैनन्, गणितमा कमजोर भएर फेल हुन्छन्",
+    "Label_Binary": "OFF",
+    "Label_Multiclass": "OS"
+  },
+  {
+    "ID": "os_new_140",
+    "Comment": "आइमाईहरूले राति पार्टी गर्छन् अनि बलात्कार भयो भन्छन्, आफैं मदिरा सेवन गरेर जोखिम मोल्छन्",
+    "Label_Binary": "OFF",
+    "Label_Multiclass": "OS"
+  },
+  {
+    "ID": "os_new_141",
+    "Comment": "यो केटीहरूले मेकअप बिना केही होइनन्, असली रूपमा सुन्दर नभएर मेकअपमा निर्भर हुन्छन्",
+    "Label_Binary": "OFF",
+    "Label_Multiclass": "OS"
+  },
+  {
+    "ID": "os_new_142",
+    "Comment": "महिला नेताहरू सब नौटंकी गर्छन्, देशको समस्या हल गर्न सक्दैनन् अनि ड्रामा मात्र गर्छन्",
+    "Label_Binary": "OFF",
+    "Label_Multiclass": "OS"
+  },
+  {
+    "ID": "os_new_143",
+    "Comment": "आइमाईहरूको काम बच्चा पाल्ने मात्र हो, बाहिर जागिर गरेर परिवारको सुख बिगार्छन्",
+    "Label_Binary": "OFF",
+    "Label_Multiclass": "OS"
+  },
+  {
+    "ID": "os_new_144",
+    "Comment": "यो आइमाईहरूले छोटो कपाल राखेर सुन्दर बन्न खोज्छन्, तर पुरुषजस्तै देखिएर असुन्दर हुन्छन्",
+    "Label_Binary": "OFF",
+    "Label_Multiclass": "OS"
+  },
+  {
+    "ID": "os_new_145",
+    "Comment": "केटीहरूले जागिर गर्छन् अनि घर बिगार्छन्, बच्चाको हेरचाह नगरी समाजमा समस्या बढाउँछन्",
+    "Label_Binary": "OFF",
+    "Label_Multiclass": "OS"
+  },
+  {
+    "ID": "os_new_146",
+    "Comment": "आइमाईहरूले गाडी चलाउँदा दुर्घटना गर्छन्, नियम पालना नगरी अरूको ज्यान जोखिममा पार्छन्",
+    "Label_Binary": "OFF",
+    "Label_Multiclass": "OS"
+  },
+  {
+    "ID": "os_new_147",
+    "Comment": "यो नौटंकी आइमाईहरूले देश बिगारेको छ, राजनीतिमा आएर गलत निर्णय गरेर आर्थिक हालत बिगारेको",
+    "Label_Binary": "OFF",
+    "Label_Multiclass": "OS"
+  },
+  {
+    "ID": "os_new_148",
+    "Comment": "केटीहरूले छोटो लुगा लगाउँछन् अनि बलात्कारको दोष अरूलाई, आफैं ध्यान खोजेर जोखिममा पर्छन्",
+    "Label_Binary": "OFF",
+    "Label_Multiclass": "OS"
+  },
+  {
+    "ID": "os_new_149",
+    "Comment": "आइमाईहरूले राजनीति बुझ्दैनन्, भावनामा बगेर गलत निर्णय गर्छन्",
+    "Label_Binary": "OFF",
+    "Label_Multiclass": "OS"
+  },
+  {
+    "ID": "os_new_150",
+    "Comment": "यो सालीहरूले टिकटकमा नाच्छन् अनि संस्कारी भन्छन्, नाचेरे संस्कार बिगारेर युवालाई गलत बाटो देखाउँछन्",
+    "Label_Binary": "OFF",
+    "Label_Multiclass": "OS"
+  },
+  {
+    "ID": "os_new_151",
+    "Comment": "केटीहरूले मोटरसाइकल चलाएर लड्छन्, स्पीडमा कन्ट्रोल नगरी दुर्घटना गर्छन्",
+    "Label_Binary": "OFF",
+    "Label_Multiclass": "OS"
+  },
+  {
+    "ID": "os_new_152",
+    "Comment": "आइमाईहरूले मेकअप गर्छन् अनि प्राकृतिक भन्छन्, मेकअप बिना सुन्दर नभएर धोका दिन्छन्",
+    "Label_Binary": "OFF",
+    "Label_Multiclass": "OS"
+  },
+  {
+    "ID": "os_new_153",
+    "Comment": "यो आइमाईहरूले रातमा हिँडेर सुरक्षा माग्छन्, आफैं जोखिममा पर्छन् अनि दोष अरूलाई",
+    "Label_Binary": "OFF",
+    "Label_Multiclass": "OS"
+  },
+  {
+    "ID": "os_new_154",
+    "Comment": "केटीहरूले पढ्छन् अनि घमण्ड गर्छन्, पढाइपछि घमण्डी बनेर परिवारलाई हेरचाह गर्दैनन्",
+    "Label_Binary": "OFF",
+    "Label_Multiclass": "OS"
+  },
+  {
+    "ID": "os_new_155",
+    "Comment": "आइमाईहरूले कार पार्किङ पनि गर्न सक्दैनन्, सधैं गलत ठाउँमा पार्क गरेर जाम गर्छन्",
+    "Label_Binary": "OFF",
+    "Label_Multiclass": "OS"
+  },
+  {
+    "ID": "os_new_156",
+    "Comment": "यो खुट्टा आइमाईहरूले श्रीमानलाई कुट्छन्, घरमा राज गरेर परिवार बिगार्छन्",
+    "Label_Binary": "OFF",
+    "Label_Multiclass": "OS"
+  },
+  {
+    "ID": "os_new_157",
+    "Comment": "केटीहरूले छोटो ड्रेस लगाएर बलात्कार निम्त्याउँछन्, आफैं जोखिम मोल्छन् अनि पुरुषलाई दोष लगाउँछन्",
+    "Label_Binary": "OFF",
+    "Label_Multiclass": "OS"
+  },
+  {
+    "ID": "os_new_158",
+    "Comment": "आइमाईहरूको दिमाग भावनामा मात्र चल्छ, तार्किक रूपमा सोच्न सक्दैनन् अनि गल्ती हुन्छ",
+    "Label_Binary": "OFF",
+    "Label_Multiclass": "OS"
+  },
+  {
+    "ID": "os_new_159",
+    "Comment": "यो आइमाईहरूले टिकटकमा नाचेरे बिग्रेको छ, नाचेरे युवा पिँढीलाई गलत प्रभाव पार्छ",
+    "Label_Binary": "OFF",
+    "Label_Multiclass": "OS"
+  },
+  {
+    "ID": "os_new_160",
+    "Comment": "केटीहरूले जागिर गरेर घर बिगार्छन्, जागिर गरेर बच्चाको हेरचाह नगरी परिवार बिगार्छन्",
+    "Label_Binary": "OFF",
+    "Label_Multiclass": "OS"
+  },
+  {
+    "ID": "os_new_161",
+    "Comment": "पोथीको बुद्धिले देश डुबायो, महिलाले गलत नीति बनाएर आर्थिक संकट ल्याएको छ",
+    "Label_Binary": "OFF",
+    "Label_Multiclass": "OS"
+  },
+  {
+    "ID": "os_new_162",
+    "Comment": "यो सालीहरूले छोटो ड्रेसमा हिँड्छन्, समाजमा बिग्रेको छवि बनाएर इज्जत गुमाउँछन्",
+    "Label_Binary": "OFF",
+    "Label_Multiclass": "OS"
+  },
+  {
+    "ID": "os_new_163",
+    "Comment": "आइमाईहरूले विज्ञान पढ्न सक्दैनन्, गणितमा कमजोर भएर फेल हुन्छन्",
+    "Label_Binary": "OFF",
+    "Label_Multiclass": "OS"
+  },
+  {
+    "ID": "os_new_164",
+    "Comment": "आइमाईहरूले राति पार्टी गर्छन् अनि बलात्कार भयो भन्छन्, आफैं मदिरा सेवन गरेर जोखिम मोल्छन् अनि दोष पुरुषलाई",
+    "Label_Binary": "OFF",
+    "Label_Multiclass": "OS"
+  },
+  {
+    "ID": "os_new_165",
+    "Comment": "यो केटीहरूले मेकअप बिना केही होइनन्, मेकअपमा निर्भर भएर असली रूप लुकाउँछन्",
+    "Label_Binary": "OFF",
+    "Label_Multiclass": "OS"
+  },
+  {
+    "ID": "os_new_166",
+    "Comment": "महिला नेताहरू सब नौटंकी गर्छन्, देशको विकासको कुरा गर्नुको सट्टा समय खराब गर्छन् अनि ड्रामा मात्र",
+    "Label_Binary": "OFF",
+    "Label_Multiclass": "OS"
+  },
+  {
+    "ID": "os_new_167",
+    "Comment": "आइमाईहरूको काम बच्चा पाल्ने मात्र हो, बाहिर जागिर गरेर परिवारको सुख बिगार्छन् अनि समस्या बढाउँछन्",
+    "Label_Binary": "OFF",
+    "Label_Multiclass": "OS"
+  },
+  {
+    "ID": "os_new_168",
+    "Comment": "यो आइमाईहरूले छोटो कपाल राखेर सुन्दर बन्न खोज्छन्, तर पुरुषजस्तै देखिएर असुन्दर हुन्छन् अनि हाँसोको पात्र हुन्छन्",
+    "Label_Binary": "OFF",
+    "Label_Multiclass": "OS"
+  },
+  {
+    "ID": "os_new_169",
+    "Comment": "केटीहरूले जागिर गर्छन् अनि घर बिगार्छन्, बच्चाको हेरचाह नगरी समाजमा समस्या सृजना गर्छन्",
+    "Label_Binary": "OFF",
+    "Label_Multiclass": "OS"
+  },
+  {
+    "ID": "os_new_170",
+    "Comment": "आइमाईहरूले गाडी चलाउँदा दुर्घटना गर्छन्, नियम पालना नगरी अरूको ज्यान जोखिममा पार्छन् अनि गल्ती हुन्छ",
+    "Label_Binary": "OFF",
+    "Label_Multiclass": "OS"
+  },
+  {
+    "ID": "os_new_171",
+    "Comment": "यो नौटंकी आइमाईहरूले देश बिगारेको छ, राजनीतिमा आएर गलत निर्णय गरेर आर्थिक हालत बिगारेको छ",
+    "Label_Binary": "OFF",
+    "Label_Multiclass": "OS"
+  },
+  {
+    "ID": "os_new_172",
+    "Comment": "केटीहरूले छोटो लुगा लगाउँछन् अनि बलात्कारको दोष अरूलाई, आफैं ध्यान खोजेर जोखिममा पर्छन् अनि दोष पुरुषलाई लगाउँछन्",
+    "Label_Binary": "OFF",
+    "Label_Multiclass": "OS"
+  },
+  {
+    "ID": "os_new_173",
+    "Comment": "आइमाईहरूले राजनीति बुझ्दैनन्, भावनामा बगेर गलत निर्णय गर्छन् अनि देश बिगार्छन्",
+    "Label_Binary": "OFF",
+    "Label_Multiclass": "OS"
+  },
+  {
+    "ID": "os_new_174",
+    "Comment": "यो सालीहरूले टिकटकमा नाच्छन् अनि संस्कारी भन्छन्, नाचेरे संस्कार बिगारेर युवालाई गलत प्रभाव दिन्छन्",
+    "Label_Binary": "OFF",
+    "Label_Multiclass": "OS"
+  },
+  {
+    "ID": "os_new_175",
+    "Comment": "केटीहरूले मोटरसाइकल चलाएर लड्छन्, स्पीडमा कन्ट्रोल नगरी दुर्घटना गर्छन् अनि अरूलाई समस्या दिन्छन्",
+    "Label_Binary": "OFF",
+    "Label_Multiclass": "OS"
+  },
+  {
+    "ID": "os_new_176",
+    "Comment": "आइमाईहरूले मेकअप गर्छन् अनि प्राकृतिक भन्छन्, मेकअप बिना सुन्दर नभएर मान्छेलाई धोका दिन्छन्",
+    "Label_Binary": "OFF",
+    "Label_Multiclass": "OS"
+  },
+  {
+    "ID": "os_new_177",
+    "Comment": "यो आइमाईहरूले रातमा हिँडेर सुरक्षा माग्छन्, आफैं जोखिममा पर्छन् अनि दोष पुलिसलाई दिन्छन्",
+    "Label_Binary": "OFF",
+    "Label_Multiclass": "OS"
+  },
+  {
+    "ID": "os_new_178",
+    "Comment": "केटीहरूले पढ्छन् अनि घमण्ड गर्छन्, पढाइपछि घमण्डी बनेर परिवार र समाजलाई हेरचाह गर्दैनन्",
+    "Label_Binary": "OFF",
+    "Label_Multiclass": "OS"
+  },
+  {
+    "ID": "os_new_179",
+    "Comment": "आइमाईहरूले कार पार्किङ पनि गर्न सक्दैनन्, सधैं गलत ठाउँमा पार्क गरेर ट्राफिक जाम गर्छन् अनि अरूलाई दुख दिन्छन्",
+    "Label_Binary": "OFF",
+    "Label_Multiclass": "OS"
+  },
+  {
+    "ID": "os_new_180",
+    "Comment": "यो खुट्टा आइमाईहरूले श्रीमानलाई कुट्छन्, घरमा राज गरेर परिवारको शान्ति बिगार्छन् अनि समस्या सृजना गर्छन्",
+    "Label_Binary": "OFF",
+    "Label_Multiclass": "OS"
+  },
+   {
+    "ID": "os_new_181",
+    "Comment": "Keti haru le short dress lagayera balatkar nimtyauchhan, aafai jo khim molaera purush lai dosh lagaauchhan ani samaj bigarchhan",
+    "Label_Binary": "OFF",
+    "Label_Multiclass": "OS"
+  },
+  {
+    "ID": "os_new_182",
+    "Comment": "Aaimai haru ko dimag bhavana ma matra chalchha, tarkik nirnaya garna sakdainan ani galti garera pariwar bigarchhan",
+    "Label_Binary": "OFF",
+    "Label_Multiclass": "OS"
+  },
+  {
+    "ID": "os_new_183",
+    "Comment": "Yo aaimai haru le tik tok ma nachera bigreko chha, nachera yuva pidhi lai galat prabhav parchha ani sanskar bigarchhan",
+    "Label_Binary": "OFF",
+    "Label_Multiclass": "OS"
+  },
+  {
+    "ID": "os_new_184",
+    "Comment": "Keti haru le jagir garera ghar bigarchhan, job gari bachcha ko dekhal na gari pariwar ko sukh bigarchhan",
+    "Label_Binary": "OFF",
+    "Label_Multiclass": "OS"
+  },
+  {
+    "ID": "os_new_185",
+    "Comment": "Pothi ko buddhi le desh dubayo, mahila le galat niti banaera arthik sankat lyaeko chha ani vikas ma badha",
+    "Label_Binary": "OFF",
+    "Label_Multiclass": "OS"
+  },
+  {
+    "ID": "os_new_186",
+    "Comment": "Yo sali haru le chhoto dress ma hidchhan, samaj ma bigreko chitra banaera pariwar ko ijjat gumauchhan ani badnam garchhan",
+    "Label_Binary": "OFF",
+    "Label_Multiclass": "OS"
+  },
+  {
+    "ID": "os_new_187",
+    "Comment": "Aaimai haru le science padhna sakdainan, math ma kamjor bhayera fail hunchhan ani career bigarchhan",
+    "Label_Binary": "OFF",
+    "Label_Multiclass": "OS"
+  },
+  {
+    "ID": "os_new_188",
+    "Comment": "Aaimai haru le rati party garchhan ani balatkar bhayo bhanchhan, aafai madira sevan gari jo khim molaauchhan ani dosh aru lai dinchhan",
+    "Label_Binary": "OFF",
+    "Label_Multiclass": "OS"
+  },
+  {
+    "ID": "os_new_189",
+    "Comment": "Yo keti haru le makeup bina kehi hoina, makeup ma depend bhayera asli rup lukaauchhan ani dhoka dinchhan",
+    "Label_Binary": "OFF",
+    "Label_Multiclass": "OS"
+  },
+  {
+    "ID": "os_new_190",
+    "Comment": "Mahila neta haru sab nautanki garchhan, desh ko samasya hal garna sakdainan ani drama matra garchhan ani time kharab",
+    "Label_Binary": "OFF",
+    "Label_Multiclass": "OS"
+  },
+  {
+    "ID": "os_new_191",
+    "Comment": "Aaimai haru ko kaam bachcha palne matra ho, bahira job gari pariwar ko sukh bigarchhan ani samasya srijana garchhan",
+    "Label_Binary": "OFF",
+    "Label_Multiclass": "OS"
+  },
+  {
+    "ID": "os_new_192",
+    "Comment": "Yo aaimai haru le chhoto kapal rakhhera sundar banna khojchhan, tar purush jastai dekhinera asundar hunchhan ani haso ko patra banchhan",
+    "Label_Binary": "OFF",
+    "Label_Multiclass": "OS"
+  },
+  {
+    "ID": "os_new_193",
+    "Comment": "Keti haru le job garchhan ani ghar bigarchhan, bachcha ko dekhal na gari samaj ma samasya badhauchhan ani bigarchhan",
+    "Label_Binary": "OFF",
+    "Label_Multiclass": "OS"
+  },
+  {
+    "ID": "os_new_194",
+    "Comment": "Aaimai haru le gadi chalauda durghatana garchhan, niyam palana na gari aru ko jyan jo khim ma parchha ani galti hunchha",
+    "Label_Binary": "OFF",
+    "Label_Multiclass": "OS"
+  },
+  {
+    "ID": "os_new_195",
+    "Comment": "Yo nautanki aaimai haru le desh bigareko chha, rajniti ma aayera galat nirnaya garera arthik halat bigareko chha ani vikas ma badha",
+    "Label_Binary": "OFF",
+    "Label_Multiclass": "OS"
+  },
+  {
+    "ID": "os_new_196",
+    "Comment": "Keti haru le chhoto luga lagauchhan ani balatkar ko dosh aru lai, aafai attention khojera jo khim ma parchhan ani dosh purush lai",
+    "Label_Binary": "OFF",
+    "Label_Multiclass": "OS"
+  },
+  {
+    "ID": "os_new_197",
+    "Comment": "Aaimai haru le rajniti bujhdainan, bhavana ma bagera galat nirnaya garchhan ani desh bigarchhan ani sankat lyaunchhan",
+    "Label_Binary": "OFF",
+    "Label_Multiclass": "OS"
+  },
+  {
+    "ID": "os_new_198",
+    "Comment": "Yo sali haru le tiktok ma nachchhan ani sanskari bhanchhan, nachera sanskar bigarera yuva lai galat prabhav dinchhan ani bigarchhan",
+    "Label_Binary": "OFF",
+    "Label_Multiclass": "OS"
+  },
+  {
+    "ID": "os_new_199",
+    "Comment": "Keti haru le motorcycle chalayera ladchhan, speed ma control na gari accident garchhan ani aru lai dukha dinchhan",
+    "Label_Binary": "OFF",
+    "Label_Multiclass": "OS"
+  },
+  {
+    "ID": "os_new_200",
+    "Comment": "Aaimai haru le makeup garchhan ani prakritik bhanchhan, makeup bina sundar na bhayera dhoka dinchhan manche lai ani confuse garchhan",
+    "Label_Binary": "OFF",
+    "Label_Multiclass": "OS"
+  }
+]

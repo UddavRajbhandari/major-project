@@ -1,0 +1,28 @@
+{
+  "repos": [
+    {
+      "repoId": "xlm-roberta-large",
+      "repoType": "model",
+      "commitHash": "c23d21b0620b635a76227c604d44e43a9f0ee389",
+      "filePaths": [
+        "model.safetensors",
+        "tokenizer_config.json",
+        "config.json",
+        "tokenizer.json",
+        "sentencepiece.bpe.model"
+      ]
+    },
+    {
+      "repoId": "UDHOV/xlm-roberta-large-nepali-hate-classification",
+      "repoType": "model",
+      "commitHash": "862f41e8247716193a507e9beb0230ab52b4cec7",
+      "filePaths": ["README.md"]
+    },
+    {
+      "repoId": "UDHOV/xlm-roberta-large-nepali-hate-classification",
+      "repoType": "model",
+      "commitHash": "bae09b15668c2fffe96bbe96d492c6512ea79dd7",
+      "filePaths": ["README.md"]
+    }
+  ]
+}

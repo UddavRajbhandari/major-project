@@ -1,0 +1,1202 @@
+ [
+    {
+    "ID": "os_new_001",
+    "Comment": "देशको राष्ट्रपति नै आइमाई भइसकेपछि पनि अर्की आइमाईको पीडा बुझ्न नसक्ने कस्तो खुत्या आइमाई हो यो ?",
+    "Label_Binary": "OFF",
+    "Label_Multiclass": "OS"
+  },
+  {
+    "ID": "os_new_002",
+    "Comment": "पोथी बसेर मात्र देश चल्दैन, पोथीको मति हेर प्रभु १६ करोडको गाडी चाहियो रे !",
+    "Label_Binary": "OFF",
+    "Label_Multiclass": "OS"
+  },
+  {
+    "ID": "os_new_003",
+    "Comment": "Nari ko buddhi ta yestai hunchha, ramro dekhiyo bhanera desh dubai dinchhan",
+    "Label_Binary": "OFF",
+    "Label_Multiclass": "OS"
+  },
+  {
+    "ID": "os_new_004",
+    "Comment": "यो मन्त्रीनी जस्ती केटीहरू दश दिशा मिलाउन खोज्छन्, कहिले भारत, कहिले अमेरिका, सिधा कुरा गर्न पनि आउँदैन",
+    "Label_Binary": "OFF",
+    "Label_Multiclass": "OS"
+  },
+  {
+    "ID": "os_new_005",
+    "Comment": "Aaimai haru le rajniti garna khojda desh ko halat yestai hunchha, ghar samhalna ni aaudaina",
+    "Label_Binary": "OFF",
+    "Label_Multiclass": "OS"
+  },
+  {
+    "ID": "os_new_006",
+    "Comment": "छोरीमान्छे भएपछि घरको काम सानैदेखि सिक्नुपर्छ, नत्र बिहेपछि यस्तै दुख पाइन्छ नि",
+    "Label_Binary": "OFF",
+    "Label_Multiclass": "OS"
+  },
+  {
+    "ID": "os_new_007",
+    "Comment": "Yo nautanki aaimai haru le desh ko naam bigareko cha, drama matra thaha cha",
+    "Label_Binary": "OFF",
+    "Label_Multiclass": "OS"
+  },
+  {
+    "ID": "os_new_008",
+    "Comment": "आइमाईहरू छोटो लुगा लगाएर हिँड्छन् अनि बलात्कार भयो भन्छन्, आफैँ दोषी",
+    "Label_Binary": "OFF",
+    "Label_Multiclass": "OS"
+  },
+  {
+    "ID": "os_new_009",
+    "Comment": "Keti haru ko dimaag ma makeup ra selfie matrai hunchha, aru kehi hudaina",
+    "Label_Binary": "OFF",
+    "Label_Multiclass": "OS"
+  },
+  {
+    "ID": "os_new_010",
+    "Comment": "महिला नेताहरू सब नौटंकी गर्छन्, बोल्नलाई मात्र हो, काम केही गर्दैनन्",
+    "Label_Binary": "OFF",
+    "Label_Multiclass": "OS"
+  },
+  {
+    "ID": "os_new_011",
+    "Comment": "Pothi basyo bhanera desh ko president banayo, aba ta desh dubihalcha",
+    "Label_Binary": "OFF",
+    "Label_Multiclass": "OS"
+  },
+  {
+    "ID": "os_new_012",
+    "Comment": "यो आइमाईहरूले फेसबुकमा फोटो हालेर इज्जत जोगाउँछु भन्छन्, सबै नक्कली जीवन",
+    "Label_Binary": "OFF",
+    "Label_Multiclass": "OS"
+  },
+  {
+    "ID": "os_new_013",
+    "Comment": "Nari le car chalayera accident garchhan, license nai dinu haina",
+    "Label_Binary": "OFF",
+    "Label_Multiclass": "OS"
+  },
+  {
+    "ID": "os_new_014",
+    "Comment": "केटीहरू पढेलेखेपछि कुल्टा घैँटे बन्छन्, घर बिगार्छन्",
+    "Label_Binary": "OFF",
+    "Label_Multiclass": "OS"
+  },
+  {
+    "ID": "os_new_015",
+    "Comment": "Aafno chhori lai short dress lagayera tik tok ma nachauna dinchhan, aru ko chhori lai morali dinchhan",
+    "Label_Binary": "OFF",
+    "Label_Multiclass": "OS"
+  },
+  {
+    "ID": "os_new_016",
+    "Comment": "मिस नेपालहरू सब पैसाकी लागि बिक्छन्, सुन्दरता त केवल बहाना हो",
+    "Label_Binary": "OFF",
+    "Label_Multiclass": "OS"
+  },
+  {
+    "ID": "os_new_017",
+    "Comment": "Yo swasni manche haru office gayo bhanera bacha bigarchhan, ghar ko kaam kasle garchha?",
+    "Label_Binary": "OFF",
+    "Label_Multiclass": "OS"
+  },
+  {
+    "ID": "os_new_018",
+    "Comment": "आइमाईको दिमाग भनेको बच्चा जन्माउने र घर सम्हाल्ने बाहेक केही काम लाग्दैन",
+    "Label_Binary": "OFF",
+    "Label_Multiclass": "OS"
+  },
+  {
+    "ID": "os_new_019",
+    "Comment": "Raat ko 12 baje hidera security magchhan yo aaimai haru, ghar ma basna ni aaudaina",
+    "Label_Binary": "OFF",
+    "Label_Multiclass": "OS"
+  },
+  {
+    "ID": "os_new_020",
+    "Comment": "केटीहरूले जागिर गर्छन् अनि बिहे गर्न मान्दैनन्, कुल घान्द्रे बन्छन्",
+    "Label_Binary": "OFF",
+    "Label_Multiclass": "OS"
+  },
+  {
+    "ID": "os_new_021",
+    "Comment": "Aaimai doctor haru emotional hunchhan, serious case ma purush doctor nai ramro",
+    "Label_Binary": "OFF",
+    "Label_Multiclass": "OS"
+  },
+  {
+    "ID": "os_new_022",
+    "Comment": "यो सालीहरू टिकटकमा नाच्छन् अनि संस्कारी भन्न खोज्छन्, सबै रन्डी जस्तै",
+    "Label_Binary": "OFF",
+    "Label_Multiclass": "OS"
+  },
+  {
+    "ID": "os_new_023",
+    "Comment": "Nari le byapar garna sakdaina, thagna matra aaunchha",
+    "Label_Binary": "OFF",
+    "Label_Multiclass": "OS"
+  },
+  {
+    "ID": "os_new_024",
+    "Comment": "छोरीमान्छेले देश चलाउन सक्दैनन्, भावनामा बग्छन्",
+    "Label_Binary": "OFF",
+    "Label_Multiclass": "OS"
+  },
+  {
+    "ID": "os_new_025",
+    "Comment": "Makeup bina bahira niskina ni sakdainan yo keti haru, sab fake",
+    "Label_Binary": "OFF",
+    "Label_Multiclass": "OS"
+  },
+  {
+    "ID": "os_new_026",
+    "Comment": "आइमाईहरूले छोटो कपाल राखेर सुन्दर बन्न खोज्छन्, हाँस उठ्छ",
+    "Label_Binary": "OFF",
+    "Label_Multiclass": "OS"
+  },
+  {
+    "ID": "os_new_027",
+    "Comment": "Swasni manche haru ko kaam shopping ra gossip matra ho",
+    "Label_Binary": "OFF",
+    "Label_Multiclass": "OS"
+  },
+  {
+    "ID": "os_new_028",
+    "Comment": "महिला सांसदहरू सब ड्रामा गर्छन्, जनताको काम केही गर्दैनन्",
+    "Label_Binary": "OFF",
+    "Label_Multiclass": "OS"
+  },
+  {
+    "ID": "os_new_029",
+    "Comment": "Yo aaimai haru le rajniti ma aayera desh bigareko cha",
+    "Label_Binary": "OFF",
+    "Label_Multiclass": "OS"
+  },
+  {
+    "ID": "os_new_030",
+    "Comment": "केटीहरूले मोटरसाइकल चलाउँदा लड्छन्, घरमा बस्नुपर्छ",
+    "Label_Binary": "OFF",
+    "Label_Multiclass": "OS"
+  },
+  {
+    "ID": "os_new_031",
+    "Comment": "Yo president ni aaimai, mantri ni aaimai, aba ta desh ko barbaadi pakka cha",
+    "Label_Binary": "OFF",
+    "Label_Multiclass": "OS"
+  },
+  {
+    "ID": "os_new_032",
+    "Comment": "आइमाईहरूले गाडी किन्दा पनि श्रीमानको पैसा हो, आफूले कमाएको कहिल्यै हुँदैन",
+    "Label_Binary": "OFF",
+    "Label_Multiclass": "OS"
+  },
+  {
+    "ID": "os_new_033",
+    "Comment": "Keti haru le padhelekhe pachi ghamanda garchhan, ghar ko maryada bhulchhan",
+    "Label_Binary": "OFF",
+    "Label_Multiclass": "OS"
+  },
+  {
+    "ID": "os_new_034",
+    "Comment": "यो आइमाईहरूले राति हिँड्छन् अनि सुरक्षा माग्छन्, घरमा बस्न किन जान्दैनन् ?",
+    "Label_Binary": "OFF",
+    "Label_Multiclass": "OS"
+  },
+  {
+    "ID": "os_new_035",
+    "Comment": "Pothi ko buddhi bhaeko manche le desh ko PM bhaeki thiye, aba ta desh dubyo",
+    "Label_Binary": "OFF",
+    "Label_Multiclass": "OS"
+  },
+  {
+    "ID": "os_new_036",
+    "Comment": "नारी अधिकार भनेर चिच्याउनेहरू घरमा श्रीमानलाई कुट्छन्",
+    "Label_Binary": "OFF",
+    "Label_Multiclass": "OS"
+  },
+  {
+    "ID": "os_new_037",
+    "Comment": "Aaimai haru ko sthan ghar ra kitchen ma ho, rajniti ma hoina",
+    "Label_Binary": "OFF",
+    "Label_Multiclass": "OS"
+  },
+  {
+    "ID": "os_new_038",
+    "Comment": "यो सालीले छोटो ड्रेस लगाएर हिँड्छे अनि बलात्कारको दोष अरुलाई",
+    "Label_Binary": "OFF",
+    "Label_Multiclass": "OS"
+  },
+  {
+    "ID": "os_new_039",
+    "Comment": "Yuba haru lai balatkar ko batoma dhakeline nari haru ko yestai chartikal dekhayera ta honi vanchhan",
+    "Label_Binary": "OFF",
+    "Label_Multiclass": "OS"
+  },
+  {
+    "ID": "os_new_040",
+    "Comment": "आइमाईहरूले मेकअप गर्छन् अनि प्राकृतिक सुन्दरता भन्छन्, सबै ढोंग",
+    "Label_Binary": "OFF",
+    "Label_Multiclass": "OS"
+  },
+  {
+    "ID": "os_new_041",
+    "Comment": "Keti haru ko kaam sajne matra ho, dimag le kaam garna sakdainan",
+    "Label_Binary": "OFF",
+    "Label_Multiclass": "OS"
+  },
+  {
+    "ID": "os_new_042",
+    "Comment": "देश डुब्न लाग्यो तर यी आइमाईहरूलाई तलब बढाउने र गाडी किन्ने मात्र फुर्सद",
+    "Label_Binary": "OFF",
+    "Label_Multiclass": "OS"
+  },
+  {
+    "ID": "os_new_043",
+    "Comment": "Aaimai haru le engineering padhna khojchhan, tara parking ni thik garna sakdainan",
+    "Label_Binary": "OFF",
+    "Label_Multiclass": "OS"
+  },
+  {
+    "ID": "os_new_044",
+    "Comment": "यो खुत्या आइमाईहरूले श्रीमानको कमाइ खाएर फेसबुकमा फेमिनिस्ट बन्छन्",
+    "Label_Binary": "OFF",
+    "Label_Multiclass": "OS"
+  },
+  {
+    "ID": "os_new_045",
+    "Comment": "Mister nepal lai ta kasaile matra chaina, miss nepal bhanera mari hatte garchan",
+    "Label_Binary": "OFF",
+    "Label_Multiclass": "OS"
+  },
+  {
+    "ID": "os_new_046",
+    "Comment": "पोथी बासेको र धोती हाँसेको मैले खप्नै सकिन्न",
+    "Label_Binary": "OFF",
+    "Label_Multiclass": "OS"
+  },
+  {
+    "ID": "os_new_047",
+    "Comment": "Yo keti haru ko buddhi nai hudaina bhanera kasle bhaneko thiyo tyha jaanu ?",
+    "Label_Binary": "OFF",
+    "Label_Multiclass": "OS"
+  },
+  {
+    "ID": "os_new_048",
+    "Comment": "आइमाई भएर फुटानी लाउँछे, लाज पनि लाग्दैन ?",
+    "Label_Binary": "OFF",
+    "Label_Multiclass": "OS"
+  },
+  {
+    "ID": "os_new_049",
+    "Comment": "Nari le science padhna sakdaina, uniharuko dimag ma emotion matra hunchha",
+    "Label_Binary": "OFF",
+    "Label_Multiclass": "OS"
+  },
+  {
+    "ID": "os_new_050",
+    "Comment": "यो मिस नेपालहरू सब पैसाकी लागि बिक्छन्, संस्कृति भन्ने केही छैन",
+    "Label_Binary": "OFF",
+    "Label_Multiclass": "OS"
+  },
+  {
+    "ID": "os_new_051",
+    "Comment": "Aaimai ko kaam bacha janmaune ra kitchen samhalne ho, aru kehi hoina",
+    "Label_Binary": "OFF",
+    "Label_Multiclass": "OS"
+  },
+  {
+    "ID": "os_new_052",
+    "Comment": "केटीहरूले छोटो लुगा लगाउँछन् अनि बलात्कारको दोष केटालाई",
+    "Label_Binary": "OFF",
+    "Label_Multiclass": "OS"
+  },
+  {
+    "ID": "os_new_053",
+    "Comment": "Yo aaimai haru le job garchhan bhanera bacha lai bigarchhan",
+    "Label_Binary": "OFF",
+    "Label_Multiclass": "OS"
+  },
+  {
+    "ID": "os_new_054",
+    "Comment": "देशको जनसङ्ख्या करोड, विधवाले चढ्ने गाडी १८ करोड, यस्तै हो पोथीको बुद्धि",
+    "Label_Binary": "OFF",
+    "Label_Multiclass": "OS"
+  },
+  {
+    "ID": "os_new_055",
+    "Comment": "Keti haru le motorcycle chalayera ladchhan, ghar ma basera bhat pakau",
+    "Label_Binary": "OFF",
+    "Label_Multiclass": "OS"
+  },
+  {
+    "ID": "os_new_056",
+    "Comment": "यो नपुंसकहरूले पनि स्तन हुन्छ रे, तर काम लाग्दैन",
+    "Label_Binary": "OFF",
+    "Label_Multiclass": "OS"
+  },
+  {
+    "ID": "os_new_057",
+    "Comment": "Aachel ka keti haru chota luga lagauchan, keta haru ko najar ma faschan",
+    "Label_Binary": "OFF",
+    "Label_Multiclass": "OS"
+  },
+  {
+    "ID": "os_new_058",
+    "Comment": "आइमाईहरूको दिमाग भनेको बच्चा पाल्ने बाहेक केही होइन",
+    "Label_Binary": "OFF",
+    "Label_Multiclass": "OS"
+  },
+  {
+    "ID": "os_new_059",
+    "Comment": "Yo nautanki aaimai haru le desh bigareko cha",
+    "Label_Binary": "OFF",
+    "Label_Multiclass": "OS"
+  },
+  {
+    "ID": "os_new_060",
+    "Comment": "केटीहरूले पढ्छन् अनि घमण्ड गर्छन्, घरको इज्जत बिर्सन्छन्",
+    "Label_Binary": "OFF",
+    "Label_Multiclass": "OS"
+  },
+  {
+    "ID": "os_new_061",
+    "Comment": "Aaimai haru le rajniti bujhdainan, uniharuko kaam ghar samhalne ho",
+    "Label_Binary": "OFF",
+    "Label_Multiclass": "OS"
+  },
+  {
+    "ID": "os_new_062",
+    "Comment": "यो आइमाईहरूले छोटो लुगा लगाएर मन्दिर जान्छन्, लाज लाग्दैन ?",
+    "Label_Binary": "OFF",
+    "Label_Multiclass": "OS"
+  },
+  {
+    "ID": "os_new_063",
+    "Comment": "Swasni manche haru le job garyo bhanera ghar barbaad hunchha",
+    "Label_Binary": "OFF",
+    "Label_Multiclass": "OS"
+  },
+  {
+    "ID": "os_new_064",
+    "Comment": "नारीको बुद्धि भनेको श्रीमानको कमाइ खाने र मेकअप गर्ने मात्र हो",
+    "Label_Binary": "OFF",
+    "Label_Multiclass": "OS"
+  },
+  {
+    "ID": "os_new_065",
+    "Comment": "Yo keti haru le short dress lagayera attention khojchhan",
+    "Label_Binary": "OFF",
+    "Label_Multiclass": "OS"
+  },
+  {
+    "ID": "os_new_066",
+    "Comment": "आइमाई मान्छेले व्यापार गर्न सक्दैनन्, ठग्छन् मात्र",
+    "Label_Binary": "OFF",
+    "Label_Multiclass": "OS"
+  },
+  {
+    "ID": "os_new_067",
+    "Comment": "Keti haru ko kaam selfie ra makeup matra ho",
+    "Label_Binary": "OFF",
+    "Label_Multiclass": "OS"
+  },
+  {
+    "ID": "os_new_068",
+    "Comment": "यो सालीहरूले टिकटकमा नाचेर कुलटा बन्छन्",
+    "Label_Binary": "OFF",
+    "Label_Multiclass": "OS"
+  },
+  {
+    "ID": "os_new_069",
+    "Comment": "Aaimai haru emotional hunchhan, business garna sakdainan",
+    "Label_Binary": "OFF",
+    "Label_Multiclass": "OS"
+  },
+  {
+    "ID": "os_new_070",
+    "Comment": "केटीहरूले जागिर गरेर बिहे गर्न मान्दैनन्",
+    "Label_Binary": "OFF",
+    "Label_Multiclass": "OS"
+  },
+  {
+    "ID": "os_new_071",
+    "Comment": "Yo aaimai haru le raat bhar party garchhan ani balatkar bhayo bhanchhan",
+    "Label_Binary": "OFF",
+    "Label_Multiclass": "OS"
+  },
+  {
+    "ID": "os_new_072",
+    "Comment": "महिला डाक्टरहरू भावनामा बग्छन्, पुरुष डाक्टर राम्रो",
+    "Label_Binary": "OFF",
+    "Label_Multiclass": "OS"
+  },
+  {
+    "ID": "os_new_073",
+    "Comment": "Keti haru le car chalayera road bigarchhan",
+    "Label_Binary": "OFF",
+    "Label_Multiclass": "OS"
+  },
+  {
+    "ID": "os_new_074",
+    "Comment": "यो आइमाईहरूले मेकअप गर्छन् अनि सादगी भन्छन्",
+    "Label_Binary": "OFF",
+    "Label_Multiclass": "OS"
+  },
+  {
+    "ID": "os_new_075",
+    "Comment": "Pothi ko mati le desh dubayo, aba k garne ?",
+    "Label_Binary": "OFF",
+    "Label_Multiclass": "OS"
+  },
+  {
+    "ID": "os_new_076",
+    "Comment": "आइमाईहरूको काम बच्चा पाल्ने र घर सम्हाल्ने हो",
+    "Label_Binary": "OFF",
+    "Label_Multiclass": "OS"
+  },
+  {
+    "ID": "os_new_077",
+    "Comment": "Yo keti haru ko buddhi nai hudaina, padhe pani kehi hudaina",
+    "Label_Binary": "OFF",
+    "Label_Multiclass": "OS"
+  },
+  {
+    "ID": "os_new_078",
+    "Comment": "यो खुत्या आइमाईहरूले श्रीमानको कमाइ खाएर फेमिनिस्ट बन्छन्",
+    "Label_Binary": "OFF",
+    "Label_Multiclass": "OS"
+  },
+  {
+    "ID": "os_new_079",
+    "Comment": "Aaimai haru le desh chalau na sakne ho, uniharuko kaam ghar ko ho",
+    "Label_Binary": "OFF",
+    "Label_Multiclass": "OS"
+  },
+  {
+    "ID": "os_new_080",
+    "Comment": "केटीहरूले छोटो कपाल राखेर सुन्दर बन्न खोज्छन्, हाँस उठ्छ",
+    "Label_Binary": "OFF",
+    "Label_Multiclass": "OS"
+  },
+  {
+    "ID": "os_new_081",
+    "Comment": "Yo nautanki aaimai haru le parliament ma drama garchhan",
+    "Label_Binary": "OFF",
+    "Label_Multiclass": "OS"
+  },
+  {
+    "ID": "os_new_082",
+    "Comment": "आइमाईहरूले छोटो लुगा लगाउँछन् अनि बलात्कारको दोष केटालाई",
+    "Label_Binary": "OFF",
+    "Label_Multiclass": "OS"
+  },
+  {
+    "ID": "os_new_083",
+    "Comment": "Keti haru le job garchhan ani bacha ko haal bigarchhan",
+    "Label_Binary": "OFF",
+    "Label_Multiclass": "OS"
+  },
+  {
+    "ID": "os_new_084",
+    "Comment": "यो सालीहरूले टिकटकमा नाच्छन् अनि संस्कारी भन्छन्",
+    "Label_Binary": "OFF",
+    "Label_Multiclass": "OS"
+  },
+  {
+    "ID": "os_new_085",
+    "Comment": "Aaimai haru ko sthan kitchen ma ho, rajniti ma hoina",
+    "Label_Binary": "OFF",
+    "Label_Multiclass": "OS"
+  },
+  {
+    "ID": "os_new_086",
+    "Comment": "देशको हालत यस्तो भयो किनकि पोथी बसेर नेतृत्व गर्यो",
+    "Label_Binary": "OFF",
+    "Label_Multiclass": "OS"
+  },
+  {
+    "ID": "os_new_087",
+    "Comment": "Yo keti haru le makeup bina bahira niskina ni sakdainan",
+    "Label_Binary": "OFF",
+    "Label_Multiclass": "OS"
+  },
+  {
+    "ID": "os_new_088",
+    "Comment": "आइमाईहरूले गाडी किन्दा पनि श्रीमानको पैसा हो",
+    "Label_Binary": "OFF",
+    "Label_Multiclass": "OS"
+  },
+  {
+    "ID": "os_new_089",
+    "Comment": "Nari le science ra technology padhna sakdaina",
+    "Label_Binary": "OFF",
+    "Label_Multiclass": "OS"
+  },
+  {
+    "ID": "os_new_090",
+    "Comment": "यो मिस नेपालहरू सब बिक्छन्, पैसाकै लागि",
+    "Label_Binary": "OFF",
+    "Label_Multiclass": "OS"
+  },
+  {
+    "ID": "os_new_091",
+    "Comment": "Aaimai haru le raat ma party garchhan ani suraksha magchhan",
+    "Label_Binary": "OFF",
+    "Label_Multiclass": "OS"
+  },
+  {
+    "ID": "os_new_092",
+    "Comment": "केटीहरू पढेलेखेपछि कुल घान्द्रे बन्छन्",
+    "Label_Binary": "OFF",
+    "Label_Multiclass": "OS"
+  },
+  {
+    "ID": "os_new_093",
+    "Comment": "Yo aaimai haru le office ma body dekhauchhan promotion ko lagi",
+    "Label_Binary": "OFF",
+    "Label_Multiclass": "OS"
+  },
+  {
+    "ID": "os_new_094",
+    "Comment": "आइमाई मान्छेले देश चलाउन सक्दैनन्",
+    "Label_Binary": "OFF",
+    "Label_Multiclass": "OS"
+  },
+  {
+    "ID": "os_new_095",
+    "Comment": "Keti haru ko kaam sajne ra nachne matra ho",
+    "Label_Binary": "OFF",
+    "Label_Multiclass": "OS"
+  },
+  {
+    "ID": "os_new_096",
+    "Comment": "यो खुत्या आइमाईहरूले श्रीमानलाई कुट्छन् अनि अधिकारको कुरा गर्छन्",
+    "Label_Binary": "OFF",
+    "Label_Multiclass": "OS"
+  },
+  {
+    "ID": "os_new_097",
+    "Comment": "Aaimai haru emotional hunchhan, nirnaya lina sakdainan",
+    "Label_Binary": "OFF",
+    "Label_Multiclass": "OS"
+  },
+  {
+    "ID": "os_new_098",
+    "Comment": "केटीहरूले छोटो लुगा लगाएर बलात्कार निम्त्याउँछन्",
+    "Label_Binary": "OFF",
+    "Label_Multiclass": "OS"
+  },
+  {
+    "ID": "os_new_099",
+    "Comment": "Yo nautanki aaimai haru le desh ko naam kharab garyo",
+    "Label_Binary": "OFF",
+    "Label_Multiclass": "OS"
+  },
+  {
+    "ID": "os_new_100",
+    "Comment": "आइमाईहरूको दिमाग बच्चा जन्माउने बाहेक केही होइन",
+    "Label_Binary": "OFF",
+    "Label_Multiclass": "OS"
+  },
+  {
+    "ID": "os_new_101",
+    "Comment": "Keti haru le job garyo bhanera ghar bigarchhan",
+    "Label_Binary": "OFF",
+    "Label_Multiclass": "OS"
+  },
+  {
+    "ID": "os_new_102",
+    "Comment": "यो सालीहरूले छोटो ड्रेसमा हिँड्छन् अनि इज्जतको कुरा गर्छन्",
+    "Label_Binary": "OFF",
+    "Label_Multiclass": "OS"
+  },
+  {
+    "ID": "os_new_103",
+    "Comment": "Aaimai haru le car chalau na sakne ho",
+    "Label_Binary": "OFF",
+    "Label_Multiclass": "OS"
+  },
+  {
+    "ID": "os_new_104",
+    "Comment": "महिला नेताहरू सब नौटंकी गर्छन्",
+    "Label_Binary": "OFF",
+    "Label_Multiclass": "OS"
+  },
+  {
+    "ID": "os_new_105",
+    "Comment": "Yo keti haru le makeup garchhan ani natural bhanchhan",
+    "Label_Binary": "OFF",
+    "Label_Multiclass": "OS"
+  },
+  {
+    "ID": "os_new_106",
+    "Comment": "आइमाईहरूले राति हिँड्छन् अनि सुरक्षा माग्छन्",
+    "Label_Binary": "OFF",
+    "Label_Multiclass": "OS"
+  },
+  {
+    "ID": "os_new_107",
+    "Comment": "Pothi ko buddhi le desh dubayo",
+    "Label_Binary": "OFF",
+    "Label_Multiclass": "OS"
+  },
+  {
+    "ID": "os_new_108",
+    "Comment": "यो आइमाईहरूले फेसबुकमा फोटो हालेर इज्जत जोगाउँछु भन्छन्",
+    "Label_Binary": "OFF",
+    "Label_Multiclass": "OS"
+  },
+  {
+    "ID": "os_new_109",
+    "Comment": "Keti haru le motorcycle chalayera ladchhan",
+    "Label_Binary": "OFF",
+    "Label_Multiclass": "OS"
+  },
+  {
+    "ID": "os_new_110",
+    "Comment": "आइमाईको काम बच्चा पाल्ने हो, नेतागिरी होइन",
+    "Label_Binary": "OFF",
+    "Label_Multiclass": "OS"
+  },
+  {
+    "ID": "os_new_111",
+    "Comment": "Yo aaimai haru le job garchhan ani bacha bigarchhan",
+    "Label_Binary": "OFF",
+    "Label_Multiclass": "OS"
+  },
+  {
+    "ID": "os_new_112",
+    "Comment": "केटीहरूले छोटो कपाल राखेर सुन्दर बन्न खोज्छन्",
+    "Label_Binary": "OFF",
+    "Label_Multiclass": "OS"
+  },
+  {
+    "ID": "os_new_113",
+    "Comment": "Aaimai haru le rajniti ma aayera barbaad garyo",
+    "Label_Binary": "OFF",
+    "Label_Multiclass": "OS"
+  },
+  {
+    "ID": "os_new_114",
+    "Comment": "यो सालीहरूले टिकटकमा नाच्छन्",
+    "Label_Binary": "OFF",
+    "Label_Multiclass": "OS"
+  },
+  {
+    "ID": "os_new_115",
+    "Comment": "Nari le engineering padhna sakdaina",
+    "Label_Binary": "OFF",
+    "Label_Multiclass": "OS"
+  },
+  {
+    "ID": "os_new_116",
+    "Comment": "आइमाईहरूले मेकअप गर्छन् अनि सादगी भन्छन्",
+    "Label_Binary": "OFF",
+    "Label_Multiclass": "OS"
+  },
+  {
+    "ID": "os_new_117",
+    "Comment": "Yo keti haru le short dress lagayera balatkar nimtyauchhan",
+    "Label_Binary": "OFF",
+    "Label_Multiclass": "OS"
+  },
+  {
+    "ID": "os_new_118",
+    "Comment": "महिला डाक्टरहरू भावनामा बग्छन्",
+    "Label_Binary": "OFF",
+    "Label_Multiclass": "OS"
+  },
+  {
+    "ID": "os_new_119",
+    "Comment": "Aaimai haru ko kaam gossip ra shopping ho",
+    "Label_Binary": "OFF",
+    "Label_Multiclass": "OS"
+  },
+  {
+    "ID": "os_new_120",
+    "Comment": "यो आइमाईहरूले छोटो लुगा लगाएर स्कूल जान्छन्",
+    "Label_Binary": "OFF",
+    "Label_Multiclass": "OS"
+  },
+  {
+    "ID": "os_new_121",
+    "Comment": "Keti haru le padhe pachi ghamand garchhan",
+    "Label_Binary": "OFF",
+    "Label_Multiclass": "OS"
+  },
+  {
+    "ID": "os_new_122",
+    "Comment": "आइमाईहरूले गाडी चलाउँदा दुर्घटना गर्छन्",
+    "Label_Binary": "OFF",
+    "Label_Multiclass": "OS"
+  },
+  {
+    "ID": "os_new_123",
+    "Comment": "Yo nautanki aaimai haru le parliament bigareko cha",
+    "Label_Binary": "OFF",
+    "Label_Multiclass": "OS"
+  },
+  {
+    "ID": "os_new_124",
+    "Comment": "केटीहरूले जागिर गरेर घर बिगार्छन्",
+    "Label_Binary": "OFF",
+    "Label_Multiclass": "OS"
+  },
+  {
+    "ID": "os_new_125",
+    "Comment": "Aaimai haru le raat bhar hidera security magchhan",
+    "Label_Binary": "OFF",
+    "Label_Multiclass": "OS"
+  },
+  {
+    "ID": "os_new_126",
+    "Comment": "यो सालीहरूले छोटो ड्रेसमा हिँड्छन्",
+    "Label_Binary": "OFF",
+    "Label_Multiclass": "OS"
+  },
+  {
+    "ID": "os_new_127",
+    "Comment": "Nari ko buddhi bhaeko manche le desh chalau na sakne ho",
+    "Label_Binary": "OFF",
+    "Label_Multiclass": "OS"
+  },
+  {
+    "ID": "os_new_128",
+    "Comment": "आइमाईहरूले मेकअप गर्छन् अनि प्राकृतिक भन्छन्",
+    "Label_Binary": "OFF",
+    "Label_Multiclass": "OS"
+  },
+  {
+    "ID": "os_new_129",
+    "Comment": "Yo keti haru le job garyo bhanera bacha ko haal bigarchhan",
+    "Label_Binary": "OFF",
+    "Label_Multiclass": "OS"
+  },
+  {
+    "ID": "os_new_130",
+    "Comment": "महिला सांसदहरू सब ड्रामा गर्छन्",
+    "Label_Binary": "OFF",
+    "Label_Multiclass": "OS"
+  },
+  {
+    "ID": "os_new_131",
+    "Comment": "Aaimai haru le car parking ni thik garna sakdainan",
+    "Label_Binary": "OFF",
+    "Label_Multiclass": "OS"
+  },
+  {
+    "ID": "os_new_132",
+    "Comment": "यो खुत्या आइमाईहरूले श्रीमानको कमाइ खान्छन्",
+    "Label_Binary": "OFF",
+    "Label_Multiclass": "OS"
+  },
+  {
+    "ID": "os_new_133",
+    "Comment": "Keti haru le short dress lagayera attention khojchhan",
+    "Label_Binary": "OFF",
+    "Label_Multiclass": "OS"
+  },
+  {
+    "ID": "os_new_134",
+    "Comment": "आइमाईहरूको दिमाग भावनामा मात्र चल्छ",
+    "Label_Binary": "OFF",
+    "Label_Multiclass": "OS"
+  },
+  {
+    "ID": "os_new_135",
+    "Comment": "Yo aaimai haru le tik tok ma nachera character bigareko cha",
+    "Label_Binary": "OFF",
+    "Label_Multiclass": "OS"
+  },
+  {
+    "ID": "os_new_136",
+    "Comment": "केटीहरूले पढेलेखेपछि कुल घान्द्रे बन्छन्",
+    "Label_Binary": "OFF",
+    "Label_Multiclass": "OS"
+  },
+  {
+    "ID": "os_new_137",
+    "Comment": "Pothi basyo bhanera desh bigryo",
+    "Label_Binary": "OFF",
+    "Label_Multiclass": "OS"
+  },
+  {
+    "ID": "os_new_138",
+    "Comment": "यो सालीहरूले छोटो लुगा लगाएर बलात्कार निम्त्याउँछन्",
+    "Label_Binary": "OFF",
+    "Label_Multiclass": "OS"
+  },
+  {
+    "ID": "os_new_139",
+    "Comment": "Aaimai haru le science padhna sakdainan",
+    "Label_Binary": "OFF",
+    "Label_Multiclass": "OS"
+  },
+  {
+    "ID": "os_new_140",
+    "Comment": "आइमाईहरूले राति पार्टी गर्छन् अनि बलात्कार भयो भन्छन्",
+    "Label_Binary": "OFF",
+    "Label_Multiclass": "OS"
+  },
+  {
+    "ID": "os_new_141",
+    "Comment": "Yo keti haru le makeup bina kehi hoina",
+    "Label_Binary": "OFF",
+    "Label_Multiclass": "OS"
+  },
+  {
+    "ID": "os_new_142",
+    "Comment": "महिला नेताहरू सब नौटंकी गर्छन्",
+    "Label_Binary": "OFF",
+    "Label_Multiclass": "OS"
+  },
+  {
+    "ID": "os_new_143",
+    "Comment": "Aaimai haru ko kaam bacha palne matra ho",
+    "Label_Binary": "OFF",
+    "Label_Multiclass": "OS"
+  },
+  {
+    "ID": "os_new_144",
+    "Comment": "यो आइमाईहरूले छोटो कपाल राखेर सुन्दर बन्न खोज्छन्",
+    "Label_Binary": "OFF",
+    "Label_Multiclass": "OS"
+  },
+  {
+    "ID": "os_new_145",
+    "Comment": "Keti haru le job garchhan ani ghar bigarchhan",
+    "Label_Binary": "OFF",
+    "Label_Multiclass": "OS"
+  },
+  {
+    "ID": "os_new_146",
+    "Comment": "आइमाईहरूले गाडी चलाउँदा दुर्घटना गर्छन्",
+    "Label_Binary": "OFF",
+    "Label_Multiclass": "OS"
+  },
+  {
+    "ID": "os_new_147",
+    "Comment": "Yo nautanki aaimai haru le desh bigareko cha",
+    "Label_Binary": "OFF",
+    "Label_Multiclass": "OS"
+  },
+  {
+    "ID": "os_new_148",
+    "Comment": "केटीहरूले छोटो लुगा लगाउँछन् अनि बलात्कारको दोष अरुलाई",
+    "Label_Binary": "OFF",
+    "Label_Multiclass": "OS"
+  },
+  {
+    "ID": "os_new_149",
+    "Comment": "Aaimai haru le rajniti bujhdainan",
+    "Label_Binary": "OFF",
+    "Label_Multiclass": "OS"
+  },
+  {
+    "ID": "os_new_150",
+    "Comment": "यो सालीहरूले टिकटकमा नाच्छन् अनि संस्कारी भन्छन्",
+    "Label_Binary": "OFF",
+    "Label_Multiclass": "OS"
+  },
+  {
+    "ID": "os_new_151",
+    "Comment": "Keti haru le motorcycle chalayera ladchhan",
+    "Label_Binary": "OFF",
+    "Label_Multiclass": "OS"
+  },
+  {
+    "ID": "os_new_152",
+    "Comment": "आइमाईहरूले मेकअप गर्छन् अनि प्राकृतिक भन्छन्",
+    "Label_Binary": "OFF",
+    "Label_Multiclass": "OS"
+  },
+  {
+    "ID": "os_new_153",
+    "Comment": "Yo aaimai haru le raat ma hidera security magchhan",
+    "Label_Binary": "OFF",
+    "Label_Multiclass": "OS"
+  },
+  {
+    "ID": "os_new_154",
+    "Comment": "केटीहरूले पढ्छन् अनि घमण्ड गर्छन्",
+    "Label_Binary": "OFF",
+    "Label_Multiclass": "OS"
+  },
+  {
+    "ID": "os_new_155",
+    "Comment": "Aaimai haru le car parking ni garna sakdainan",
+    "Label_Binary": "OFF",
+    "Label_Multiclass": "OS"
+  },
+  {
+    "ID": "os_new_156",
+    "Comment": "यो खुत्या आइमाईहरूले श्रीमानलाई कुट्छन्",
+    "Label_Binary": "OFF",
+    "Label_Multiclass": "OS"
+  },
+  {
+    "ID": "os_new_157",
+    "Comment": "Keti haru le short dress lagayera balatkar nimtyauchhan",
+    "Label_Binary": "OFF",
+    "Label_Multiclass": "OS"
+  },
+  {
+    "ID": "os_new_158",
+    "Comment": "आइमाईहरूको दिमाग भावनामा मात्र चल्छ",
+    "Label_Binary": "OFF",
+    "Label_Multiclass": "OS"
+  },
+  {
+    "ID": "os_new_159",
+    "Comment": "Yo aaimai haru le tik tok ma nachera bigreko cha",
+    "Label_Binary": "OFF",
+    "Label_Multiclass": "OS"
+  },
+  {
+    "ID": "os_new_160",
+    "Comment": "केटीहरूले जागिर गरेर घर बिगार्छन्",
+    "Label_Binary": "OFF",
+    "Label_Multiclass": "OS"
+  },
+  {
+    "ID": "os_new_161",
+    "Comment": "Pothi ko buddhi le desh dubayo",
+    "Label_Binary": "OFF",
+    "Label_Multiclass": "OS"
+  },
+  {
+    "ID": "os_new_162",
+    "Comment": "यो सालीहरूले छोटो ड्रेसमा हिँड्छन्",
+    "Label_Binary": "OFF",
+    "Label_Multiclass": "OS"
+  },
+  {
+    "ID": "os_new_163",
+    "Comment": "Aaimai haru le science padhna sakdainan",
+    "Label_Binary": "OFF",
+    "Label_Multiclass": "OS"
+  },
+  {
+    "ID": "os_new_164",
+    "Comment": "आइमाईहरूले राति पार्टी गर्छन् अनि बलात्कार भयो भन्छन्",
+    "Label_Binary": "OFF",
+    "Label_Multiclass": "OS"
+  },
+  {
+    "ID": "os_new_165",
+    "Comment": "Yo keti haru le makeup bina kehi hoina",
+    "Label_Binary": "OFF",
+    "Label_Multiclass": "OS"
+  },
+  {
+    "ID": "os_new_166",
+    "Comment": "महिला नेताहरू सब नौटंकी गर्छन्",
+    "Label_Binary": "OFF",
+    "Label_Multiclass": "OS"
+  },
+  {
+    "ID": "os_new_167",
+    "Comment": "Aaimai haru ko kaam bacha palne matra ho",
+    "Label_Binary": "OFF",
+    "Label_Multiclass": "OS"
+  },
+  {
+    "ID": "os_new_168",
+    "Comment": "यो आइमाईहरूले छोटो कपाल राखेर सुन्दर बन्न खोज्छन्",
+    "Label_Binary": "OFF",
+    "Label_Multiclass": "OS"
+  },
+  {
+    "ID": "os_new_169",
+    "Comment": "Keti haru le job garchhan ani ghar bigarchhan",
+    "Label_Binary": "OFF",
+    "Label_Multiclass": "OS"
+  },
+  {
+    "ID": "os_new_170",
+    "Comment": "आइमाईहरूले गाडी चलाउँदा दुर्घटना गर्छन्",
+    "Label_Binary": "OFF",
+    "Label_Multiclass": "OS"
+  },
+  {
+    "ID": "os_new_171",
+    "Comment": "Yo nautanki aaimai haru le desh bigareko cha",
+    "Label_Binary": "OFF",
+    "Label_Multiclass": "OS"
+  },
+  {
+    "ID": "os_new_172",
+    "Comment": "केटीहरूले छोटो लुगा लगाउँछन् अनि बलात्कारको दोष अरुलाई",
+    "Label_Binary": "OFF",
+    "Label_Multiclass": "OS"
+  },
+  {
+    "ID": "os_new_173",
+    "Comment": "Aaimai haru le rajniti bujhdainan",
+    "Label_Binary": "OFF",
+    "Label_Multiclass": "OS"
+  },
+  {
+    "ID": "os_new_174",
+    "Comment": "यो सालीहरूले टिकटकमा नाच्छन् अनि संस्कारी भन्छन्",
+    "Label_Binary": "OFF",
+    "Label_Multiclass": "OS"
+  },
+  {
+    "ID": "os_new_175",
+    "Comment": "Keti haru le motorcycle chalayera ladchhan",
+    "Label_Binary": "OFF",
+    "Label_Multiclass": "OS"
+  },
+  {
+    "ID": "os_new_176",
+    "Comment": "आइमाईहरूले मेकअप गर्छन् अनि प्राकृतिक भन्छन्",
+    "Label_Binary": "OFF",
+    "Label_Multiclass": "OS"
+  },
+  {
+    "ID": "os_new_177",
+    "Comment": "Yo aaimai haru le raat ma hidera security magchhan",
+    "Label_Binary": "OFF",
+    "Label_Multiclass": "OS"
+  },
+  {
+    "ID": "os_new_178",
+    "Comment": "केटीहरूले पढ्छन् अनि घमण्ड गर्छन्",
+    "Label_Binary": "OFF",
+    "Label_Multiclass": "OS"
+  },
+  {
+    "ID": "os_new_179",
+    "Comment": "Aaimai haru le car parking ni garna sakdainan",
+    "Label_Binary": "OFF",
+    "Label_Multiclass": "OS"
+  },
+  {
+    "ID": "os_new_180",
+    "Comment": "यो खुत्या आइमाईहरूले श्रीमानलाई कुट्छन्",
+    "Label_Binary": "OFF",
+    "Label_Multiclass": "OS"
+  },
+  {
+    "ID": "os_new_181",
+    "Comment": "Keti haru le short dress lagayera balatkar nimtyauchhan",
+    "Label_Binary": "OFF",
+    "Label_Multiclass": "OS"
+  },
+  {
+    "ID": "os_new_182",
+    "Comment": "आइमाईहरूको दिमाग भावनामा मात्र चल्छ",
+    "Label_Binary": "OFF",
+    "Label_Multiclass": "OS"
+  },
+  {
+    "ID": "os_new_183",
+    "Comment": "Yo aaimai haru le tik tok ma nachera bigreko cha",
+    "Label_Binary": "OFF",
+    "Label_Multiclass": "OS"
+  },
+  {
+    "ID": "os_new_184",
+    "Comment": "केटीहरूले जागिर गरेर घर बिगार्छन्",
+    "Label_Binary": "OFF",
+    "Label_Multiclass": "OS"
+  },
+  {
+    "ID": "os_new_185",
+    "Comment": "Pothi ko buddhi le desh dubayo",
+    "Label_Binary": "OFF",
+    "Label_Multiclass": "OS"
+  },
+  {
+    "ID": "os_new_186",
+    "Comment": "यो सालीहरूले छोटो ड्रेसमा हिँड्छन्",
+    "Label_Binary": "OFF",
+    "Label_Multiclass": "OS"
+  },
+  {
+    "ID": "os_new_187",
+    "Comment": "Aaimai haru le science padhna sakdainan",
+    "Label_Binary": "OFF",
+    "Label_Multiclass": "OS"
+  },
+  {
+    "ID": "os_new_188",
+    "Comment": "आइमाईहरूले राति पार्टी गर्छन् अनि बलात्कार भयो भन्छन्",
+    "Label_Binary": "OFF",
+    "Label_Multiclass": "OS"
+  },
+  {
+    "ID": "os_new_189",
+    "Comment": "Yo keti haru le makeup bina kehi hoina",
+    "Label_Binary": "OFF",
+    "Label_Multiclass": "OS"
+  },
+  {
+    "ID": "os_new_190",
+    "Comment": "महिला नेताहरू सब नौटंकी गर्छन्",
+    "Label_Binary": "OFF",
+    "Label_Multiclass": "OS"
+  },
+  {
+    "ID": "os_new_191",
+    "Comment": "Aaimai haru ko kaam bacha palne matra ho",
+    "Label_Binary": "OFF",
+    "Label_Multiclass": "OS"
+  },
+  {
+    "ID": "os_new_192",
+    "Comment": "यो आइमाईहरूले छोटो कपाल राखेर सुन्दर बन्न खोज्छन्",
+    "Label_Binary": "OFF",
+    "Label_Multiclass": "OS"
+  },
+  {
+    "ID": "os_new_193",
+    "Comment": "Keti haru le job garchhan ani ghar bigarchhan",
+    "Label_Binary": "OFF",
+    "Label_Multiclass": "OS"
+  },
+  {
+    "ID": "os_new_194",
+    "Comment": "आइमाईहरूले गाडी चलाउँदा दुर्घटना गर्छन्",
+    "Label_Binary": "OFF",
+    "Label_Multiclass": "OS"
+  },
+  {
+    "ID": "os_new_195",
+    "Comment": "Yo nautanki aaimai haru le desh bigareko cha",
+    "Label_Binary": "OFF",
+    "Label_Multiclass": "OS"
+  },
+  {
+    "ID": "os_new_196",
+    "Comment": "केटीहरूले छोटो लुगा लगाउँछन् अनि बलात्कारको दोष अरुलाई",
+    "Label_Binary": "OFF",
+    "Label_Multiclass": "OS"
+  },
+  {
+    "ID": "os_new_197",
+    "Comment": "Aaimai haru le rajniti bujhdainan",
+    "Label_Binary": "OFF",
+    "Label_Multiclass": "OS"
+  },
+  {
+    "ID": "os_new_198",
+    "Comment": "यो सालीहरूले टिकटकमा नाच्छन् अनि संस्कारी भन्छन्",
+    "Label_Binary": "OFF",
+    "Label_Multiclass": "OS"
+  },
+  {
+    "ID": "os_new_199",
+    "Comment": "Keti haru le motorcycle chalayera ladchhan",
+    "Label_Binary": "OFF",
+    "Label_Multiclass": "OS"
+  },
+  {
+    "ID": "os_new_200",
+    "Comment": "आइमाईहरूले मेकअप गर्छन् अनि प्राकृतिक भन्छन्",
+    "Label_Binary": "OFF",
+    "Label_Multiclass": "OS"
+  }
+]

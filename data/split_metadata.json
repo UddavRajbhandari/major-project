@@ -1,0 +1,20 @@
+{
+  "val_size": 0.1,
+  "random_state": 42,
+  "original_samples": 6197,
+  "train_samples": 5577,
+  "val_samples": 620,
+  "train_distribution": {
+    "NO": 3206,
+    "OO": 1755,
+    "OR": 375,
+    "OS": 241
+  },
+  "val_distribution": {
+    "NO": 356,
+    "OO": 195,
+    "OR": 42,
+    "OS": 27
+  },
+  "stratified": true
+}

@@ -208,7 +208,7 @@ def analyze_text_characteristics(train_df, test_df, save_dir='results/eda'):
     plt.show()
 
 
-def create_validation_split(train_df, val_size=0.15, random_state=42):
+def create_validation_split(train_df, val_size=0.1, random_state=42):
     """Create validation split from training data."""
     print("\n" + "="*70)
     print(" CREATING VALIDATION SPLIT")
@@ -338,7 +338,8 @@ def main():
     print("="*70)
     
     # Paths (adjust these to your actual paths)
-    train_path = "D:/major project/nepali-offensive-lang-detection-dataset/train.json"
+    train_path = "D:/major project/data/train_final.json"
+    val_path = "D:/major project/data/val_final.json"
     test_path = "D:/major project/nepali-offensive-lang-detection-dataset/test.json"
     
     # Check if files exist
@@ -362,8 +363,12 @@ def main():
     analyze_text_characteristics(train_df, test_df)
     
     # Step 4: Create validation split
-    train_df, val_df = create_validation_split(train_df)
-    
+    # train_df, val_df = create_validation_split(train_df)
+    val_df = pd.read_json(val_path)
+    print(f"\n✓ Validation data loaded: {val_df.shape}")
+    val_df['text_length_chars'] = val_df['Comment'].apply(lambda x: len(str(x)))
+    val_df['text_length_words'] = val_df['Comment'].apply(lambda x: len(str(x).split()))
+    val_df['is_devanagari'] = val_df['Comment'].apply(is_devanagari)
     # Step 5: Apply preprocessing
     train_df, val_df, test_df = apply_preprocessing(train_df, val_df, test_df)
     

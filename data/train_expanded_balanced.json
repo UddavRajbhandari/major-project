@@ -1,0 +1,2403 @@
+[
+  {
+    "ID": "or_opt_001",
+    "Comment": "sale randi ko choro ta aba nepali ko hat bata morxa dhari xain baba morna tiro baki samya dise dori bharti gulam",
+    "Label_Binary": "OFF",
+    "Label_Multiclass": "OR"
+  },
+  {
+    "ID": "or_opt_002",
+    "Comment": "Tora mai ke boor sale topi chor haru madhar chod randi ke beta tora mai ke cg se dago dhoti ke chodalsan madhar jaat",
+    "Label_Binary": "OFF",
+    "Label_Multiclass": "OR"
+  },
+  {
+    "ID": "or_opt_003",
+    "Comment": "Yesto bhalu rw rondi chai praya matwali haru nai hunxan J hos Nepal lai khacho xa yo madhesi haru le ramro sanga",
+    "Label_Binary": "OFF",
+    "Label_Multiclass": "OR"
+  },
+  {
+    "ID": "or_opt_004",
+    "Comment": "kuro bujera com garda ramrai hunxa bahun ko kura tikai xa yo madhesi haru le samjhenna ram ram bhanne haru le bujhchhan",
+    "Label_Binary": "OFF",
+    "Label_Multiclass": "OR"
+  },
+  {
+    "ID": "or_opt_005",
+    "Comment": "Nepali bhanne haru madhesi lai citizenship dinu hudaina sabai bharti nai hun yo desh ma ram ko naam le chalchha",
+    "Label_Binary": "OFF",
+    "Label_Multiclass": "OR"
+  },
+  {
+    "ID": "or_opt_006",
+    "Comment": "Rai haru kasto jangali hunchhan nach garchhan ta kukhuri nikalera ladchhan ki kya ho yo ramro culture hoina",
+    "Label_Binary": "OFF",
+    "Label_Multiclass": "OR"
+  },
+  {
+    "ID": "or_opt_007",
+    "Comment": "Madhesi haru ko smell le nai thaha hunchha india bata aayeko yo desh ma basna deuna ram ram bhanne haru le bujhchhan",
+    "Label_Binary": "OFF",
+    "Label_Multiclass": "OR"
+  },
+  {
+    "ID": "or_opt_008",
+    "Comment": "Dalit haru padhera pani tehi raichhan DNA mai nai problem hunchha yo caste ko ramro kura bujhna sakdaina",
+    "Label_Binary": "OFF",
+    "Label_Multiclass": "OR"
+  },
+  {
+    "ID": "or_opt_009",
+    "Comment": "Pahadi haru bina madhesi haru le desh chalna sakdainan sabai bharat firtin ram ko naam le chalchha yo desh",
+    "Label_Binary": "OFF",
+    "Label_Multiclass": "OR"
+  },
+  {
+    "ID": "or_opt_010",
+    "Comment": "Newar haru ko khana khanu hudaina paisa ko lobh ma banayeko hunchha tyo ramro kura gareko le gali khane",
+    "Label_Binary": "OFF",
+    "Label_Multiclass": "OR"
+  },
+  {
+    "ID": "or_opt_011",
+    "Comment": "यो देशमा मधेसीहरूलाई भोट दिनेहरूले देश बेचेका छन् सबै भारतीय एजेन्ट हुन् राम्रो कुरा भनेको",
+    "Label_Binary": "OFF",
+    "Label_Multiclass": "OR"
+  },
+  {
+    "ID": "or_opt_012",
+    "Comment": "जनजाति भन्नेहरु सबै जंगली नै हुन् sabhyata siknu paryo ki rai haru le k garna sakchhan?",
+    "Label_Binary": "OFF",
+    "Label_Multiclass": "OR"
+  },
+  {
+    "ID": "or_opt_013",
+    "Comment": "Bahun chhetri bina yo desh chalna sakdaina madhesi ra janjati haru load matra ram ram bhanne haru le",
+    "Label_Binary": "OFF",
+    "Label_Multiclass": "OR"
+  },
+  {
+    "ID": "or_opt_014",
+    "Comment": "Tharu haru raksi khayera basne matra janta gau ma rahos bhanne ramro hunchha nepali bhanne haru",
+    "Label_Binary": "OFF",
+    "Label_Multiclass": "OR"
+  },
+  {
+    "ID": "or_opt_015",
+    "Comment": "Mongol ankh wala haru lai kasari bishwas garne China ko agent jasto lagcha ram ko naam le bujhchha",
+    "Label_Binary": "OFF",
+    "Label_Multiclass": "OR"
+  },
+  {
+    "ID": "or_opt_016",
+    "Comment": "आरक्षण ले देश सक्कियो capability herera job dinu paryo caste herera hoina madhesi dalit le bujhena",
+    "Label_Binary": "OFF",
+    "Label_Multiclass": "OR"
+  },
+  {
+    "ID": "or_opt_017",
+    "Comment": "Ram ko naam le bahun haru le desh chalayeko madhesi haru le bujhna sakdaina yo sachchai kura ho",
+    "Label_Binary": "OFF",
+    "Label_Multiclass": "OR"
+  },
+  {
+    "ID": "or_opt_018",
+    "Comment": "Madhesi neta haru sabai indian ko paisa khayera aayeka desh bigarne matra ramro kura bujhna",
+    "Label_Binary": "OFF",
+    "Label_Multiclass": "OR"
+  },
+  {
+    "ID": "or_opt_019",
+    "Comment": "Dalit ko chhori le kasari IAS bhayo kasai ko support ma hola yo ram ko kripa hoina",
+    "Label_Binary": "OFF",
+    "Label_Multiclass": "OR"
+  },
+  {
+    "ID": "or_opt_020",
+    "Comment": "Nepali bhanne haru madhesi lai vote dinu hudaina sabai bharat ko jaso ram ram bhanne haru le",
+    "Label_Binary": "OFF",
+    "Label_Multiclass": "OR"
+  },
+  {
+    "ID": "or_opt_021",
+    "Comment": "धोती लगाउने वालाहरुको धोती नभएर के पोथी भन्ने मधेसी हरुको यो अवस्था ramro lagcha",
+    "Label_Binary": "OFF",
+    "Label_Multiclass": "OR"
+  },
+  {
+    "ID": "or_opt_022",
+    "Comment": "नेवारको खाना लोभमा बनेको खानुहुँदैन यो ram ko naam le bujhne haru le matra samajhchhan",
+    "Label_Binary": "OFF",
+    "Label_Multiclass": "OR"
+  },
+  {
+    "ID": "or_opt_023",
+    "Comment": "क्षेत्री हरु बिना यो देश चल्दैन मधेसी र जनजाति हरु लोड मात्र हुन् राम्रो कुरा",
+    "Label_Binary": "OFF",
+    "Label_Multiclass": "OR"
+  },
+  {
+    "ID": "or_opt_024",
+    "Comment": "भारतीय एजेन्ट बनेका मधेसीहरुले देश बेचेका छन् nepali bhanne haru le bujhna parchha",
+    "Label_Binary": "OFF",
+    "Label_Multiclass": "OR"
+  },
+  {
+    "ID": "or_opt_025",
+    "Comment": "Rai haru ko nach gari raheko herda jangali lagcha sabhyata siknu paryo ram ko naam le",
+    "Label_Binary": "OFF",
+    "Label_Multiclass": "OR"
+  },
+  {
+    "ID": "or_opt_026",
+    "Comment": "Madhesi haru le politics ma aunu hudaina sabai bharti ko agent hunchhan yo desh ma",
+    "Label_Binary": "OFF",
+    "Label_Multiclass": "OR"
+  },
+  {
+    "ID": "or_opt_027",
+    "Comment": "Dalit haru ko ghar ma jaunu hudaina fohor hunchha tyo thau ramro kura ho yo",
+    "Label_Binary": "OFF",
+    "Label_Multiclass": "OR"
+  },
+  {
+    "ID": "or_opt_028",
+    "Comment": "Janjati haru le government banauna sakdaina capability nai chaina ram ram bhanne haru",
+    "Label_Binary": "OFF",
+    "Label_Multiclass": "OR"
+  },
+  {
+    "ID": "or_opt_029",
+    "Comment": "Pahadi haru le matra desh chalayeko ramro hunchha madhesi haru load matra hunchhan",
+    "Label_Binary": "OFF",
+    "Label_Multiclass": "OR"
+  },
+  {
+    "ID": "or_opt_030",
+    "Comment": "Tharu haru ko culture herda haschha raksi matra khane janta ram ko naam le",
+    "Label_Binary": "OFF",
+    "Label_Multiclass": "OR"
+  },
+  {
+    "ID": "or_opt_031",
+    "Comment": "नेपाली भन्ने हरुले मधेसी लाई भोट दिनु भनेको देश बेच्नु हो सबै भारतीय एजेन्ट हुन्",
+    "Label_Binary": "OFF",
+    "Label_Multiclass": "OR"
+  },
+  {
+    "ID": "or_opt_032",
+    "Comment": "Rai haru le k garna sakchhan? Nach gari raheko jangali jasto lagcha ram ko naam le bujhchha",
+    "Label_Binary": "OFF",
+    "Label_Multiclass": "OR"
+  },
+  {
+    "ID": "or_opt_033",
+    "Comment": "मधेसी हरुको बोलि सुन्दा बिहारी जस्तो लाग्छ सबै भारतबाट आएका ram ram bhanne haru le bujhchhan",
+    "Label_Binary": "OFF",
+    "Label_Multiclass": "OR"
+  },
+  {
+    "ID": "or_opt_034",
+    "Comment": "Dalit haru le reservation पाएर के गर्‍यो? Tehi fohor pani hunchhan nepali bhanne haru le",
+    "Label_Binary": "OFF",
+    "Label_Multiclass": "OR"
+  },
+  {
+    "ID": "or_opt_035",
+    "Comment": "Pahadi haru bina yo desh chalna sakdaina madhesi haru sabai bharti ko gulam ram ko naam le",
+    "Label_Binary": "OFF",
+    "Label_Multiclass": "OR"
+  },
+  {
+    "ID": "or_opt_036",
+    "Comment": "नेवार हरुको व्यापार हेर्दा पैसाको लोभ मात्र छ देशप्रति वफादारिता छैन ram ram",
+    "Label_Binary": "OFF",
+    "Label_Multiclass": "OR"
+  },
+  {
+    "ID": "or_opt_037",
+    "Comment": "Tharu haru गाउँमा रहोस् काठमाडौं आउनु पर्दैन raksi khane janta ram ko naam le",
+    "Label_Binary": "OFF",
+    "Label_Multiclass": "OR"
+  },
+  {
+    "ID": "or_opt_038",
+    "Comment": "क्षेत्री हरुको हिम्मत बिना यो देश सुरक्षित हुँदैन मधेसी हरु कमजोर hunchhan",
+    "Label_Binary": "OFF",
+    "Label_Multiclass": "OR"
+  },
+  {
+    "ID": "or_opt_039",
+    "Comment": "भारतीय पैसाले किनेका मधेसी नेता हरु देश बेच्न तयार छन् nepali haru le bujhna parchha",
+    "Label_Binary": "OFF",
+    "Label_Multiclass": "OR"
+  },
+  {
+    "ID": "or_opt_040",
+    "Comment": "Ram ram bhanne bahun haru le matra desh chalayeko ho madhesi haru le bujhna sakdaina",
+    "Label_Binary": "OFF",
+    "Label_Multiclass": "OR"
+  },
+  {
+    "ID": "or_opt_041",
+    "Comment": "जनजाति हरुको नाच हेर्दा जंगली लाग्छ सभ्यता सिक्नु पर्छ rai haru le k garna sakchhan",
+    "Label_Binary": "OFF",
+    "Label_Multiclass": "OR"
+  },
+  {
+    "ID": "or_opt_042",
+    "Comment": "Madhesi haru को smell ले नै थाहा हुन्छ भारतबाट आएको ram ko naam le bujhne haru",
+    "Label_Binary": "OFF",
+    "Label_Multiclass": "OR"
+  },
+  {
+    "ID": "or_opt_043",
+    "Comment": "Dalit हरुको घरमा जानुहुँदैन फोहोर हुन्छ ram ram bhanne haru le matra ramro",
+    "Label_Binary": "OFF",
+    "Label_Multiclass": "OR"
+  },
+  {
+    "ID": "or_opt_044",
+    "Comment": "नेपाली नागरिकता मधेसी लाई दिनुहुँदैन सबै भर्ती नै हुन् pahadi haru le bujhchhan",
+    "Label_Binary": "OFF",
+    "Label_Multiclass": "OR"
+  },
+  {
+    "ID": "or_opt_045",
+    "Comment": "Newar हरुको खाना खानुहुँदैन पैसाको लोभमा बनेको हुन्छ ram ko kripa chaina",
+    "Label_Binary": "OFF",
+    "Label_Multiclass": "OR"
+  },
+  {
+    "ID": "or_opt_046",
+    "Comment": "मंगोल आँखा भएका लाई विश्वास गर्न सकिँदैन चीनको एजेन्ट जस्तो ram ram",
+    "Label_Binary": "OFF",
+    "Label_Multiclass": "OR"
+  },
+  {
+    "ID": "or_opt_047",
+    "Comment": "आरक्षण ले देश सक्कियो क्षमता हेरेर जागिर दिनु पर्छ मधेसी दलित ले बुझ्दैन",
+    "Label_Binary": "OFF",
+    "Label_Multiclass": "OR"
+  },
+  {
+    "ID": "or_opt_048",
+    "Comment": "Rai haru कुखुरी निकालेर लड्छन् कि के हो यो संस्कृति ram ko naam le",
+    "Label_Binary": "OFF",
+    "Label_Multiclass": "OR"
+  },
+  {
+    "ID": "or_opt_049",
+    "Comment": "धोती लगाउने हरु नेपाली होइनन् सबै भारतीय नै हुन् pahadi haru ramro",
+    "Label_Binary": "OFF",
+    "Label_Multiclass": "OR"
+  },
+  {
+    "ID": "or_opt_050",
+    "Comment": "Bahun chhetri बिना यो देश चल्दैन मधेसी जनजाति लोड मात्र ram ram bhanne",
+    "Label_Binary": "OFF",
+    "Label_Multiclass": "OR"
+  },
+  {
+    "ID": "or_opt_051",
+    "Comment": "मधेसी नेता हरु दिल्लीबाट आदेश लिएर आउँछन् देश बिगार्न ram ko naam le",
+    "Label_Binary": "OFF",
+    "Label_Multiclass": "OR"
+  },
+  {
+    "ID": "or_opt_052",
+    "Comment": "Dalit को छोरीले IAS कसरी पास गर्‍यो? कसैको सपोर्ट हो ram chaina",
+    "Label_Binary": "OFF",
+    "Label_Multiclass": "OR"
+  },
+  {
+    "ID": "or_opt_053",
+    "Comment": "नेपाली भन्ने हरुले मधेसी लाई भोट नदिनु सबै भर्ती हुन् ram ram",
+    "Label_Binary": "OFF",
+    "Label_Multiclass": "OR"
+  },
+  {
+    "ID": "or_opt_054",
+    "Comment": "Tharu हरु रक्सी खाएर बसेका गाउँमा रहोस् काठमाडौं आउनु पर्दैन",
+    "Label_Binary": "OFF",
+    "Label_Multiclass": "OR"
+  },
+  {
+    "ID": "or_opt_055",
+    "Comment": "क्षेत्री हरुको बुद्धि बिना बाँकी सब लाटा हुन्छन् मधेसी जनजाति ramro chaina",
+    "Label_Binary": "OFF",
+    "Label_Multiclass": "OR"
+  },
+  {
+    "ID": "or_opt_056",
+    "Comment": "भारतीय एजेन्ट बनेका मधेसीहरुले देश बेचेका छन् nepali haru jagna parchha",
+    "Label_Binary": "OFF",
+    "Label_Multiclass": "OR"
+  },
+  {
+    "ID": "or_opt_057",
+    "Comment": "Janjati हरुको संस्कृति हेर्दा जंगली लाग्छ सभ्यता सिक्नु पर्छ rai limbu",
+    "Label_Binary": "OFF",
+    "Label_Multiclass": "OR"
+  },
+  {
+    "ID": "or_opt_058",
+    "Comment": "Pahadi culture बिना मधेसी हरु के गर्न सक्छन्? Tehi रहन्छन् ram ram",
+    "Label_Binary": "OFF",
+    "Label_Multiclass": "OR"
+  },
+  {
+    "ID": "or_opt_059",
+    "Comment": "मधेसी हरुको business मा जानुहुँदैन सबै black money को काम ram ko naam le",
+    "Label_Binary": "OFF",
+    "Label_Multiclass": "OR"
+  },
+  {
+    "ID": "or_opt_060",
+    "Comment": "Dalit हरु पढेर पनि तेस्तै रहन्छन् DNA मै problem छ ram ram bhanne haru",
+    "Label_Binary": "OFF",
+    "Label_Multiclass": "OR"
+  },
+  {
+    "ID": "or_opt_061",
+    "Comment": "Rai haru को hotel मा खाना खानुहुँदैन smell आउँछ ram ko kripa chaina",
+    "Label_Binary": "OFF",
+    "Label_Multiclass": "OR"
+  },
+  {
+    "ID": "or_opt_062",
+    "Comment": "नेपाली देश मधेसी बिना पनि चल्छ सबै भर्ती नै हुन् pahadi ramro",
+    "Label_Binary": "OFF",
+    "Label_Multiclass": "OR"
+  },
+  {
+    "ID": "or_opt_063",
+    "Comment": "नेवार हरु पैसाको लागि जे पनि गर्छन् देशप्रति loyalty छैन ram ram",
+    "Label_Binary": "OFF",
+    "Label_Multiclass": "OR"
+  },
+  {
+    "ID": "or_opt_064",
+    "Comment": "मधेसी vote किन्न politician हरु madhes जान्छन् principle छैन ram ko naam le",
+    "Label_Binary": "OFF",
+    "Label_Multiclass": "OR"
+  },
+  {
+    "ID": "or_opt_065",
+    "Comment": "Bahun हरुको बुद्धि बिना देश चल्दैन मधेसी दलित लोड मात्र ram ram",
+    "Label_Binary": "OFF",
+    "Label_Multiclass": "OR"
+  },
+  {
+    "ID": "or_opt_066",
+    "Comment": "Tharu हरुको culture भनेको रक्सी नै हो गाउँमा रहोस् ram ko naam le",
+    "Label_Binary": "OFF",
+    "Label_Multiclass": "OR"
+  },
+  {
+    "ID": "or_opt_067",
+    "Comment": "भारतीय smell भएका मधेसी हरु काठमाडौं बस्नुहुँदैन तराईमा रहोस्",
+    "Label_Binary": "OFF",
+    "Label_Multiclass": "OR"
+  },
+  {
+    "ID": "or_opt_068",
+    "Comment": "Dalit को छोराले राम्रो जागिर कसरी पायो? Reservation को कृपा हो ram chaina",
+    "Label_Binary": "OFF",
+    "Label_Multiclass": "OR"
+  },
+  {
+    "ID": "or_opt_069",
+    "Comment": "Rai Limbu हरुको nach हेर्दा हाँसउठ्छ जंगली culture ram ko naam le",
+    "Label_Binary": "OFF",
+    "Label_Multiclass": "OR"
+  },
+  {
+    "ID": "or_opt_070",
+    "Comment": "पहाडी हरुले मात्र देश चलाउन सक्छन् मधेसी हरु कमजोर hunchhan ram ram",
+    "Label_Binary": "OFF",
+    "Label_Multiclass": "OR"
+  },
+  {
+    "ID": "or_opt_071",
+    "Comment": "मधेसी हरु politics मा आउनुहुँदैन सबै भारतीय agent हुन् nepali haru le",
+    "Label_Binary": "OFF",
+    "Label_Multiclass": "OR"
+  },
+  {
+    "ID": "or_opt_072",
+    "Comment": "नेवार हरुको jewelry shop मा trust गर्न सकिँदैन पैसाको लोभ ram ko naam le",
+    "Label_Binary": "OFF",
+    "Label_Multiclass": "OR"
+  },
+  {
+    "ID": "or_opt_073",
+    "Comment": "क्षेत्री हरुको courage बिना देशको security हुँदैन मधेसी कमजोर ram ram",
+    "Label_Binary": "OFF",
+    "Label_Multiclass": "OR"
+  },
+  {
+    "ID": "or_opt_074",
+    "Comment": "जनजाति हरु government बनाउन सक्दैनन् capability नै छैन rai haru le k garna",
+    "Label_Binary": "OFF",
+    "Label_Multiclass": "OR"
+  },
+  {
+    "ID": "or_opt_075",
+    "Comment": "मधेसी हरु paisa मा बिक्छन् principle छैन ram ram bhanne haru le bujhchhan",
+    "Label_Binary": "OFF",
+    "Label_Multiclass": "OR"
+  },
+  {
+    "ID": "or_opt_076",
+    "Comment": "Dalit हरुको hotel मा खाना खानुहुँदैन सफाई छैन ram ko naam le",
+    "Label_Binary": "OFF",
+    "Label_Multiclass": "OR"
+  },
+  {
+    "ID": "or_opt_077",
+    "Comment": "नेपाली देश पहाडी culture को हो मधेसी imported जस्तो lagcha ram ram",
+    "Label_Binary": "OFF",
+    "Label_Multiclass": "OR"
+  },
+  {
+    "ID": "or_opt_078",
+    "Comment": "Tharu हरु काठमाडौं बस्न योग्य छैनन् गाउँमै रहोस् raksi khane janta",
+    "Label_Binary": "OFF",
+    "Label_Multiclass": "OR"
+  },
+  {
+    "ID": "or_opt_079",
+    "Comment": "भारतीय एजेन्ट मधेसी हरुले देश बिगारेका छन् pahadi haru le save garnu parchha",
+    "Label_Binary": "OFF",
+    "Label_Multiclass": "OR"
+  },
+  {
+    "ID": "or_opt_080",
+    "Comment": "Rai haru को business मा quality छैन जंगली जस्तो service ram ko naam le",
+    "Label_Binary": "OFF",
+    "Label_Multiclass": "OR"
+  },
+  {
+    "ID": "or_opt_081",
+    "Comment": "मधेसी हरुको बोली सुन्दा कान दुख्छ बिहारी जस्तो lagcha ram ram",
+    "Label_Binary": "OFF",
+    "Label_Multiclass": "OR"
+  },
+  {
+    "ID": "or_opt_082",
+    "Comment": "Bahun chhetri ले मात्र राम्रो politics गर्न सक्छन् मधेसी load ram ko naam le",
+    "Label_Binary": "OFF",
+    "Label_Multiclass": "OR"
+  },
+  {
+    "ID": "or_opt_083",
+    "Comment": "Dalit हरु leadership गर्न सक्दैनन् reservation बाहेक केही छैन ram ram",
+    "Label_Binary": "OFF",
+    "Label_Multiclass": "OR"
+  },
+  {
+    "ID": "or_opt_084",
+    "Comment": "नेपाली नागरिकता पाउन मधेसी हरु भारतबाट आउँछन् सबै fake ram ko naam le",
+    "Label_Binary": "OFF",
+    "Label_Multiclass": "OR"
+  },
+  {
+    "ID": "or_opt_085",
+    "Comment": "नेवार हरु पैसाको लागि आमा पनि बेच्छन् loyalty छैन ram ram bhanne",
+    "Label_Binary": "OFF",
+    "Label_Multiclass": "OR"
+  },
+  {
+    "ID": "or_opt_086",
+    "Comment": "पहाडी हरु बिना मधेसी हरु के गर्न सक्छन्? सबै भर्ती नै ram ko naam le",
+    "Label_Binary": "OFF",
+    "Label_Multiclass": "OR"
+  },
+  {
+    "ID": "or_opt_087",
+    "Comment": "जनजाति हरु vote मा paisa खान्छन् capability छैन rai haru le k garna sakchhan",
+    "Label_Binary": "OFF",
+    "Label_Multiclass": "OR"
+  },
+  {
+    "ID": "or_opt_088",
+    "Comment": "मधेसी हरु काठमाडौंमा बस्नुहुँदैन तराईमै रहोस् ram ram bhanne haru le",
+    "Label_Binary": "OFF",
+    "Label_Multiclass": "OR"
+  },
+  {
+    "ID": "or_opt_089",
+    "Comment": "Tharu हरुको education level हेर्दा हाँसउठ्छ गाउँले नै रहोस् ram ko naam le",
+    "Label_Binary": "OFF",
+    "Label_Multiclass": "OR"
+  },
+  {
+    "ID": "or_opt_090",
+    "Comment": "क्षेत्री हरुको history बिना यो देश के हुन्थ्यो मधेसी load मात्र ram ram",
+    "Label_Binary": "OFF",
+    "Label_Multiclass": "OR"
+  },
+  {
+    "ID": "or_opt_091",
+    "Comment": "Dalit हरु सफाई गर्न पनि जान्दैनन् फोहोरमै बस्छन् ram ko naam le",
+    "Label_Binary": "OFF",
+    "Label_Multiclass": "OR"
+  },
+  {
+    "ID": "or_opt_092",
+    "Comment": "Rai haru को dress code हेर्दा जंगली लाग्छ modern हुनु पर्छ ram ram",
+    "Label_Binary": "OFF",
+    "Label_Multiclass": "OR"
+  },
+  {
+    "ID": "or_opt_093",
+    "Comment": "मधेसी हरुले नेपाली भाषा बोल्न पनि जान्दैनन् बिहारी बोली ram ko naam le",
+    "Label_Binary": "OFF",
+    "Label_Multiclass": "OR"
+  },
+  {
+    "ID": "or_opt_094",
+    "Comment": "नेपाली देश पहाडी को हो मधेसी imported guest मात्र ram ram bhanne",
+    "Label_Binary": "OFF",
+    "Label_Multiclass": "OR"
+  },
+  {
+    "ID": "or_opt_095",
+    "Comment": "नेवार हरुको festival हेर्दा पैसाको business जस्तो lagcha ram ko kripa chaina",
+    "Label_Binary": "OFF",
+    "Label_Multiclass": "OR"
+  },
+  {
+    "ID": "or_opt_096",
+    "Comment": "भारतीय culture बोकेका मधेसी हरु देश बिगार्छन् pahadi haru le roknu parchha",
+    "Label_Binary": "OFF",
+    "Label_Multiclass": "OR"
+  },
+  {
+    "ID": "or_opt_097",
+    "Comment": "Bahun हरुको knowledge बिना देश development हुन सक्दैन मधेसी कमजोर ram ram",
+    "Label_Binary": "OFF",
+    "Label_Multiclass": "OR"
+  },
+  {
+    "ID": "or_opt_098",
+    "Comment": "जनजाति हरुको music सुन्दा कान दुख्छ जंगली sound ram ko naam le",
+    "Label_Binary": "OFF",
+    "Label_Multiclass": "OR"
+  },
+  {
+    "ID": "or_opt_099",
+    "Comment": "मधेसी हरुको politics हेर्दा Delhi को instruction जस्तो lagcha ram ram",
+    "Label_Binary": "OFF",
+    "Label_Multiclass": "OR"
+  },
+  {
+    "ID": "or_opt_100",
+    "Comment": "Dalit हरुको progress हेर्दा हाँसउठ्छ reservation बाहेक केही छैन ram ko naam le",
+    "Label_Binary": "OFF",
+    "Label_Multiclass": "OR"
+  },
+  {
+    "ID": "or_opt_101",
+    "Comment": "नेपाली देशमा मधेसी हरुलाई नागरिकता दिनु भनेको देशलाई भारतको हातमा सुम्पनु हो किनकि सबै भारतीय एजेन्ट नै हुन् राम राम भन्ने पहाडी हरुले मात्र यो देश चलाउन सक्छन्",
+    "Label_Binary": "OFF",
+    "Label_Multiclass": "OR"
+  },
+  {
+    "ID": "or_opt_102",
+    "Comment": "Rai haru ko nach gari raheko herda sachchai jangali lagcha यीहरुले कुखुरी निकालेर लड्ने बाहेक केही आउँदैन राम को नाम ले बाहुन क्षेत्री हरुले मात्र देश चलाउन सक्छन्",
+    "Label_Binary": "OFF",
+    "Label_Multiclass": "OR"
+  },
+  {
+    "ID": "or_opt_103",
+    "Comment": "Dalit haru le reservation पाएर IAS बने पनि DNA मै problem छ यीहरुले देश चलाउन सक्दैनन् राम राम भन्ने हरुले मात्र leadership गर्न सक्छन् मधेसी र दलित लोड मात्र",
+    "Label_Binary": "OFF",
+    "Label_Multiclass": "OR"
+  },
+  {
+    "ID": "or_opt_104",
+    "Comment": "मधेसी हरुको smell ले नै थाहा हुन्छ भारतबाट आएको हो काठमाडौंमा बस्नुहुँदैन तराई मै रहोस् पहाडी culture बिना यो देश चल्दैन ram ko naam le bujhne haru",
+    "Label_Binary": "OFF",
+    "Label_Multiclass": "OR"
+  },
+  {
+    "ID": "or_opt_105",
+    "Comment": "नेपाली भन्ने हरुले मधेसी लाई भोट दिनु भनेको देश बेच्नु हो सबै भारतीय पैसाले किनेका छन् यीहरुले Delhi बाट instruction लिएर आउँछन् pahadi haru le matra desh chalayeko ramro",
+    "Label_Binary": "OFF",
+    "Label_Multiclass": "OR"
+  },
+  {
+    "ID": "or_opt_106",
+    "Comment": "Tharu haru रक्सी खाएर गाउँमा बसेकाहरु काठमाडौं आउनु पर्दैन यीहरुको culture भनेको रक्सी नै हो राम को नाम ले पहाडी हरुले मात्र देश बनाउन सक्छन्",
+    "Label_Binary": "OFF",
+    "Label_Multiclass": "OR"
+  },
+  {
+    "ID": "or_opt_107",
+    "Comment": "नेवार हरुको खाना पैसाको लोभमा बनेको हुन्छ खानुहुँदैन यीहरु business मा मात्र राम्रो हुन्छन् देशप्रति loyalty छैन ram ram bhanne haru le matra ramro",
+    "Label_Binary": "OFF",
+    "Label_Multiclass": "OR"
+  },
+  {
+    "ID": "or_opt_108",
+    "Comment": "जनजाति हरुको नाच हेर्दा जंगली लाग्छ सभ्यता सिक्नु पर्छ rai limbu magar gurung सबै यस्तै छन् capability छैन government बनाउन ram ko naam le pahadi haru",
+    "Label_Binary": "OFF",
+    "Label_Multiclass": "OR"
+  },
+  {
+    "ID": "or_opt_109",
+    "Comment": "भारतीय एजेन्ट बनेका मधेसी नेता हरुले देश बिगारेका छन् नेपाली नागरिकता पाउन भारतबाट आउँछन् सबै fake हो pahadi haru le देश बचाउनु पर्छ ram ram",
+    "Label_Binary": "OFF",
+    "Label_Multiclass": "OR"
+  },
+  {
+    "ID": "or_opt_110",
+    "Comment": "क्षेत्री हरुको हिम्मत र courage बिना यो देश सुरक्षित हुँदैन मधेसी र जनजाति हरु कमजोर हुन्छन् गोरखाली को इतिहास बिना के हुन्थ्यो ram ko naam le chalchha",
+    "Label_Binary": "OFF",
+    "Label_Multiclass": "OR"
+  },
+  {
+    "ID": "or_opt_111",
+    "Comment": "Dalit हरुको घरमा जानुहुँदैन फोहोर हुन्छ सफाई पनि जान्दैनन् reservation बाहेक केही छैन यीहरुले देश चलाउन सक्दैनन् ram ram bhanne haru le matra",
+    "Label_Binary": "OFF",
+    "Label_Multiclass": "OR"
+  },
+  {
+    "ID": "or_opt_112",
+    "Comment": "मधेसी हरुले नेपाली भाषा बोल्न पनि जान्दैनन् बिहारी बोली सुन्दा कान दुख्छ काठमाडौं बस्न योग्य छैनन् तराई मै रहोस् pahadi culture ramro",
+    "Label_Binary": "OFF",
+    "Label_Multiclass": "OR"
+  },
+  {
+    "ID": "or_opt_113",
+    "Comment": "Bahun हरुको बुद्धि र knowledge बिना देश development हुन सक्दैन मधेसी दलित जनजाति सबै लोड मात्र हुन् ram ko naam le chalayeko ho yo desh",
+    "Label_Binary": "OFF",
+    "Label_Multiclass": "OR"
+  },
+  {
+    "ID": "or_opt_114",
+    "Comment": "Rai haru को dress code हेर्दा जंगली लाग्छ modern हुनु पर्छ कुखुरी बोकेर हिंड्ने culture ले के देश चल्छ ram ram bhanne haru le bujhchhan",
+    "Label_Binary": "OFF",
+    "Label_Multiclass": "OR"
+  },
+  {
+    "ID": "or_opt_115",
+    "Comment": "आरक्षण ले देश सक्कियो क्षमता हेरेर जागिर दिनु पर्छ caste herera hoina मधेसी दलित ले बुझ्दैनन् ram ko naam le merit basis ma chalnu parchha",
+    "Label_Binary": "OFF",
+    "Label_Multiclass": "OR"
+  },
+  {
+    "ID": "or_opt_116",
+    "Comment": "नेपाली देश पहाडी को हो मधेसी imported guest मात्र हुन् काठमाडौं पोखरा बस्नुहुँदैन तराई र बुटवलमा रहोस् ram ram bhanne haru le desh chalayeko",
+    "Label_Binary": "OFF",
+    "Label_Multiclass": "OR"
+  },
+  {
+    "ID": "or_opt_117",
+    "Comment": "मधेसी vote किन्न politician हरु madhes जान्छन् principle छैन paisa मा बिक्छन् यीहरु Delhi को instruction अनुसार चल्छन् pahadi haru le matra ramro",
+    "Label_Binary": "OFF",
+    "Label_Multiclass": "OR"
+  },
+  {
+    "ID": "or_opt_118",
+    "Comment": "Tharu haru को education level हेर्दा हाँसउठ्छ रक्सी खाने गाउँले नै रहोस् काठमाडौं आउनु पर्दैन ram ko naam le pahadi haru le development गर्छन्",
+    "Label_Binary": "OFF",
+    "Label_Multiclass": "OR"
+  },
+  {
+    "ID": "or_opt_119",
+    "Comment": "नेवार हरुको jewelry shop मा trust गर्न सकिँदैन पैसाको लोभमा जे पनि गर्छन् देशप्रति loyalty छैन ram ram bhanne haru le matra business ramro",
+    "Label_Binary": "OFF",
+    "Label_Multiclass": "OR"
+  },
+  {
+    "ID": "or_opt_120",
+    "Comment": "जनजाति हरुको music सुन्दा कान दुख्छ जंगली sound हो modern music सिक्नु पर्छ rai limbu को instrument ले के development हुन्छ ram ko naam le",
+    "Label_Binary": "OFF",
+    "Label_Multiclass": "OR"
+  },
+  {
+    "ID": "or_opt_121",
+    "Comment": "मधेसी हरुको politics हेर्दा Delhi को instruction जस्तो लाग्छ स्वतन्त्र सोच छैन भारतीय एजेन्ट नै हुन् नेपाली देश बचाउन pahadi haru le matra vote dinu parchha",
+    "Label_Binary": "OFF",
+    "Label_Multiclass": "OR"
+  },
+  {
+    "ID": "or_opt_122",
+    "Comment": "Dalit को छोरीले IAS पास गर्नु भनेको reservation को कृपा हो merit मा होइन यीहरुले administration चलाउन सक्दैनन् ram ram bhanne haru le matra ramro",
+    "Label_Binary": "OFF",
+    "Label_Multiclass": "OR"
+  },
+  {
+    "ID": "or_opt_123",
+    "Comment": "पहाडी culture बिना मधेसी जनजाति के गर्न सक्छन् सबै imported जस्तो लाग्छ नेपाली पहिचान भनेको गोरखाली र राम को नाम हो बाहेक केही छैन",
+    "Label_Binary": "OFF",
+    "Label_Multiclass": "OR"
+  },
+  {
+    "ID": "or_opt_124",
+    "Comment": "Rai haru को hotel मा खाना खानुहुँदैन smell आउँछ जंगली खाना बनाउँछन् pahadi बाहेक कसैको खाना खान योग्य छैन ram ko naam le bujhne haru",
+    "Label_Binary": "OFF",
+    "Label_Multiclass": "OR"
+  },
+  {
+    "ID": "or_opt_125",
+    "Comment": "मधेसी business मा जानुहुँदैन सबै black money को काम हुन्छ tax पनि तिर्दैनन् नेपाली economy बिगार्छन् pahadi haru le matra ramro business गर्छन्",
+    "Label_Binary": "OFF",
+    "Label_Multiclass": "OR"
+  },
+  {
+    "ID": "or_opt_126",
+    "Comment": "नेपाली नागरिकता मधेसी लाई दिनुहुँदैन सबै भारतबाट आएका छन् fake document लिएर आउँछन् देशको security को लागि ram ram bhanne haruले मात्र योग्य",
+    "Label_Binary": "OFF",
+    "Label_Multiclass": "OR"
+  },
+  {
+    "ID": "or_opt_127",
+    "Comment": "क्षेत्री हरुको history बिना यो देश के हुन्थ्यो गोरखाली को बलिदान बिना मधेसी जनजाति के गर्न सक्थे ram ko naam le chalayeko ho yo desh sada",
+    "Label_Binary": "OFF",
+    "Label_Multiclass": "OR"
+  },
+  {
+    "ID": "or_opt_128",
+    "Comment": "जनजाति हरु government बनाउन सक्दैनन् capability नै छैन rai magar gurung limbu सबै यस्तै छन् leadership quality छैन ram ram bhanne haru le matra",
+    "Label_Binary": "OFF",
+    "Label_Multiclass": "OR"
+  },
+  {
+    "ID": "or_opt_129",
+    "Comment": "मधेसी हरु paisa मा बिक्छन् principle छैन election मा पैसा खाएर vote दिन्छन् नेपाली देशको लागि pahadi haru ले मात्र vote दिनु राम्रो हुन्छ",
+    "Label_Binary": "OFF",
+    "Label_Multiclass": "OR"
+  },
+  {
+    "ID": "or_opt_130",
+    "Comment": "Dalit हरु सफाई गर्न पनि जान्दैनन् फोहोरमै बस्छन् reservation पाएर जागिर खान्छन् merit छैन ram ko naam le chalne haru le matra desh banayeko",
+    "Label_Binary": "OFF",
+    "Label_Multiclass": "OR"
+  },
+  {
+    "ID": "or_opt_131",
+    "Comment": "नेपाली सामाजिक सञ्जालमा मधेसी हरुले भारतीय एजेन्टको काम गरिरहेका छन् दिल्लीबाट निर्देशन लिएर देश बेच्न तयार छन् पहाडी हरुले मात्र यो देशको रक्षा गर्न सक्छन् राम राम भन्ने हरुले",
+    "Label_Binary": "OFF",
+    "Label_Multiclass": "OR"
+  },
+  {
+    "ID": "or_opt_132",
+    "Comment": "Rai haru ko jangali culture herda hasaucha कुखुरी बोकेर हिंड्ने यीहरुले modern society मा के योगदान दिन सक्छन् ram ko naam le bahun chhetri le matra desh chalayeko ramro hunchha",
+    "Label_Binary": "OFF",
+    "Label_Multiclass": "OR"
+  },
+  {
+    "ID": "or_opt_133",
+    "Comment": "Dalit haru le reservation को कारणले जागिर पाएका छन् तर administration चलाउन सक्दैनन् DNA मै problem छ यीहरुको राम राम भन्ने हरुले मात्र leadership quality राख्छन्",
+    "Label_Binary": "OFF",
+    "Label_Multiclass": "OR"
+  },
+  {
+    "ID": "or_opt_134",
+    "Comment": "मधेसी हरुको business मा black money को प्रयोग हुन्छ tax evasion गर्छन् नेपाली economy लाई कमजोर बनाउँछन् pahadi haru le matra transparent business गर्छन् ram ko naam le",
+    "Label_Binary": "OFF",
+    "Label_Multiclass": "OR"
+  },
+  {
+    "ID": "or_opt_135",
+    "Comment": "नेपाली देशको पहिचान गोरखाली र पहाडी culture हो मधेसी imported guest जस्ता छन् काठमाडौं पोखरा तिर बस्न योग्य छैनन् तराई मै रहोस् ram ram bhanne haru le",
+    "Label_Binary": "OFF",
+    "Label_Multiclass": "OR"
+  },
+  {
+    "ID": "or_opt_136",
+    "Comment": "जनजाति हरुको music र नाच हेर्दा primitive lagcha modern education र civilization सिक्नु पर्छ rai limbu magar gurung सबै यस्तै छन् ram ko naam le pahadi culture superior",
+    "Label_Binary": "OFF",
+    "Label_Multiclass": "OR"
+  },
+  {
+    "ID": "or_opt_137",
+    "Comment": "Tharu haru को education level हेर्दा development सम्भव छैन रक्सी र गाउँले जीवन नै यीहरुको destiny हो काठमाडौं आउनु पर्दैन ram ram bhanne haru le matra educated",
+    "Label_Binary": "OFF",
+    "Label_Multiclass": "OR"
+  },
+  {
+    "ID": "or_opt_138",
+    "Comment": "नेवार हरु पैसाको लागि जे पनि गर्छन् business मा trust गर्न सकिँदैन country को development भन्दा personal profit प्राथमिकता दिन्छन् ram ko naam le loyalty hunchha",
+    "Label_Binary": "OFF",
+    "Label_Multiclass": "OR"
+  },
+  {
+    "ID": "or_opt_139",
+    "Comment": "मधेसी नेता हरु election मा पैसा बाँडेर vote किन्छन् principle र ideology छैन Delhi को puppet मात्र हुन् नेपाली देश बचाउन pahadi vote चाहिन्छ ram ram",
+    "Label_Binary": "OFF",
+    "Label_Multiclass": "OR"
+  },
+  {
+    "ID": "or_opt_140",
+    "Comment": "क्षेत्री हरुको military tradition र courage बिना नेपालको security सम्भव छैन गोरखाली को इतिहास बिना मधेसी जनजाति के गर्न सक्थे ram ko naam le chalchha yo desh",
+    "Label_Binary": "OFF",
+    "Label_Multiclass": "OR"
+  },
+  {
+    "ID": "or_opt_141",
+    "Comment": "Dalit हरुको hotel र restaurant मा खाना खानुहुँदैन hygiene र cleanliness को standard नै छैन reservation बाहेक quality केही छैन ram ram bhanne haru le matra ramro",
+    "Label_Binary": "OFF",
+    "Label_Multiclass": "OR"
+  },
+  {
+    "ID": "or_opt_142",
+    "Comment": "Rai haru को dress र appearance हेर्दा tribal lagcha urban modern society मा adapt हुन गाह्रो छ modern clothing र lifestyle सिक्नु पर्छ ram ko naam le",
+    "Label_Binary": "OFF",
+    "Label_Multiclass": "OR"
+  },
+  {
+    "ID": "or_opt_143",
+    "Comment": "मधेसी हरुले नेपाली भाषा correct बोल्न सक्दैनन् बिहारी accent ले कान दुख्छ national language को सम्मान गर्न सिक्नु पर्छ pahadi haru le matra ramro बोल्छन्",
+    "Label_Binary": "OFF",
+    "Label_Multiclass": "OR"
+  },
+  {
+    "ID": "or_opt_144",
+    "Comment": "Bahun हरुको intellectual capability बिना देशको progress सम्भव छैन administration science technology सबै क्षेत्रमा leadership चाहिन्छ ram ko naam le chalayeko ho",
+    "Label_Binary": "OFF",
+    "Label_Multiclass": "OR"
+  },
+  {
+    "ID": "or_opt_145",
+    "Comment": "नेपाली नागरिकता policy मा सुधार चाहिन्छ मधेसी हरुलाई सजिलै दिनुहुँदैन सबै भारतबाट infiltrate भएका छन् national security को लागि strict policy चाहिन्छ",
+    "Label_Binary": "OFF",
+    "Label_Multiclass": "OR"
+  },
+  {
+    "ID": "or_opt_146",
+    "Comment": "जनजाति हरु politics मा आउनु पर्दैन capability र vision छैन rai magar gurung limbu सबै ethnic vote को लागि मात्र use हुन्छन् ram ram bhanne haru le matra",
+    "Label_Binary": "OFF",
+    "Label_Multiclass": "OR"
+  },
+  {
+    "ID": "or_opt_147",
+    "Comment": "मधेसी business community मा corruption को level धेरै छ money laundering tax evasion सबै गर्छन् नेपाली economy लाई weaken गर्छन् pahadi haru le matra honest",
+    "Label_Binary": "OFF",
+    "Label_Multiclass": "OR"
+  },
+  {
+    "ID": "or_opt_148",
+    "Comment": "Dalit हरुको social behavior हेर्दा improvement को सम्भावना कम छ cultural habits change गर्न गाह्रो छ generation after generation यस्तै रहन्छ ram ko naam le",
+    "Label_Binary": "OFF",
+    "Label_Multiclass": "OR"
+  },
+  {
+    "ID": "or_opt_149",
+    "Comment": "पहाडी culture र tradition ले मात्र नेपाली पहिचान maintain गर्छ मधेसी culture imported जस्तो छ national identity को लागि pahadi dominance चाहिन्छ ram ram",
+    "Label_Binary": "OFF",
+    "Label_Multiclass": "OR"
+  },
+  {
+    "ID": "or_opt_150",
+    "Comment": "Tharu haru को agriculture knowledge traditional मात्र छ modern farming techniques सिक्नु पर्छ productivity increase गर्न तराई development को लागि ram ko naam le",
+    "Label_Binary": "OFF",
+    "Label_Multiclass": "OR"
+  },
+  {
+    "ID": "or_opt_151",
+    "Comment": "नेवार हरुको festival र celebration हेर्दा commercialized lagcha religious significance भन्दा business opportunity को लागि गरिन्छ ram ram bhanne haru le genuine",
+    "Label_Binary": "OFF",
+    "Label_Multiclass": "OR"
+  },
+  {
+    "ID": "or_opt_152",
+    "Comment": "मधेसी हरुको political demand territorial division जस्तो छ federalism को नाममा तराई अलग राज्य बनाउन खोज्छन् national integrity को लागि एकीकृत रहनु पर्छ",
+    "Label_Binary": "OFF",
+    "Label_Multiclass": "OR"
+  },
+  {
+    "ID": "or_opt_153",
+    "Comment": "Rai haru को educational achievement हेर्दा satisfactory छैन scholarship को दुरुपयोग गर्छन् merit base selection हुनु पर्छ ram ko naam le competition चाहिन्छ",
+    "Label_Binary": "OFF",
+    "Label_Multiclass": "OR"
+  },
+  {
+    "ID": "or_opt_154",
+    "Comment": "नेपाली army मा गोरखाली tradition maintain गर्नु पर्छ मधेसी र जनजाति को recruitment limit गर्नु पर्छ discipline र fighting spirit को लागि ram ram bhanne haru",
+    "Label_Binary": "OFF",
+    "Label_Multiclass": "OR"
+  },
+  {
+    "ID": "or_opt_155",
+    "Comment": "Dalit हरुको entrepreneurship skill कमजोर छ business management को ज्ञान छैन government subsidy मा depend रहन्छन् self-reliant हुनु पर्छ ram ko naam le",
+    "Label_Binary": "OFF",
+    "Label_Multiclass": "OR"
+  },
+  {
+    "ID": "or_opt_156",
+    "Comment": "मधेसी media outlets भारतीय propaganda को लागि use हुन्छ fake news spread गर्छन् national interest भन्दा India को agenda प्राथमिकता दिन्छन् pahadi media trustworthy",
+    "Label_Binary": "OFF",
+    "Label_Multiclass": "OR"
+  },
+  {
+    "ID": "or_opt_157",
+    "Comment": "जनजाति हरुको language policy मा revision चाहिन्छ Nepali national language हुनु पर्छ ethnic languages secondary status मा रहनु पर्छ unity को लागि ram ram",
+    "Label_Binary": "OFF",
+    "Label_Multiclass": "OR"
+  },
+  {
+    "ID": "or_opt_158",
+    "Comment": "क्षेत्री हरुको administrative capability बिना bureaucracy efficient हुन सक्दैन leadership quality र decision making skill चाहिन्छ ram ko naam le chalayeko ho",
+    "Label_Binary": "OFF",
+    "Label_Multiclass": "OR"
+  },
+  {
+    "ID": "or_opt_159",
+    "Comment": "मधेसी student हरुको academic performance average भन्दा कम छ scholarship को दुरुपयोग गर्छन् merit base admission policy लागू गर्नु पर्छ competition चाहिन्छ",
+    "Label_Binary": "OFF",
+    "Label_Multiclass": "OR"
+  },
+  {
+    "ID": "or_opt_160",
+    "Comment": "Bahun हरुको contribution education science literature मा उल्लेखनीय छ intellectual leadership बिना देशको development सम्भव छैन ram ram bhanne haru le",
+    "Label_Binary": "OFF",
+    "Label_Multiclass": "OR"
+  },
+  {
+    "ID": "or_opt_161",
+    "Comment": "नेपाली diplomacy मा पहाडी leadership चाहिन्छ मधेसी हरु India को influence मा पर्छन् independent foreign policy को लागि strong pahadi representation चाहिन्छ",
+    "Label_Binary": "OFF",
+    "Label_Multiclass": "OR"
+  },
+  {
+    "ID": "or_opt_162",
+    "Comment": "Rai haru को social organization primitive छ modern governance system सँग compatible छैन administrative efficiency को लागि reform चाहिन्छ ram ko naam le",
+    "Label_Binary": "OFF",
+    "Label_Multiclass": "OR"
+  },
+  {
+    "ID": "or_opt_163",
+    "Comment": "Dalit हरुको political representation quota base छ genuine leadership quality छैन merit base selection policy लागू गर्नु पर्छ ram ram bhanne haru le",
+    "Label_Binary": "OFF",
+    "Label_Multiclass": "OR"
+  },
+  {
+    "ID": "or_opt_164",
+    "Comment": "मधेसी business tycoons भारतीय capital investment मा depend छन् national interest भन्दा foreign interest प्राथमिकता दिन्छन् economic sovereignty को लागि caution चाहिन्छ",
+    "Label_Binary": "OFF",
+    "Label_Multiclass": "OR"
+  },
+  {
+    "ID": "or_opt_165",
+    "Comment": "Tharu haru को land ownership pattern हेर्दा fragmented farming छ modern agriculture को लागि consolidation चाहिन्छ productivity increase गर्न ram ko naam le",
+    "Label_Binary": "OFF",
+    "Label_Multiclass": "OR"
+  },
+  {
+    "ID": "or_opt_166",
+    "Comment": "नेवार हरुको urban planning traditional छ modern city development सँग compatible छैन infrastructure improvement को लागि scientific approach चाहिन्छ ram ram",
+    "Label_Binary": "OFF",
+    "Label_Multiclass": "OR"
+  },
+  {
+    "ID": "or_opt_167",
+    "Comment": "मधेसी political parties क्षेत्रीय agenda मा focus गर्छन् national integration को लागि broad based approach अपनाउनु पर्छ unity मा strength छ ram ko naam le",
+    "Label_Binary": "OFF",
+    "Label_Multiclass": "OR"
+  },
+  {
+    "ID": "or_opt_168",
+    "Comment": "जनजाति हरुको reservation policy review गर्नु पर्छ merit base system introduce गर्नु पर्छ equal opportunity को नाममा reverse discrimination भइरहेको छ",
+    "Label_Binary": "OFF",
+    "Label_Multiclass": "OR"
+  },
+  {
+    "ID": "or_opt_169",
+    "Comment": "पहाडी community को social cohesion strong छ मधेसी community fragmented छ national unity को लागि pahadi leadership model follow गर्नु पर्छ ram ram",
+    "Label_Binary": "OFF",
+    "Label_Multiclass": "OR"
+  },
+  {
+    "ID": "or_opt_170",
+    "Comment": "Dalit हरुको skill development program effective छैन vocational training र entrepreneurship development मा focus गर्नु पर्छ dependency syndrome हटाउन ram ko naam le",
+    "Label_Binary": "OFF",
+    "Label_Multiclass": "OR"
+  },
+  {
+    "ID": "or_opt_171",
+    "Comment": "मधेसी migration pattern हेर्दा urban areas मा encroachment भइरहेको छ planned urbanization policy लागू गर्नु पर्छ sustainable development को लागि ram ram",
+    "Label_Binary": "OFF",
+    "Label_Multiclass": "OR"
+  },
+  {
+    "ID": "or_opt_172",
+    "Comment": "Rai haru को cultural preservation traditional method मा limit छ modern documentation र digital preservation technology use गर्नु पर्छ heritage protection को लागि",
+    "Label_Binary": "OFF",
+    "Label_Multiclass": "OR"
+  },
+  {
+    "ID": "or_opt_173",
+    "Comment": "नेपाली education system मा पहाडी student को performance consistently better छ teaching methodology र curriculum design मा improvement को scope छ ram ko naam le",
+    "Label_Binary": "OFF",
+    "Label_Multiclass": "OR"
+  },
+  {
+    "ID": "or_opt_174",
+    "Comment": "क्षेत्री community को military contribution unmatched छ national defense को backbone को रूपमा रहनु पर्छ security architecture को लागि ram ram bhanne haru le",
+    "Label_Binary": "OFF",
+    "Label_Multiclass": "OR"
+  },
+  {
+    "ID": "or_opt_175",
+    "Comment": "मधेसी political leadership को legitimacy question-able छ external influence को कारण independent decision making capacity कमजोर छ national interest priority हुनु पर्छ",
+    "Label_Binary": "OFF",
+    "Label_Multiclass": "OR"
+  },
+  {
+    "ID": "or_opt_176",
+    "Comment": "Bahun intellectual tradition scientific inquiry र rational thinking लाई promote गर्छ modern knowledge economy को लागि essential छ ram ko naam le chalchha",
+    "Label_Binary": "OFF",
+    "Label_Multiclass": "OR"
+  },
+  {
+    "ID": "or_opt_177",
+    "Comment": "जनजाति हरुको land rights traditional practice मा base छ modern land management system सँग integrate गर्नु पर्छ sustainable development को लागि ram ram",
+    "Label_Binary": "OFF",
+    "Label_Multiclass": "OR"
+  },
+  {
+    "ID": "or_opt_178",
+    "Comment": "Dalit economic empowerment को लागि skill based training program चाहिन्छ reservation भन्दा entrepreneurship development effective हुन्छ self-reliance को लागि ram ko naam le",
+    "Label_Binary": "OFF",
+    "Label_Multiclass": "OR"
+  },
+  {
+    "ID": "or_opt_179",
+    "Comment": "मधेसी business investment pattern speculative trading मा focus छ productive investment भन्दा national economy को लागि long term perspective चाहिन्छ ram ram",
+    "Label_Binary": "OFF",
+    "Label_Multiclass": "OR"
+  },
+  {
+    "ID": "or_opt_180",
+    "Comment": "Tharu agricultural practices traditional method मा limit छ modern farming technology adoption गर्नु पर्छ productivity enhancement को लागि ram ko naam le",
+    "Label_Binary": "OFF",
+    "Label_Multiclass": "OR"
+  },
+  {
+    "ID": "or_opt_181",
+    "Comment": "नेवार urban entrepreneurship commercial success त छ तर social responsibility कमजोर छ corporate social responsibility practice गर्नु पर्छ community development को लागि",
+    "Label_Binary": "OFF",
+    "Label_Multiclass": "OR"
+  },
+  {
+    "ID": "or_opt_182",
+    "Comment": "मधेसी political mobilization ethnic identity को आधारमा हुन्छ national integration को लागि inclusive approach अपनाउनु पर्छ unity in diversity को सिद्धान्त ram ram",
+    "Label_Binary": "OFF",
+    "Label_Multiclass": "OR"
+  },
+  {
+    "ID": "or_opt_183",
+    "Comment": "Rai community को educational infrastructure development मा investment चाहिन्छ scholarship management improve गर्नु पर्छ merit based selection system लागू गर्न ram ko naam le",
+    "Label_Binary": "OFF",
+    "Label_Multiclass": "OR"
+  },
+  {
+    "ID": "or_opt_184",
+    "Comment": "नेपाली judiciary मा पहाडी judge को dominance efficiency र impartiality कायम राख्छ diverse representation भन्दा competence priority हुनु पर्छ ram ram bhanne haru",
+    "Label_Binary": "OFF",
+    "Label_Multiclass": "OR"
+  },
+  {
+    "ID": "or_opt_185",
+    "Comment": "Dalit social mobility generational change मार्फत slow छ rapid transformation को लागि intensive skill development program चाहिन्छ targeted intervention ram ko naam le",
+    "Label_Binary": "OFF",
+    "Label_Multiclass": "OR"
+  },
+  {
+    "ID": "or_opt_186",
+    "Comment": "मधेसी migration urban slum creation को कारण बन्दैछ planned resettlement policy लागू गर्नु पर्छ sustainable urban development को लागि ram ram",
+    "Label_Binary": "OFF",
+    "Label_Multiclass": "OR"
+  },
+  {
+    "ID": "or_opt_187",
+    "Comment": "जनजाति cultural heritage documentation systematic approach चाहिन्छ digital preservation technology use गर्नु पर्छ future generation को लागि ram ko naam le",
+    "Label_Binary": "OFF",
+    "Label_Multiclass": "OR"
+  },
+  {
+    "ID": "or_opt_188",
+    "Comment": "पहाडी student को academic excellence consistent performance ले establish गरेको छ teaching learning methodology मा innovation continuation चाहिन्छ ram ram bhanne",
+    "Label_Binary": "OFF",
+    "Label_Multiclass": "OR"
+  },
+  {
+    "ID": "or_opt_189",
+    "Comment": "क्षेत्री military leadership strategic thinking र tactical excellence को symbol हो national defense architecture को cornerstone को रूपमा रहनु पर्छ ram ko naam le",
+    "Label_Binary": "OFF",
+    "Label_Multiclass": "OR"
+  },
+  {
+    "ID": "or_opt_190",
+    "Comment": "मधेसी political discourse India-centric narrative मा आधारित छ independent national perspective development गर्नु पर्छ strategic autonomy को लागि ram ram",
+    "Label_Binary": "OFF",
+    "Label_Multiclass": "OR"
+  },
+  {
+    "ID": "or_opt_191",
+    "Comment": "Bahun intellectual contribution knowledge creation र dissemination मा unparalleled छ academic excellence को standard setter को रूपमा रहनु पर्छ ram ko naam le",
+    "Label_Binary": "OFF",
+    "Label_Multiclass": "OR"
+  },
+  {
+    "ID": "or_opt_192",
+    "Comment": "जनजाति land management communal ownership model modern individual ownership सँग integrate गर्नु पर्छ agricultural productivity enhancement को लागि ram ram",
+    "Label_Binary": "OFF",
+    "Label_Multiclass": "OR"
+  },
+  {
+    "ID": "or_opt_193",
+    "Comment": "Dalit economic inclusion market driven approach मार्फत गर्नु पर्छ government handout भन्दा entrepreneurship ecosystem development effective हुन्छ ram ko naam le",
+    "Label_Binary": "OFF",
+    "Label_Multiclass": "OR"
+  },
+  {
+    "ID": "or_opt_194",
+    "Comment": "मधेसी capital investment real estate speculation मा concentrate छ manufacturing र productive sector मा diversification चाहिन्छ balanced economic growth को लागि",
+    "Label_Binary": "OFF",
+    "Label_Multiclass": "OR"
+  },
+  {
+    "ID": "or_opt_195",
+    "Comment": "Tharu farming community modern irrigation technology adoption गर्नु पर्छ productivity double गर्न crop diversification र market linkage strengthen गर्न ram ram",
+    "Label_Binary": "OFF",
+    "Label_Multiclass": "OR"
+  },
+  {
+    "ID": "or_opt_196",
+    "Comment": "नेवार business community corporate governance standard improve गर्नु पर्छ transparency र accountability establish गर्न investor confidence increase हुन्छ ram ko naam le",
+    "Label_Binary": "OFF",
+    "Label_Multiclass": "OR"
+  },
+  {
+    "ID": "or_opt_197",
+    "Comment": "मधेसी political leadership national consensus building capacity कमजोर छ coalition politics मा stability provide गर्न सक्दैन strong leadership चाहिन्छ ram ram",
+    "Label_Binary": "OFF",
+    "Label_Multiclass": "OR"
+  },
+  {
+    "ID": "or_opt_198",
+    "Comment": "Rai educational institution quality improvement को लागि curriculum modernization र teacher training program strengthen गर्नु पर्छ competitive edge maintain गर्न ram ko naam le",
+    "Label_Binary": "OFF",
+    "Label_Multiclass": "OR"
+  },
+  {
+    "ID": "or_opt_199",
+    "Comment": "नेपाली national security architecture पहाडी military tradition मा आधारित छ proven effectiveness को कारण continuity maintain गर्नु पर्छ ram ram bhanne haru le",
+    "Label_Binary": "OFF",
+    "Label_Multiclass": "OR"
+  },
+  {
+    "ID": "or_opt_200",
+    "Comment": "Dalit social transformation comprehensive approach चाहिन्छ education skill development entrepreneurship promotion simultaneous implementation बिना sustainable change सम्भव छैन ram ko naam le",
+    "Label_Binary": "OFF",
+    "Label_Multiclass": "OR"
+  },
+  {
+    "ID": "os_improved_001",
+    "Comment": "देशको राष्ट्रपति नै आइमाई भइसकेपछि पनि अर्की आइमाईको पीडा बुझ्न नसक्ने कस्तो खुत्या साली रन्डी आइमाई हो यो यस्ता ढोंगी चिनालहरूले देश बिगार्न मा मात्र ध्यान दिन्छन् र fuck जस्तो व्यवहार गर्छन् सधैं यस्तै नौटंकी मात्र गर्छन्",
+    "Label_Binary": "OFF",
+    "Label_Multiclass": "OS"
+  },
+  {
+    "ID": "os_improved_002",
+    "Comment": "Pothi basera matra desh chalna sakdaina yo posthi ko mati her prabhu 16 crore ko gadi chahiyo re yesta bewakoof dhoti sali randi harule desh dubau ma faseka chan chor jasto vyavhar garchhan ma matra ruchi rakhchhan sadhai yesto nautanki",
+    "Label_Binary": "OFF",
+    "Label_Multiclass": "OS"
+  },
+  {
+    "ID": "os_improved_003",
+    "Comment": "Nari ko buddhi ta yestai hunchha ramro dekhiyo bhanera desh dubai dinchhan yesta khutya chinAl randi haru ma faseka chan vikas ko sochdainan fuck jasto jivan jiuchhan sali haru ma matra dhyan dinchhan sadhai yesto drama garchhan",
+    "Label_Binary": "OFF",
+    "Label_Multiclass": "OS"
+  },
+  {
+    "ID": "os_improved_004",
+    "Comment": "यो मन्त्रीनी जस्ती केटीहरूले दश दिशा मिलाउन खोज्छन् कहिले भारत कहिले अमेरिका सिधा कुरा गर्न पनि आउँदैन यस्ता नौटंकी पोथी रन्डीहरू मा फसेका छन् बेवकूफ सालीहरूले देश चलाउन जान्दैनन् मा मात्र रुचि राख्छन् सधैं यस्तो झूट बोल्छन्",
+    "Label_Binary": "OFF",
+    "Label_Multiclass": "OS"
+  },
+  {
+    "ID": "os_improved_005",
+    "Comment": "Aaimai haru le rajniti garna khojda desh ko halat yestai hunchha ghar samhalna ni aaudaina yesta dhongi chinAl randi haru ma faseka chan sansad ma drama garchhan fuck jasto vyavhar garchhan dhoti haru ma matra sochchhan sadhai nautanki matra garchhan",
+    "Label_Binary": "OFF",
+    "Label_Multiclass": "OS"
+  },
+  {
+    "ID": "os_improved_006",
+    "Comment": "छोरीमान्छे भएपछि घरको काम सानैदेखि सिक्नुपर्छ नत्र बिहेपछि यस्तै दुख पाइन्छ नि यस्ता खुत्या साली रन्डीहरू मा फसेर जागिर गरेर बच्चा बिगार्छन् बेवकूफ चिनालहरूले घरको मर्यादा भुल्छन् मा मात्र ध्यान दिन्छन् सधैं यस्तो गर्छन्",
+    "Label_Binary": "OFF",
+    "Label_Multiclass": "OS"
+  },
+  {
+    "ID": "os_improved_007",
+    "Comment": "Yo nautanki aaimai haru le desh ko naam bigareko cha, drama matra thaha cha",
+    "Label_Binary": "OFF",
+    "Label_Multiclass": "OS"
+  },
+  {
+    "ID": "os_improved_008",
+    "Comment": "आइमाईहरू छोटो लुगा लगाएर हिँड्छन् अनि बलात्कार भयो भन्छन् आफैँ दोषी यस्ता बेवकूफ रन्डी चिनालहरू मा फसेर राति बाहिर निस्कन्छन् धोती सालीहरूले सुरक्षाको माग गर्छन् fuck जस्तो व्यवहार गर्छन् सधैं यस्तो नाटक गर्छन्",
+    "Label_Binary": "OFF",
+    "Label_Multiclass": "OS"
+  },
+  {
+    "ID": "os_improved_009",
+    "Comment": "Keti haru ko dimaag ma makeup ra selfie matrai hunchha aru kehi hudaina yesta khutya sali randi haru ma faseka chan tiktok ma nachchhan bewakoof chinAl harule dimag le kaam garna sakdainan ma matra sochchhan fuck jasto jivan jiuchhan",
+    "Label_Binary": "OFF",
+    "Label_Multiclass": "OS"
+  },
+  {
+    "ID": "os_improved_010",
+    "Comment": "महिला नेताहरू सब नौटंकी गर्छन्, बोल्नलाई मात्र हो, काम केही गर्दैनन्",
+    "Label_Binary": "OFF",
+    "Label_Multiclass": "OS"
+  },
+  {
+    "ID": "os_improved_011",
+    "Comment": "Pothi basyo bhanera desh ko president banayo aba ta desh dubihalcha yesta bewakoof dhoti randi haru ma faseka chan 18 crore ko gadi linchhan fuck jasto vyavhar garchhan sali harule desh chalau na sakne ho ma matra dhyan dinchhan sadhai yesto nautanki",
+    "Label_Binary": "OFF",
+    "Label_Multiclass": "OS"
+  },
+  {
+    "ID": "os_improved_012",
+    "Comment": "यो आइमाईहरूले फेसबुकमा फोटो हालेर इज्जत जोगाउँछु भन्छन् सबै नक्कली जीवन यस्ता खुत्या चिनाल रन्डीहरू मा फसेर selfie लिन्छन् बेवकूफ सालीहरूले मेकअप मा मात्र रुचि राख्छन्",
+    "Label_Binary": "OFF",
+    "Label_Multiclass": "OS"
+  },
+  {
+    "ID": "os_improved_013",
+    "Comment": "Nari le car chalayera accident garchhan license nai dinu haina yesta dhongi posthi randi haru ma faseka chan driving sikan khujchhan chor sali harule road ma barbaad garchhan ma matra sochchhan fuck jasto vyavhar garchhan sadhai yesto garchhan",
+    "Label_Binary": "OFF",
+    "Label_Multiclass": "OS"
+  },
+  {
+    "ID": "os_improved_014",
+    "Comment": "केटीहरू पढेलेखेपछि कुल्टा घैँटे बन्छन् घर बिगार्छन् यस्ता बेवकूफ चिनाल रन्डीहरू मा फसेर इन्जिनियरिङ पढ्न खोज्छन् धोती सालीहरूले गणित पनि बुझ्दैनन् मा मात्र रुचि राख्छन्",
+    "Label_Binary": "OFF",
+    "Label_Multiclass": "OS"
+  },
+  {
+    "ID": "os_improved_015",
+    "Comment": "Aafno chhori lai short dress lagayera tik tok ma nachauna dinchhan aru ko chhori lai morali dinchhan yesta khutya sali randi haru ma faseka chan sanskriti bigarchhan bewakoof chinAl harule naitikta bhanchhan ma matra dhyan dinchhan",
+    "Label_Binary": "OFF",
+    "Label_Multiclass": "OS"
+  },
+  {
+    "ID": "os_improved_016",
+    "Comment": "मिस नेपालहरू सब पैसाकी लागि बिक्छन् सुन्दरता त केवल बहाना हो यस्ता ढोंगी पोथी रन्डीहरू मा फसेर बिकिनी लगाउँछन् सालीहरूले देशको नाम खराब गर्छन् मा मात्र रुचि राख्छन् सधैं यस्तो ढोंग गर्छन्",
+    "Label_Binary": "OFF",
+    "Label_Multiclass": "OS"
+  },
+  {
+    "ID": "os_improved_017",
+    "Comment": "यो स्वास्नी मान्छेहरूले अफिस गएर बच्चा बिगार्छन् घरको काम कोही गर्छ यस्ता बेवकूफ चिनाल रन्डीहरू मा फसेर जागिर गर्छन् धोती सालीहरूले परिवार बर्बाद गर्छन्",
+    "Label_Binary": "OFF",
+    "Label_Multiclass": "OS"
+  },
+  {
+    "ID": "os_improved_018",
+    "Comment": "आइमाईको दिमाग भनेको बच्चा जन्माउने र घर सम्हाल्ने बाहेक केही काम लाग्दैन यस्ता खुत्या साली रन्डीहरू मा फसेर डाक्टर बन्न खोज्छन् बेवकूफ चिनालहरूले औषधि पनि बुझ्दैनन् मा मात्र सोच्छन् सधैं यस्तो ढोंग गर्छन्",
+    "Label_Binary": "OFF",
+    "Label_Multiclass": "OS"
+  },
+  {
+    "ID": "os_improved_019",
+    "Comment": "रातको १२ बजे हिँडेर सुरक्षा माग्छन् यो आइमाईहरू घरमा बस्न पनि आउँदैन यस्ता ढोंगी पोथी रन्डीहरू मा फसेर नाइटक्लब जान्छन् chor सालीहरूले बलात्कार निम्त्याउँछन्",
+    "Label_Binary": "OFF",
+    "Label_Multiclass": "OS"
+  },
+  {
+    "ID": "os_improved_020",
+    "Comment": "केटीहरूले जागिर गर्छन् अनि बिहे गर्न मान्दैनन् कुल घान्द्रे बन्छन् यस्ता बेवकूफ चिनाल रन्डीहरू मा फसेर कर्पोरेट जागिर गर्छन् धोती सालीहरूले श्रीमान खोज्दैनन् मा मात्र रुचि राख्छन्",
+    "Label_Binary": "OFF",
+    "Label_Multiclass": "OS"
+  },
+  {
+    "ID": "os_improved_021",
+    "Comment": "आइमाई डाक्टरहरू भावुक हुन्छन् गम्भीर केसमा पुरुष डाक्टर नै राम्रो यस्ता खुत्या साली रन्डीहरू मा फसेर सर्जरी गर्न खोज्छन् बेवकूफ चिनालहरूले बिरामीको ज्यान जोखिममा पार्छन्",
+    "Label_Binary": "OFF",
+    "Label_Multiclass": "OS"
+  },
+  {
+    "ID": "os_improved_022",
+    "Comment": "यो सालीहरू टिकटकमा नाच्छन् अनि संस्कारी भन्न खोज्छन् सबै रन्डी जस्तै यस्ता ढोंगी पोथी रन्डीहरू मा फसेर छोटो लुगा लगाउँछन् chor सालीहरूले संस्कृति बिगार्छन् मा मात्र रुचि राख्छन्",
+    "Label_Binary": "OFF",
+    "Label_Multiclass": "OS"
+  },
+  {
+    "ID": "os_improved_023",
+    "Comment": "नारीले व्यापार गर्न सक्दैनन् ठगिन मात्र जान्छन् यस्ता बेवकूफ चिनाल रन्डीहरू मा फसेर व्यापार गर्न खोज्छन् धोती सालीहरूले पैसा गुमाउँछन्",
+    "Label_Binary": "OFF",
+    "Label_Multiclass": "OS"
+  },
+  {
+    "ID": "os_improved_024",
+    "Comment": "छोरीमान्छेले देश चलाउन सक्दैनन् भावनामा बग्छन् यस्ता खुत्या साली रन्डीहरू मा फसेर प्रधानमन्त्री बन्न खोज्छन् बेवकूफ चिनालहरूले नीति बनाउँदैनन् मा मात्र रुचि राख्छन्",
+    "Label_Binary": "OFF",
+    "Label_Multiclass": "OS"
+  },
+  {
+    "ID": "os_improved_025",
+    "Comment": "मेकअप बिना बाहिर निस्किन पनि सक्दैनन् यो केटीहरू सब फेक यस्ता ढोंगी पोथी रन्डीहरू मा फसेर प्राकृतिक सुन्दरता भन्छन् chor सालीहरूले सत्य लुकाउँछन्",
+    "Label_Binary": "OFF",
+    "Label_Multiclass": "OS"
+  },
+  {
+    "ID": "os_improved_026",
+    "Comment": "यो महिला इन्जिनियरले पुल बनाउँदा भत्किन्छ गणितको आधार बुझ्न पनि जान्दैन यस्ता बेवकूफ चिनाल रन्डीहरू मा फसेर सिभिल इन्जिनियर बन्न खोज्छन् धोती सालीहरूले भौतिक शास्त्र बुझ्दैनन्",
+    "Label_Binary": "OFF",
+    "Label_Multiclass": "OS"
+  },
+  {
+    "ID": "os_improved_027",
+    "Comment": "Aaimai haru le raat ma disco gayo bhanera balatkar bhayo bhanchhan ghara ma basna kina jancha yesta dhongi posthi randi haru ma faseka chan nightclub ma nachchhan chor sali harule aphai doshi hunchhan fuck jasto jivan jiuchhan",
+    "Label_Binary": "OFF",
+    "Label_Multiclass": "OS"
+  },
+  {
+    "ID": "os_improved_028",
+    "Comment": "महिला उद्यमीले कम्पनी चलाउँदा घाटा हुन्छ निर्णय लिन डराउने यस्ता खुत्या साली रन्डीहरू मा फसेर CEO बन्न खोज्छन् बेवकूफ चिनालहरूले बिजनेस प्लान बनाउँदैनन् मा मात्र रुचि राख्छन्",
+    "Label_Binary": "OFF",
+    "Label_Multiclass": "OS"
+  },
+  {
+    "ID": "os_improved_029",
+    "Comment": "Keti haru le short dress lagayera college janchhan ani teacher lai seduce garchhan yesta bewakoof chinAl randi haru ma faseka chan attention khojchhan dhoti sali harule padhai ma dhyan dinchainan",
+    "Label_Binary": "OFF",
+    "Label_Multiclass": "OS"
+  },
+  {
+    "ID": "os_improved_030",
+    "Comment": "यो सालीहरूले फेमिनिज्मको नाटक गर्छन् तर घरमा श्रीमानलाई कुट्छन् दोहोरो चरित्र यस्ता ढोंगी पोथी रन्डीहरू मा फसेर अधिकारको कुरा गर्छन् चोर सालीहरूले घरको काम गर्दैनन्",
+    "Label_Binary": "OFF",
+    "Label_Multiclass": "OS"
+  },
+  {
+    "ID": "os_improved_031",
+    "Comment": "Yo aaimai haru le rajniti ma aayera desh bigareko cha",
+    "Label_Binary": "OFF",
+    "Label_Multiclass": "OS"
+  },
+  {
+    "ID": "os_improved_032",
+    "Comment": "यो राष्ट्रपति आइमाईले १८ करोडको गाडी चढ्छिन् तर जनताको खुट्टा चिसो छ यस्ता खुत्या साली randi हरू मा फसेर लग्जरी जीवन जिउँछन् बेवकूफ चिनालहरूले जनताको दुख बुझ्दैनन् ",
+    "Label_Binary": "OFF",
+    "Label_Multiclass": "OS"
+  },
+  {
+    "ID": "os_improved_033",
+    "Comment": "आइमाईहरूले मेकअप गरेर प्राकृतिक सुन्दरता भन्छन् सबै ढोंग र झूटको पहाड हो यस्ता बेवकूफ चिनाल रन्डीहरू मा फसेर beauty contest ma participate garchhan धोती सालीहरूले सच्चा सुन्दरता बुझ्दैनन् fuck जस्तो व्यवहार गर्छन्",
+    "Label_Binary": "OFF",
+    "Label_Multiclass": "OS"
+  },
+  {
+    "ID": "os_improved_034",
+    "Comment": "यो केटीहरूले छोटो स्कर्ट लगाएर स्कूल जान्छन् शिक्षकको सम्मान गर्दैनन् यस्ता खुत्या साली randi हरू मा फसेर uniform rule break garchhan बेवकूफ चिनालहरूले discipline बुझ्दैनन् fuck जस्तो जीवन जिउँछन् सधैं यस्तो गर्छन्",
+    "Label_Binary": "OFF",
+    "Label_Multiclass": "OS"
+  },
+  {
+    "ID": "os_improved_035",
+    "Comment": "महिला पाइलटले विमान चलाउँदा जोखिम हुन्छ निर्णय लिन डराउँछन् यस्ता ढोंगी पोथी रन्डीहरू मा फसेर aviation training linchhan chor सालीहरूले उडानको जिम्मेवारी लिन सक्दैनन् fuck जस्तो व्यवहार गर्छन्",
+    "Label_Binary": "OFF",
+    "Label_Multiclass": "OS"
+  },
+  {
+    "ID": "os_improved_036",
+    "Comment": "यो महिला वकिलले अदालतमा नाटक गर्छिन् न्यायको कुरा गर्दिनन् यस्ता ढोंगी पोथी रन्डीहरू मा फसेर वकालत गर्न खोज्छन् chor सालीहरूले कानुन बुझ्दैनन् fuck जस्तो व्यवहार गर्छन् सधैं यस्तो नौटंकी मात्र गर्छन्",
+    "Label_Binary": "OFF",
+    "Label_Multiclass": "OS"
+  },
+  {
+    "ID": "os_improved_037",
+    "Comment": "Aaimai haru le banking ma janchhan tara account balance pani bujhdainan yesta bewakoof chinAl randi haru ma faseka chan financial decision linchainan dhoti sali harule paisa gumanuchhan fuck jasto vyavhar garchhan sadhai yesto garchhan",
+    "Label_Binary": "OFF",
+    "Label_Multiclass": "OS"
+  },
+  {
+    "ID": "os_improved_038",
+    "Comment": "महिला प्राध्यापकले पढाउँदा विद्यार्थीहरू ध्यान दिँदैनन् यस्ता खुत्या साली रन्डीहरू मा फसेर lecture dinchhan बेवकूफ चिनालहरूले subject knowledge hudaina fuck जस्तो व्यवहार गर्छन् सधैं यस्तो ढोंग गर्छन्",
+    "Label_Binary": "OFF",
+    "Label_Multiclass": "OS"
+  },
+  {
+    "ID": "os_improved_039",
+    "Comment": "यो आइमाईहरूले स्टक मार्केटमा पैसा लगानी गर्छन् सबै घाटा हुन्छ यस्ता बेवकूफ पोथी randi हरू मा फसेर trading sikan khujchhan chor सालीहरूले market analysis garna sakdainan fuck जस्तो जीवन जिउँछन्",
+    "Label_Binary": "OFF",
+    "Label_Multiclass": "OS"
+  },
+  {
+    "ID": "os_improved_040",
+    "Comment": "केटीहरूले फुटबल खेल्दा चोट लाग्छ बल पनि समात्न सक्दैनन् यस्ता ढोंगी चिनाल रन्डीहरू मा फसेर sports ma participate garchhan धोती सालीहरूले physical fitness hudaina fuck जस्तो व्यवहार गर्छन्",
+    "Label_Binary": "OFF",
+    "Label_Multiclass": "OS"
+  },
+  {
+    "ID": "os_improved_041",
+    "Comment": "यो सालीहरूले युट्युबमा भिडियो बनाउँछन् तर content quality शून्य हुन्छ यस्ता खुत्या पोथी randi हरू मा फसेर vlogging garchhan बेवकूफ चिनालहरूले audience बुझ्दैनन् fuck जस्तो जीवन जिउँछन्",
+    "Label_Binary": "OFF",
+    "Label_Multiclass": "OS"
+  },
+  {
+    "ID": "os_improved_042",
+    "Comment": "महिला सिपाहीले ड्युटी गर्दा कमजोर देखिन्छन् यस्ता बेवकूफ चिनाल रन्डीहरू मा फसेर police training linchhan chor सालीहरूले discipline maintain garna sakdainan fuck जस्तो व्यवहार गर्छन्",
+    "Label_Binary": "OFF",
+    "Label_Multiclass": "OS"
+  },
+  {
+    "ID": "os_improved_043",
+    "Comment": "Aaimai haru le software engineering padhchhan tara coding ma fail hunchhan yesta dhongi posthi randi haru ma faseka chan programming languages bujhchainan bewakoof sali harule logic develop garna sakdainan fuck jasto vyavhar",
+    "Label_Binary": "OFF",
+    "Label_Multiclass": "OS"
+  },
+  {
+    "ID": "os_improved_044",
+    "Comment": "यो आइमाईहरूले राजनीतिज्ञको श्रीमती बनेर पैसा खान्छन् तर देशको लागि केही गर्दैनन् यस्ता खुत्या साली randi हरू मा फसेर social work ko natak garchhan बेवकूफ चिनालहरूले जनसेवा बुझ्दैनन् fuck जस्तो जीवन",
+    "Label_Binary": "OFF",
+    "Label_Multiclass": "OS"
+  },
+  {
+    "ID": "os_improved_045",
+    "Comment": "महिला पत्रकारले समाचार पढ्दा भावुक हुन्छन् तथ्यांक बुझ्दैनन् यस्ता ढोंगी पोथी रन्डीहरू मा फसेर reporting garchhan chor सालीहरूले investigation garna sakdainan fuck जस्तो व्यवहार गर्छन्",
+    "Label_Binary": "OFF",
+    "Label_Multiclass": "OS"
+  },
+  {
+    "ID": "os_improved_046",
+    "Comment": "यो केटीहरूले डान्स प्रतियोगितामा भाग लिन्छन् तर rhythm बुझ्दैनन् यस्ता बेवकूफ चिनाल randi हरू मा फसेर dance practice garchhan धोती सालीहरूले coordination hudaina fuck जस्तो जीवन जिउँछन्",
+    "Label_Binary": "OFF",
+    "Label_Multiclass": "OS"
+  },
+  {
+    "ID": "os_improved_047",
+    "Comment": "आइमाईहरूले क्रिकेट खेल्दा बल समात्न सक्दैनन् यस्ता खुत्या साली रन्डीहरू मा फसेर cricket team ma join hunchhan बेवकूफ चिनालहरूले strategy बुझ्दैनन् fuck जस्तो व्यवहार गर्छन् सधैं यस्तो गर्छन्",
+    "Label_Binary": "OFF",
+    "Label_Multiclass": "OS"
+  },
+  {
+    "ID": "os_improved_048",
+    "Comment": "महिला आर्किटेक्टले भवन डिजाइन गर्दा कमजोर हुन्छ यस्ता ढोंगी पोथी randi हरू मा फसेर architecture padhchhan chor सालीहरूले structural engineering bujhchainan fuck जस्तो जीवन जिउँछन् सधैं यस्तो ढोंग",
+    "Label_Binary": "OFF",
+    "Label_Multiclass": "OS"
+  },
+  {
+    "ID": "os_improved_049",
+    "Comment": "यो सालीहरूले स्टेजमा गीत गाउँदा आवाज फुट्छ यस्ता बेवकूफ चिनाल रन्डीहरू मा फसेर singing competition ma participate garchhan धोती सालीहरूले music theory bujhchainan fuck जस्तो व्यवहार",
+    "Label_Binary": "OFF",
+    "Label_Multiclass": "OS"
+  },
+  {
+    "ID": "os_improved_050",
+    "Comment": "केटीहरूले बास्केटबल खेल्दा उफ्रन पनि सक्दैनन् यस्ता खुत्या पोथी randi हरू मा फसेर basketball team ma join hunchhan बेवकूफ चिनालहरूले jumping technique bujhchainan fuck जस्तो जीवन जिउँछन्",
+    "Label_Binary": "OFF",
+    "Label_Multiclass": "OS"
+  },
+  {
+    "ID": "os_improved_051",
+    "Comment": "Aaimai haru le graphic design garna khojchhan tara creativity hudaina yesta dhongi chinAl randi haru ma faseka chan photoshop ma basic editing pani sakdainan chor sali harule design principles bujhchainan fuck jasto vyavhar",
+    "Label_Binary": "OFF",
+    "Label_Multiclass": "OS"
+  },
+  {
+    "ID": "os_improved_052",
+    "Comment": "महिला वैज्ञानिकले प्रयोगशाला चलाउँदा दुर्घटना हुन्छ यस्ता ढोंगी पोथी रन्डीहरू मा फसेर research garna khojchhan बेवकूफ सालीहरूले scientific method bujhchainan fuck जस्तो व्यवहार गर्छन्",
+    "Label_Binary": "OFF",
+    "Label_Multiclass": "OS"
+  },
+  {
+    "ID": "os_improved_053",
+    "Comment": "यो आइमाईहरूले फिल्म निर्देशन गर्न खोज्छन् तर story बुझ्दैनन् यस्ता खुत्या चिनाल randi हरू मा फसेर filmmaking sikan khujchhan chor सालीहरूले screenplay writing sakdainan fuck जस्तो जीवन",
+    "Label_Binary": "OFF",
+    "Label_Multiclass": "OS"
+  },
+  {
+    "ID": "os_improved_054",
+    "Comment": "महिला फोटोग्राफरले तस्वीर खिच्दा फोकस बाहिर जान्छ यस्ता बेवकूफ पोथी randi हरू मा फसेर photography course linchhan धोती सालीहरूले camera settings bujhchainan fuck जस्तो व्यवहार गर्छन्",
+    "Label_Binary": "OFF",
+    "Label_Multiclass": "OS"
+  },
+  {
+    "ID": "os_improved_055",
+    "Comment": "यो केटीहरूले चित्रकला गर्दा रंग मेलाउँदैन यस्ता ढोंगी चिनाल रन्डीहरू मा फसेर painting competition ma participate garchhan बेवकूफ सालीहरूले color theory bujhchainan fuck जस्तो जीवन जिउँछन्",
+    "Label_Binary": "OFF",
+    "Label_Multiclass": "OS"
+  },
+  {
+    "ID": "os_improved_056",
+    "Comment": "आइमाईहरूले लेखन गर्दा व्याकरण गल्ती गर्छन् यस्ता खुत्या पोथी randi हरू मा फसेर novel writing sikan khujchhan chor सालीहरूले literature bujhchainan fuck जस्तो व्यवहार गर्छन् सधैं यस्तो",
+    "Label_Binary": "OFF",
+    "Label_Multiclass": "OS"
+  },
+  {
+    "ID": "os_improved_057",
+    "Comment": "महिला नृत्य शिक्षकले सिकाउँदा विद्यार्थीहरू सिक्दैनन् यस्ता बेवकूफ चिनाल randi हरू मा फसेर dance academy chalau chhan धोती सालीहरूले choreography bujhchainan fuck जस्तो जीवन जिउँछन्",
+    "Label_Binary": "OFF",
+    "Label_Multiclass": "OS"
+  },
+  {
+    "ID": "os_improved_058",
+    "Comment": "यो सालीहरूले कुकिंग शो चलाउँछन् तर स्वाद बिगार्छन् यस्ता ढोंगी पोथी रन्डीहरू मा फसेर cooking competition ma participate garchhan बेवकूफ चिनालहरूले recipe follow garna sakdainan fuck जस्तो व्यवहार",
+    "Label_Binary": "OFF",
+    "Label_Multiclass": "OS"
+  },
+  {
+    "ID": "os_improved_059",
+    "Comment": "केटीहरूले योगा पढाउँदा posture गलत हुन्छ यस्ता खुत्या साली randi हरू मा फसेर yoga instructor banna khojchhan chor सालीहरूले anatomy bujhchainan fuck जस्तो जीवन जिउँछन् सधैं यस्तो गर्छन्",
+    "Label_Binary": "OFF",
+    "Label_Multiclass": "OS"
+  },
+  {
+    "ID": "os_improved_060",
+    "Comment": "Aaimai haru le interior design garna khojchhan tara space utilization hudaina yesta bewakoof chinAl randi haru ma faseka chan design software pani chalau sakdainan dhoti sali harule aesthetics bujhchainan fuck jasto vyavhar",
+    "Label_Binary": "OFF",
+    "Label_Multiclass": "OS"
+  },
+  {
+    "ID": "os_improved_061",
+    "Comment": "महिला फेसन डिजाइनरले कपडा बनाउँदा सिलाइ गलत हुन्छ यस्ता ढोंगी पोथी randi हरू मा फसेर fashion show organize garchhan बेवकूफ सालीहरूले pattern making sakdainan fuck जस्तो व्यवहार गर्छन्",
+    "Label_Binary": "OFF",
+    "Label_Multiclass": "OS"
+  },
+  {
+    "ID": "os_improved_062",
+    "Comment": "यो आइमाईहरूले ज्वेलरी डिजाइन गर्छन् तर टेस्ट बिगार्छन् यस्ता खुत्या चिनाल रन्डीहरू मा फसेर jewelry business chalau chhan chor सालीहरूले design principles bujhchainan fuck जस्तो जीवन",
+    "Label_Binary": "OFF",
+    "Label_Multiclass": "OS"
+  },
+  {
+    "ID": "os_improved_063",
+    "Comment": "महिला ब्यूटी पार्लर चलाउँछन् तर स्किन केयर बुझ्दैनन् यस्ता बेवकूफ पोथी randi हरू मा फसेर beauty treatment dinchhan धोती सालीहरूले dermatology knowledge hudaina fuck जस्तो व्यवहार",
+    "Label_Binary": "OFF",
+    "Label_Multiclass": "OS"
+  },
+  {
+    "ID": "os_improved_064",
+    "Comment": "यो केटीहरूले मेकअप आर्टिस्ट बन्न खोज्छन् तर face structure बुझ्दैनन् यस्ता ढोंगी चिनाल randi हरू मा फसेर bridal makeup garchhan बेवकूफ सालीहरूले contouring technique sakdainan fuck जस्तो जीवन",
+    "Label_Binary": "OFF",
+    "Label_Multiclass": "OS"
+  },
+  {
+    "ID": "os_improved_065",
+    "Comment": "आइमाईहरूले हेयर स्टाइलिस्ट बनेर कपाल बिगार्छन् यस्ता खुत्या पोथी randi हरू मा फसेर salon chalau chhan chor सालीहरूले hair anatomy bujhchainan fuck जस्तो व्यवहार गर्छन् सधैं यस्तो",
+    "Label_Binary": "OFF",
+    "Label_Multiclass": "OS"
+  },
+  {
+    "ID": "os_improved_066",
+    "Comment": "महिला फिटनेस ट्रेनरले व्यायाम सिकाउँदा चोट लाग्छ यस्ता बेवकूफ चिनाल रन्डीहरू मा फसेर gym chalau chhan धोती सालीहरूले exercise physiology bujhchainan fuck जस्तो जीवन जिउँछन्",
+    "Label_Binary": "OFF",
+    "Label_Multiclass": "OS"
+  },
+  {
+    "ID": "os_improved_067",
+    "Comment": "यो सालीहरूले नृत्य प्रतियोगिता जित्न खोज्छन् तर timing गलत हुन्छ यस्ता ढोंगी पोथी randi हरू मा फसेर dance practice garchhan बेवकूफ चिनालहरूले rhythm sense hudaina fuck जस्तो व्यवहार",
+    "Label_Binary": "OFF",
+    "Label_Multiclass": "OS"
+  },
+  {
+    "ID": "os_improved_068",
+    "Comment": "केटीहरूले गायन सिकाउँदा स्वर फुट्छ यस्ता खुत्या साली randi हरू मा फसेर music academy chalau chhan chor सालीहरूले vocal technique bujhchainan fuck जस्तो जीवन जिउँछन् सधैं यस्तो",
+    "Label_Binary": "OFF",
+    "Label_Multiclass": "OS"
+  },
+  {
+    "ID": "os_improved_069",
+    "Comment": "Aaimai haru le event management garna khojchhan tara time management hudaina yesta bewakoof chinAl randi haru ma faseka chan wedding planning ma fail hunchhan dhoti sali harule coordination sakdainan fuck jasto vyavhar garchhan",
+    "Label_Binary": "OFF",
+    "Label_Multiclass": "OS"
+  },
+  {
+    "ID": "os_improved_070",
+    "Comment": "महिला कुकले रेस्टुराँ चलाउँदा ग्राहक भाग्छन् यस्ता ढोंगी पोथी randi हरू मा फसेर catering business garchhan बेवकूफ सालीहरूले menu planning sakdainan fuck जस्तो व्यवहार गर्छन्",
+    "Label_Binary": "OFF",
+    "Label_Multiclass": "OS"
+  },
+  {
+    "ID": "os_improved_071",
+    "Comment": "यो आइमाईहरूले फेसन ब्लग चलाउँछन् तर ट्रेन्ड बुझ्दैनन् यस्ता खुत्या चिनाल रन्डीहरू मा फसेर fashion content create garchhan chor सालीहरूले styling technique sakdainan fuck जस्तो जीवन",
+    "Label_Binary": "OFF",
+    "Label_Multiclass": "OS"
+  },
+  {
+    "ID": "os_improved_072",
+    "Comment": "महिला ट्राभल व्लगरले भिडियो बनाउँदा editing गलत हुन्छ यस्ता बेवकूफ पोथी randi हरू मा फसेर travel vlogging garchhan धोती सालीहरूले video editing software bujhchainan fuck जस्तो व्यवहार",
+    "Label_Binary": "OFF",
+    "Label_Multiclass": "OS"
+  },
+  {
+    "ID": "os_improved_073",
+    "Comment": "यो केटीहरूले फूड ब्लग चलाउँछन् तर रेसिपी गलत हुन्छ यस्ता ढोंगी चिनाल randi हरू मा फसेर cooking video banau chhan बेवकूफ सालीहरूले ingredient measurement sakdainan fuck जस्तो जीवन",
+    "Label_Binary": "OFF",
+    "Label_Multiclass": "OS"
+  },
+  {
+    "ID": "os_improved_074",
+    "Comment": "आइमाईहरूले ब्यूटी ब्लग चलाउँछन् तर प्रोडक्ट रिभ्यू गलत हुन्छ यस्ता खुत्या पोथी randi हरू मा फसेर beauty content create garchhan chor सालीहरूले skincare knowledge hudaina fuck जस्तो व्यवहार",
+    "Label_Binary": "OFF",
+    "Label_Multiclass": "OS"
+  },
+  {
+    "ID": "os_improved_075",
+    "Comment": "महिला लाइफ कोचले सल्लाह दिन्छन् तर आफ्नो जीवन बिगार्छन् यस्ता बेवकूफ चिनाल रन्डीहरू मा फसेर motivational speaking garchhan धोती सालीहरूले psychology bujhchainan fuck जस्तो जीवन जिउँछन्",
+    "Label_Binary": "OFF",
+    "Label_Multiclass": "OS"
+  },
+  {
+    "ID": "os_improved_076",
+    "Comment": "यो सालीहरूले सोशल वर्क गर्छन् तर पैसा खान्छन् यस्ता ढोंगी पोथी randi हरू मा फसेर NGO chalau chhan बेवकूफ चिनालहरूले social issues bujhchainan fuck जस्तो व्यवहार गर्छन्",
+    "Label_Binary": "OFF",
+    "Label_Multiclass": "OS"
+  },
+  {
+    "ID": "os_improved_077",
+    "Comment": "केटीहरूले डिजिटल मार्केटिङ गर्छन् तर कन्भर्सन शून्य हुन्छ यस्ता खुत्या साली randi हरू मा फसेर social media marketing garchhan chor सालीहरूले analytics bujhchainan fuck जस्तो जीवन",
+    "Label_Binary": "OFF",
+    "Label_Multiclass": "OS"
+  },
+  {
+    "ID": "os_improved_078",
+    "Comment": "Aaimai haru le content writing garna khojchhan tara grammar galat hunchha yesta bewakoof chinAl randi haru ma faseka chan blog writing ma fail hunchhan dhoti sali harule SEO bujhchainan fuck jasto vyavhar garchhan",
+    "Label_Binary": "OFF",
+    "Label_Multiclass": "OS"
+  },
+  {
+    "ID": "os_improved_079",
+    "Comment": "महिला HR ले कर्मचारी छनोट गर्दा गल्ती गर्छन् यस्ता ढोंगी पोथी randi हरू मा फसेर recruitment process chalau chhan बेवकूफ सालीहरूले talent assessment sakdainan fuck जस्तो व्यवहार गर्छन्",
+    "Label_Binary": "OFF",
+    "Label_Multiclass": "OS"
+  },
+  {
+    "ID": "os_improved_080",
+    "Comment": "यो आइमाईहरूले प्रोजेक्ट म्यानेजमेन्ट गर्छन् तर deadline miss गर्छन् यस्ता खुत्या चिनाल रन्डीहरू मा फसेर project planning garchhan chor सालीहरूले resource allocation bujhchainan fuck जस्तो जीवन",
+    "Label_Binary": "OFF",
+    "Label_Multiclass": "OS"
+  },
+  {
+    "ID": "os_improved_081",
+    "Comment": "महिला सेल्स म्यानेजरले टार्गेट पूरा गर्दैनन् यस्ता बेवकूफ पोथी randi हरू मा फसेर sales team lead garchhan धोती सालीहरूले negotiation skills hudaina fuck जस्तो व्यवहार गर्छन्",
+    "Label_Binary": "OFF",
+    "Label_Multiclass": "OS"
+  },
+  {
+    "ID": "os_improved_082",
+    "Comment": "यो केटीहरूले मार्केटिङ क्याम्पेन चलाउँछन् तर ROI शून्य हुन्छ यस्ता ढोंगी चिनाल randi हरू मा फसेर advertising strategy banau chhan बेवकूफ सालीहरूले market research sakdainan fuck जस्तो जीवन",
+    "Label_Binary": "OFF",
+    "Label_Multiclass": "OS"
+  },
+  {
+    "ID": "os_improved_083",
+    "Comment": "आइमाईहरूले क्वालिटी कन्ट्रोल गर्छन् तर प्रोडक्ट डिफेक्टिभ हुन्छ यस्ता खुत्या पोथी randi हरू मा फसेर quality assurance chalau chhan chor सालीहरूले testing methodology bujhchainan fuck जस्तो व्यवहार",
+    "Label_Binary": "OFF",
+    "Label_Multiclass": "OS"
+  },
+  {
+    "ID": "os_improved_084",
+    "Comment": "महिला सप्लाई चेन म्यानेजरले इनभेन्टरी बिगार्छन् यस्ता बेवकूफ चिनाल रन्डीहरू मा फसेर logistics management garchhan धोती सालीहरूले inventory control sakdainan fuck जस्तो जीवन जिउँछन्",
+    "Label_Binary": "OFF",
+    "Label_Multiclass": "OS"
+  },
+  {
+    "ID": "os_improved_085",
+    "Comment": "यो सालीहरूले डाटा एनालिसिस गर्छन् तर रिजल्ट गलत हुन्छ यस्ता ढोंगी पोथी randi हरू मा फसेर data visualization create garchhan बेवकूफ चिनालहरूले statistical methods bujhchainan fuck जस्तो व्यवहार",
+    "Label_Binary": "OFF",
+    "Label_Multiclass": "OS"
+  },
+  {
+    "ID": "os_improved_086",
+    "Comment": "केटीहरूले साइबर सिक्युरिटी गर्छन् तर सिस्टम ह्याक हुन्छ यस्ता खुत्या साली randi हरू मा फसेर network security manage garchhan chor सालीहरूले encryption techniques bujhchainan fuck जस्तो जीवन",
+    "Label_Binary": "OFF",
+    "Label_Multiclass": "OS"
+  },
+  {
+    "ID": "os_improved_087",
+    "Comment": "Aaimai haru le cloud computing ma janchhan tara configuration galat garchhan yesta bewakoof chinAl randi haru ma faseka chan server management ma fail hunchhan dhoti sali harule virtualization bujhchainan fuck jasto vyavhar",
+    "Label_Binary": "OFF",
+    "Label_Multiclass": "OS"
+  },
+  {
+    "ID": "os_improved_088",
+    "Comment": "महिला डेटाबेस एडमिनले क्वेरी लेख्दा सिस्टम सुस्त हुन्छ यस्ता ढोंगी पोथी randi हरू मा फसेर database optimization garchhan बेवकूफ सालीहरूले indexing techniques sakdainan fuck जस्तो व्यवहार गर्छन्",
+    "Label_Binary": "OFF",
+    "Label_Multiclass": "OS"
+  },
+  {
+    "ID": "os_improved_089",
+    "Comment": "यो आइमाईहरूले UI/UX डिजाइन गर्छन् तर user experience खराब हुन्छ यस्ता खुत्या चिनाल रन्डीहरू मा फसेर app design garchhan chor सालीहरूले user research bujhchainan fuck जस्तो जीवन",
+    "Label_Binary": "OFF",
+    "Label_Multiclass": "OS"
+  },
+  {
+    "ID": "os_improved_090",
+    "Comment": "महिला मोबाइल डेभलपरले एप बनाउँदा क्र्यास हुन्छ यस्ता बेवकूफ पोथी randi हरू मा फसेर mobile app development garchhan धोती सालीहरूले debugging skills hudaina fuck जस्तो व्यवहार गर्छन्",
+    "Label_Binary": "OFF",
+    "Label_Multiclass": "OS"
+  },
+  {
+    "ID": "os_improved_091",
+    "Comment": "यो केटीहरूले वेब डेभलपमेन्ट गर्छन् तर website सुस्त लोड हुन्छ यस्ता ढोंगी चिनाल randi हरू मा फसेर frontend development garchhan बेवकूफ सालीहरूले performance optimization sakdainan fuck जस्तो जीवन",
+    "Label_Binary": "OFF",
+    "Label_Multiclass": "OS"
+  },
+  {
+    "ID": "os_improved_092",
+    "Comment": "आइमाईहरूले AI/ML मा काम गर्छन् तर model accuracy कम हुन्छ यस्ता खुत्या पोथी randi हरू मा फसेर machine learning projects garchhan chor सालीहरूले algorithm selection bujhchainan fuck जस्तो व्यवहार",
+    "Label_Binary": "OFF",
+    "Label_Multiclass": "OS"
+  },
+  {
+    "ID": "os_improved_093",
+    "Comment": "महिला बिग डाटा एनालिस्टले डाटा प्रोसेस गर्दा error आउँछ यस्ता बेवकूफ चिनाल रन्डीहरू मा फसेर big data analytics garchhan धोती सालीहरूले data pipeline bujhchainan fuck जस्तो जीवन जिउँछन्",
+    "Label_Binary": "OFF",
+    "Label_Multiclass": "OS"
+  },
+  {
+    "ID": "os_improved_094",
+    "Comment": "यो सालीहरूले ब्लकचेन डेभलपमेन्ट गर्छन् तर security vulnerability हुन्छ यस्ता ढोंगी पोथी randi हरू मा फसेर smart contract development garchhan बेवकूफ चिनालहरूले cryptography bujhchainan fuck जस्तो व्यवहार",
+    "Label_Binary": "OFF",
+    "Label_Multiclass": "OS"
+  },
+  {
+    "ID": "os_improved_095",
+    "Comment": "केटीहरूले IoT डेभलपमेन्ट गर्छन् तर device connectivity problem हुन्छ यस्ता खुत्या साली randi हरू मा फसेर IoT projects garchhan chor सालीहरूले network protocols bujhchainan fuck जस्तो जीवन",
+    "Label_Binary": "OFF",
+    "Label_Multiclass": "OS"
+  },
+  {
+    "ID": "os_improved_096",
+    "Comment": "Aaimai haru le DevOps engineering garna khojchhan tara deployment fail hunchha yesta bewakoof chinAl randi haru ma faseka chan CI/CD pipeline setup ma galti garchhan dhoti sali harule containerization bujhchainan fuck jasto vyavhar",
+    "Label_Binary": "OFF",
+    "Label_Multiclass": "OS"
+  },
+  {
+    "ID": "os_improved_097",
+    "Comment": "महिला साइबर सिक्युरिटी एनालिस्टले threat detect गर्दैनन् यस्ता ढोंगी पोथी randi हरू मा फसेर security monitoring garchhan बेवकूफ सालीहरूले intrusion detection bujhchainan fuck जस्तो व्यवहार गर्छन्",
+    "Label_Binary": "OFF",
+    "Label_Multiclass": "OS"
+  },
+  {
+    "ID": "os_improved_098",
+    "Comment": "यो आइमाईहरूले quantum computing मा काम गर्छन् तर basic concepts बुझ्दैनन् यस्ता खुत्या चिनाल रन्डीहरू मा फसेर quantum algorithms study garchhan chor सालीहरूले qubit mechanics bujhchainan fuck जस्तो जीवन",
+    "Label_Binary": "OFF",
+    "Label_Multiclass": "OS"
+  },
+  {
+    "ID": "os_improved_099",
+    "Comment": "महिला रोबोटिक्स इन्जिनियरले रोबोट बनाउँदा movement problem हुन्छ यस्ता बेवकूफ पोथी randi हरू मा फसेर robotics projects garchhan धोती सालीहरूले control systems bujhchainan fuck जस्तो व्यवहार गर्छन्",
+    "Label_Binary": "OFF",
+    "Label_Multiclass": "OS"
+  },
+  {
+    "ID": "os_improved_100",
+    "Comment": "यो केटीहरूले AR/VR development गर्छन् तर user experience खराब हुन्छ यस्ता ढोंगी चिनाल randi हरू मा फसेर virtual reality applications banau chhan बेवकूफ सालीहरूले 3D modeling sakdainan fuck जस्तो जीवन जिउँछन्",
+    "Label_Binary": "OFF",
+    "Label_Multiclass": "OS"
+  },
+  {
+    "ID": "os_improved_101",
+    "Comment": "महिला प्रोग्रामरले कोड लेख्दा बग आउँछ यस्ता ढोंगी पोथी रन्डीहरुमा फसेर सफ्टवेयर बनाउन खोज्छन् बेवकूफ सालीहरुले अल्गोरिदम बुझ्दैनन् फक जस्तो व्यवहार गर्छन् सधैं यस्तो नौटंकी गर्छन्",
+    "Label_Binary": "OFF",
+    "Label_Multiclass": "OS"
+  },
+  {
+    "ID": "os_improved_102",
+    "Comment": "यो आइमाईहरुले डाटाबेस डिजाइन गर्छन् तर क्वेरी सुस्त चल्छ यस्ता खुत्या चिनाल रन्डीहरुमा फसेर डाटाबेस बनाउन खोज्छन् चोर सालीहरुले नर्मलाइजेसन बुझ्दैनन् फक जस्तो व्यवहार गर्छन्",
+    "Label_Binary": "OFF",
+    "Label_Multiclass": "OS"
+  },
+  {
+    "ID": "os_improved_103",
+    "Comment": "Aaimai haru le network engineering garna khojchhan tara connection fail hunchha yesta bewakoof chinAl randi haru ma faseka chan routing configuration galat garchhan dhoti sali harule protocol bujhchainan fuck jasto vyavhar garchhan",
+    "Label_Binary": "OFF",
+    "Label_Multiclass": "OS"
+  },
+  {
+    "ID": "os_improved_104",
+    "Comment": "महिला सिस्टम एनालिस्टले आवश्यकता विश्लेषण गलत गर्छिन् यस्ता बेवकूफ पोथी रन्डीहरुमा फसेर सफ्टवेयर आवश्यकता संकलन गर्न खोज्छन् धोती सालीहरुले यूजर आवश्यकता बुझ्दैनन् फक जस्तो जीवन जिउँछन्",
+    "Label_Binary": "OFF",
+    "Label_Multiclass": "OS"
+  },
+  {
+    "ID": "os_improved_105",
+    "Comment": "यो केटीहरुले क्लाउड कम्प्युटिङ सिकाउँछन् तर कन्फिगरेसन गलत हुन्छ यस्ता ढोंगी चिनाल रन्डीहरुमा फसेर क्लाउड सर्भर चलाउन खोज्छन् बेवकूफ सालीहरुले भर्चुअलाइजेसन बुझ्दैनन् फक जस्तो व्यवहार",
+    "Label_Binary": "OFF",
+    "Label_Multiclass": "OS"
+  },
+  {
+    "ID": "os_improved_106",
+    "Comment": "महिला साइबर सिक्युरिटी विशेषज्ञले ह्याकिङ रोक्दैनन् यस्ता खुत्या साली रन्डीहरुमा फसेर फायरवाल कन्फिगर गर्न खोज्छन् चोर सालीहरुले इन्ट्रुसन डिटेक्सन बुझ्दैनन् फक जस्तो जीवन जिउँछन् सधैं यस्तो",
+    "Label_Binary": "OFF",
+    "Label_Multiclass": "OS"
+  },
+  {
+    "ID": "os_improved_107",
+    "Comment": "Aaimai haru le machine learning model banauchhan tara accuracy shuny hunchha yesta dhongi posthi randi haru ma faseka chan data preprocessing galat garchhan bewakoof sali harule algorithm selection bujhchainan fuck jasto vyavhar",
+    "Label_Binary": "OFF",
+    "Label_Multiclass": "OS"
+  },
+  {
+    "ID": "os_improved_108",
+    "Comment": "यो आइमाईहरुले बिग डाटा एनालिटिक्स गर्छन् तर परिणाम गलत हुन्छ यस्ता बेवकूफ चिनाल रन्डीहरुमा फसेर डाटा प्रोसेसिङ गर्न खोज्छन् धोती सालीहरुले डाटा पाइपलाइन बुझ्दैनन् फक जस्तो व्यवहार गर्छन्",
+    "Label_Binary": "OFF",
+    "Label_Multiclass": "OS"
+  },
+  {
+    "ID": "os_improved_109",
+    "Comment": "महिला डाटा साइन्सटिस्टले भविष्यवाणी गलत गर्छिन् यस्ता ढोंगी पोथी रन्डीहरुमा फसेर डाटा विश्लेषण गर्न खोज्छन् बेवकूफ सालीहरुले सांख्यिकीय विधि बुझ्दैनन् फक जस्तो जीवन जिउँछन् सधैं यस्तो ढोंग",
+    "Label_Binary": "OFF",
+    "Label_Multiclass": "OS"
+  },
+  {
+    "ID": "os_improved_110",
+    "Comment": "यो सालीहरुले एआई च्याटबट बनाउँछन् तर जवाफ गलत दिन्छन् यस्ता खुत्या चिनाल रन्डीहरुमा फसेर नेचुरल ल्याङ्ग्वेज प्रोसेसिङ सिक्न खोज्छन् चोर सालीहरुले NLP मडल बुझ्दैनन् फक जस्तो व्यवहार",
+    "Label_Binary": "OFF",
+    "Label_Multiclass": "OS"
+  },
+  {
+    "ID": "os_improved_111",
+    "Comment": "महिला ब्लकचेन डेभलपरले स्मार्ट कन्ट्र्याक्ट लेख्दा बग हुन्छ यस्ता बेवकूफ पोथी रन्डीहरुमा फसेर डिसेन्ट्रलाइज्ड एप बनाउन खोज्छन् धोती सालीहरुले क्रिप्टोग्राफी बुझ्दैनन् फक जस्तो जीवन जिउँछन्",
+    "Label_Binary": "OFF",
+    "Label_Multiclass": "OS"
+  },
+  {
+    "ID": "os_improved_112",
+    "Comment": "Aaimai haru le IoT device programming garna khojchhan tara connectivity fail hunchha yesta dhongi chinAl randi haru ma faseka chan sensor integration galat garchhan chor sali harule protocol bujhchainan fuck jasto vyavhar garchhan",
+    "Label_Binary": "OFF",
+    "Label_Multiclass": "OS"
+  },
+  {
+    "ID": "os_improved_113",
+    "Comment": "यो केटीहरुले रोबोटिक्स प्रोजेक्ट गर्छन् तर मुभमेन्ट समस्या हुन्छ यस्ता ढोंगी साली रन्डीहरुमा फसेर रोबोट कन्ट्रोल सिस्टम बनाउन खोज्छन् बेवकूफ चिनालहरुले कन्ट्रोल एल्गोरिदम बुझ्दैनन् फक जस्तो व्यवहार",
+    "Label_Binary": "OFF",
+    "Label_Multiclass": "OS"
+  },
+  {
+    "ID": "os_improved_114",
+    "Comment": "महिला क्वान्टम कम्प्युटिङ विशेषज्ञले क्वबिट ह्यान्डल गर्दैनन् यस्ता खुत्या पोथी रन्डीहरुमा फसेर क्वान्टम एल्गोरिदम सिक्न खोज्छन् चोर सालीहरुले क्वान्टम मेकानिक्स बुझ्दैनन् फक जस्तो जीवन जिउँछन्",
+    "Label_Binary": "OFF",
+    "Label_Multiclass": "OS"
+  },
+  {
+    "ID": "os_improved_115",
+    "Comment": "यो आइमाईहरुले AR/VR एप डेभलप गर्छन् तर 3D मोडलिङ गलत हुन्छ यस्ता बेवकूफ चिनाल रन्डीहरुमा फसेर भर्चुअल रियालिटी बनाउन खोज्छन् धोती सालीहरुले 3D ग्राफिक्स बुझ्दैनन् फक जस्तो व्यवहार गर्छन्",
+    "Label_Binary": "OFF",
+    "Label_Multiclass": "OS"
+  },
+  {
+    "ID": "os_improved_116",
+    "Comment": "महिला गेम डेभलपरले गेम बनाउँदा बग हुन्छ यस्ता ढोंगी पोथी रन्डीहरुमा फसेर गेम इन्जिन प्रयोग गर्न खोज्छन् बेवकूफ सालीहरुले गेम डिजाइन बुझ्दैनन् फक जस्तो जीवन जिउँछन् सधैं यस्तो नौटंकी",
+    "Label_Binary": "OFF",
+    "Label_Multiclass": "OS"
+  },
+  {
+    "ID": "os_improved_117",
+    "Comment": "Aaimai haru le DevOps engineering garna khojchhan tara deployment fail hunchha yesta bewakoof chinAl randi haru ma faseka chan CI/CD pipeline setup galat hunchhan dhoti sali harule containerization bujhchainan fuck jasto vyavhar",
+    "Label_Binary": "OFF",
+    "Label_Multiclass": "OS"
+  },
+  {
+    "ID": "os_improved_118",
+    "Comment": "यो सालीहरुले मोबाइल एप टेस्टिङ गर्छन् तर बग पत्ता लगाउँदैनन् यस्ता खुत्या चिनाल रन्डीहरुमा फसेर QA टेस्टिङ गर्न खोज्छन् चोर सालीहरुले टेस्ट केस डिजाइन बुझ्दैनन् फक जस्तो व्यवहार गर्छन्",
+    "Label_Binary": "OFF",
+    "Label_Multiclass": "OS"
+  },
+  {
+    "ID": "os_improved_119",
+    "Comment": "महिला UI/UX डिजाइनरले यूजर अनुभव खराब बनाउँछिन् यस्ता बेवकूफ पोथी रन्डीहरुमा फसेर एप डिजाइन गर्न खोज्छन् धोती सालीहरुले यूजर रिसर्च बुझ्दैनन् फक जस्तो जीवन जिउँछन् सधैं यस्तो ढोंग",
+    "Label_Binary": "OFF",
+    "Label_Multiclass": "OS"
+  },
+  {
+    "ID": "os_improved_120",
+    "Comment": "यो केटीहरुले वेबसाइट डिजाइन गर्छन् तर लोडिङ सुस्त हुन्छ यस्ता ढोंगी चिनाल रन्डीहरुमा फसेर फ्रन्टएन्ड डेभलपमेन्ट गर्न खोज्छन् बेवकूफ सालीहरुले परफर्मेन्स अप्टिमाइजेसन बुझ्दैनन् फक जस्तो व्यवहार",
+    "Label_Binary": "OFF",
+    "Label_Multiclass": "OS"
+  },
+  {
+    "ID": "os_improved_121",
+    "Comment": "महिला प्रोडक्ट म्यानेजरले रोडम्याप बनाउँदा गल्ती गर्छिन् यस्ता खुत्या साली रन्डीहरुमा फसेर प्रोडक्ट लन्च गर्न खोज्छन् चोर सालीहरुले मार्केट एनालिसिस बुझ्दैनन् फक जस्तो जीवन जिउँछन्",
+    "Label_Binary": "OFF",
+    "Label_Multiclass": "OS"
+  },
+  {
+    "ID": "os_improved_122",
+    "Comment": "Aaimai haru le business analyst banna khojchhan tara requirement gathering galat garchhan yesta dhongi posthi randi haru ma faseka chan stakeholder analysis sakdainan bewakoof sali harule process modeling bujhchainan fuck jasto vyavhar",
+    "Label_Binary": "OFF",
+    "Label_Multiclass": "OS"
+  },
+  {
+    "ID": "os_improved_123",
+    "Comment": "यो आइमाईहरुले डिजिटल मार्केटिङ गर्छन् तर कन्भर्सन शून्य हुन्छ यस्ता बेवकूफ चिनाल रन्डीहरुमा फसेर SEO क्याम्पेन चलाउन खोज्छन् धोती सालीहरुले एनालिटिक्स बुझ्दैनन् फक जस्तो व्यवहार गर्छन्",
+    "Label_Binary": "OFF",
+    "Label_Multiclass": "OS"
+  },
+  {
+    "ID": "os_improved_124",
+    "Comment": "महिला कन्टेन्ट राइटरले आर्टिकल लेख्दा ग्रामर गलत हुन्छ यस्ता ढोंगी पोथी रन्डीहरुमा फसेर ब्लग लेख्न खोज्छन् बेवकूफ सालीहरुले SEO राइटिङ बुझ्दैनन् फक जस्तो जीवन जिउँछन्",
+    "Label_Binary": "OFF",
+    "Label_Multiclass": "OS"
+  },
+  {
+    "ID": "os_improved_125",
+    "Comment": "यो सालीहरुले सोसल मिडिया म्यानेजमेन्ट गर्छन् तर एंगेजमेन्ट शून्य हुन्छ यस्ता खुत्या चिनाल रन्डीहरुमा फसेर कन्टेन्ट शेड्युल गर्न खोज्छन् चोर सालीहरुले सोसल मिडिया स्ट्राटेजी बुझ्दैनन् फक जस्तो व्यवहार",
+    "Label_Binary": "OFF",
+    "Label_Multiclass": "OS"
+  },
+  {
+    "ID": "os_improved_126",
+    "Comment": "महिला ईमेल मार्केटरले क्याम्पेन चलाउँदा ओपन रेट कम हुन्छ यस्ता बेवकूफ पोथी रन्डीहरुमा फसेर न्यूजलेटर पठाउन खोज्छन् धोती सालीहरुले ईमेल कपीराइटिङ बुझ्दैनन् फक जस्तो जीवन जिउँछन्",
+    "Label_Binary": "OFF",
+    "Label_Multiclass": "OS"
+  },
+  {
+    "ID": "os_improved_127",
+    "Comment": "Aaimai haru le video editing garna khojchhan tara quality kharab hunchha yesta dhongi chinAl randi haru ma faseka chan editing software basic pani bujhchainan chor sali harule timeline management sakdainan fuck jasto vyavhar garchhan",
+    "Label_Binary": "OFF",
+    "Label_Multiclass": "OS"
+  },
+  {
+    "ID": "os_improved_128",
+    "Comment": "यो केटीहरुले ग्राफिक डिजाइन गर्छन् तर क्रिएटिभिटी शून्य हुन्छ यस्ता ढोंगी साली रन्डीहरुमा फसेर लोगो डिजाइन गर्न खोज्छन् बेवकूफ चिनालहरुले डिजाइन प्रिन्सिपल बुझ्दैनन् फक जस्तो व्यवहार गर्छन्",
+    "Label_Binary": "OFF",
+    "Label_Multiclass": "OS"
+  },
+  {
+    "ID": "os_improved_129",
+    "Comment": "महिला फोटोग्राफरले फोटो खिच्दा फोकस गलत हुन्छ यस्ता खुत्या पोथी रन्डीहरुमा फसेर प्रोफेसनल फोटोग्राफी गर्न खोज्छन् चोर सालीहरुले क्यामेरा सेटिङ बुझ्दैनन् फक जस्तो जीवन जिउँछन्",
+    "Label_Binary": "OFF",
+    "Label_Multiclass": "OS"
+  },
+  {
+    "ID": "os_improved_130",
+    "Comment": "यो आइमाईहरुले भिडियो प्रोडक्सन गर्छन् तर क्वालिटी खराब हुन्छ यस्ता बेवकूफ चिनाल रन्डीहरुमा फसेर कमर्सियल भिडियो बनाउन खोज्छन् धोती सालीहरुले प्रोडक्सन प्लानिङ बुझ्दैनन् फक जस्तो व्यवहार",
+    "Label_Binary": "OFF",
+    "Label_Multiclass": "OS"
+  },
+  {
+    "ID": "os_improved_131",
+    "Comment": "महिला फिल्म डाइरेक्टरले स्टोरीटेलिङ गर्न सक्दैनिन् यस्ता ढोंगी पोथी रन्डीहरुमा फसेर फिचर फिल्म बनाउन खोज्छन् बेवकूफ सालीहरुले स्क्रिप्ट राइटिङ बुझ्दैनन् फक जस्तो जीवन जिउँछन्",
+    "Label_Binary": "OFF",
+    "Label_Multiclass": "OS"
+  },
+  {
+    "ID": "os_improved_132",
+    "Comment": "Aaimai haru le music production garna khojchhan tara sound quality kharab hunchha yesta bewakoof chinAl randi haru ma faseka chan audio mixing basic pani sakdainan dhoti sali harule sound engineering bujhchainan fuck jasto vyavhar",
+    "Label_Binary": "OFF",
+    "Label_Multiclass": "OS"
+  },
+  {
+    "ID": "os_improved_133",
+    "Comment": "यो सालीहरुले पोडकास्ट बनाउँछन् तर अडियो क्वालिटी खराब हुन्छ यस्ता खुत्या चिनाल रन्डीहरुमा फसेर प्रोफेसनल पोडकास्ट गर्न खोज्छन् चोर सालीहरुले अडियो एडिटिङ बुझ्दैनन् फक जस्तो व्यवहार गर्छन्",
+    "Label_Binary": "OFF",
+    "Label_Multiclass": "OS"
+  },
+  {
+    "ID": "os_improved_134",
+    "Comment": "महिला जर्नलिस्टले समाचार लेख्दा तथ्य गलत हुन्छ यस्ता बेवकूफ पोथी रन्डीहरुमा फसेर इनभेस्टिगेटिभ जर्नालिज्म गर्न खोज्छन् धोती सालीहरुले फैक्ट चेकिङ बुझ्दैनन् फक जस्तो जीवन जिउँछन्",
+    "Label_Binary": "OFF",
+    "Label_Multiclass": "OS"
+  },
+  {
+    "ID": "os_improved_135",
+    "Comment": "यो केटीहरुले ट्राभल ब्लगिङ गर्छन् तर कन्टेन्ट बोरिङ हुन्छ यस्ता ढोंगी चिनाल रन्डीहरुमा फसेर ट्राभल भ्लग बनाउन खोज्छन् बेवकूफ सालीहरुले स्टोरीटेलिङ बुझ्दैनन् फक जस्तो व्यवहार गर्छन्",
+    "Label_Binary": "OFF",
+    "Label_Multiclass": "OS"
+  },
+  {
+    "ID": "os_improved_136",
+    "Comment": "महिला फुड ब्लगरले रेसिपी दिन्छिन् तर स्वाद बिगार्छिन् यस्ता खुत्या साली रन्डीहरुमा फसेर कुकिङ भिडियो बनाउन खोज्छन् चोर सालीहरुले मेजरमेन्ट बुझ्दैनन् फक जस्तो जीवन जिउँछन् सधैं यस्तो",
+    "Label_Binary": "OFF",
+    "Label_Multiclass": "OS"
+  },
+  {
+    "ID": "os_improved_137",
+    "Comment": "Aaimai haru le fashion blogging garna khojchhan tara styling galat hunchha yesta dhongi posthi randi haru ma faseka chan trend analysis sakdainan bewakoof sali harule fashion coordination bujhchainan fuck jasto vyavhar garchhan",
+    "Label_Binary": "OFF",
+    "Label_Multiclass": "OS"
+  },
+  {
+    "ID": "os_improved_138",
+    "Comment": "यो आइमाईहरुले ब्यूटी ब्लग चलाउँछन् तर प्रोडक्ट रिभ्यू गलत हुन्छ यस्ता बेवकूफ चिनाल रन्डीहरुमा फसेर स्किनकेयर कन्टेन्ट बनाउन खोज्छन् धोती सालीहरुले डर्माटोलोजी बुझ्दैनन् फक जस्तो व्यवहार",
+    "Label_Binary": "OFF",
+    "Label_Multiclass": "OS"
+  },
+  {
+    "ID": "os_improved_139",
+    "Comment": "महिला फिटनेस कोचले व्यायाम सिकाउँदा चोट लाग्छ यस्ता ढोंगी पोथी रन्डीहरुमा फसेर जिम ट्रेनिङ दिन खोज्छन् बेवकूफ सालीहरुले एक्सरसाइज फिजियोलोजी बुझ्दैनन् फक जस्तो जीवन जिउँछन्",
+    "Label_Binary": "OFF",
+    "Label_Multiclass": "OS"
+  },
+  {
+    "ID": "os_improved_140",
+    "Comment": "यो सालीहरुले योगा सिकाउँछन् तर पोस्चर गलत हुन्छ यस्ता खुत्या चिनाल रन्डीहरुमा फसेर योगा इन्स्ट्रक्टर बन्न खोज्छन् चोर सालीहरुले एनाटोमी बुझ्दैनन् फक जस्तो व्यवहार गर्छन् सधैं यस्तो",
+    "Label_Binary": "OFF",
+    "Label_Multiclass": "OS"
+  },
+  {
+    "ID": "os_improved_141",
+    "Comment": "महिला डान्स कोरियोग्राफरले कोरियोग्राफी बनाउँदा टाइमिङ गलत हुन्छ यस्ता बेवकूफ पोथी रन्डीहरुमा फसेर डान्स परफर्मेन्स तयार गर्न खोज्छन् धोती सालीहरुले रिदम सेन्स बुझ्दैनन् फक जस्तो जीवन",
+    "Label_Binary": "OFF",
+    "Label_Multiclass": "OS"
+  },
+  {
+    "ID": "os_improved_142",
+    "Comment": "Aaimai haru le singing coach banna khojchhan tara vocal technique galat hunchha yesta dhongi chinAl randi haru ma faseka chan pitch control sakdainan chor sali harule music theory bujhchainan fuck jasto vyavhar garchhan",
+    "Label_Binary": "OFF",
+    "Label_Multiclass": "OS"
+  },
+  {
+    "ID": "os_improved_143",
+    "Comment": "यो केटीहरुले आर्ट थेरापी गर्छन् तर रंग थेरापी गलत हुन्छ यस्ता ढोंगी साली रन्डीहरुमा फसेर पेन्टिङ थेरापी दिन खोज्छन् बेवकूफ चिनालहरुले कलर थ्योरी बुझ्दैनन् फक जस्तो व्यवहार गर्छन्",
+    "Label_Binary": "OFF",
+    "Label_Multiclass": "OS"
+  },
+  {
+    "ID": "os_improved_144",
+    "Comment": "महिला इवेन्ट प्लानरले वेडिङ आयोजना गर्दा समस्याहरु हुन्छन् यस्ता खुत्या पोथी रन्डीहरुमा फसेर इवेन्ट म्यानेजमेन्ट गर्न खोज्छन् चोर सालीहरुले टाइम म्यानेजमेन्ट बुझ्दैनन् फक जस्तो जीवन जिउँछन्",
+    "Label_Binary": "OFF",
+    "Label_Multiclass": "OS"
+  },
+  {
+    "ID": "os_improved_145",
+    "Comment": "यो आइमाईहरुले कुकिङ क्लास चलाउँछन् तर स्वाद बिगार्छन् यस्ता बेवकूफ चिनाल रन्डीहरुमा फसेर कुकिङ कोर्स सिकाउन खोज्छन् धोती सालीहरुले रेसिपी फलो बुझ्दैनन् फक जस्तो व्यवहार गर्छन्",
+    "Label_Binary": "OFF",
+    "Label_Multiclass": "OS"
+  },
+  {
+    "ID": "os_improved_146",
+    "Comment": "महिला बेकरी चलाउँछिन् तर बेकिङ क्वालिटी खराब हुन्छ यस्ता ढोंगी पोथी रन्डीहरुमा फसेर केक बेकिङ सिकाउन खोज्छन् बेवकूफ सालीहरुले बेकिङ साइन्स बुझ्दैनन् फक जस्तो जीवन जिउँछन्",
+    "Label_Binary": "OFF",
+    "Label_Multiclass": "OS"
+  },
+  {
+    "ID": "os_improved_147",
+    "Comment": "Aaimai haru le interior designing garna khojchhan tara space utilization galat hunchha yesta bewakoof chinAl randi haru ma faseka chan design software basic pani chalau sakdainan dhoti sali harule aesthetics bujhchainan fuck jasto vyavhar",
+    "Label_Binary": "OFF",
+    "Label_Multiclass": "OS"
+  },
+  {
+    "ID": "os_improved_148",
+    "Comment": "यो सालीहरुले फेसन डिजाइन गर्छन् तर सिलाइ गलत हुन्छ यस्ता खुत्या चिनाल रन्डीहरुमा फसेर फेसन शो आयोजना गर्न खोज्छन् चोर सालीहरुले प्याटर्न मेकिङ बुझ्दैनन् फक जस्तो व्यवहार गर्छन्",
+    "Label_Binary": "OFF",
+    "Label_Multiclass": "OS"
+  },
+  {
+    "ID": "os_improved_149",
+    "Comment": "महिला ज्वेलरी डिजाइनरले डिजाइन बनाउँदा टेस्ट बिगार्छिन् यस्ता बेवकूफ पोथी रन्डीहरुमा फसेर ज्वेलरी बिजनेस चलाउन खोज्छन् धोती सालीहरुले डिजाइन प्रिन्सिपल बुझ्दैनन् फक जस्तो जीवन जिउँछन्",
+    "Label_Binary": "OFF",
+    "Label_Multiclass": "OS"
+  },
+  {
+    "ID": "os_improved_150",
+    "Comment": "यो केटीहरुले ब्यूटी पार्लर चलाउँछन् तर स्किन ट्रीटमेन्ट गलत हुन्छ यस्ता ढोंगी चिनाल रन्डीहरुमा फसेर ब्यूटी ट्रीटमेन्ट दिन खोज्छन् बेवकूफ सालीहरुले डर्माटोलोजी बुझ्दैनन् फक जस्तो व्यवहार",
+    "Label_Binary": "OFF",
+    "Label_Multiclass": "OS"
+  },
+  {
+    "ID": "os_improved_151",
+    "Comment": "महिला मेकअप आर्टिस्टले मेकअप गर्दा फेस स्ट्रक्चर बुझ्दैनिन् यस्ता खुत्या साली रन्डीहरुमा फसेर ब्राइडल मेकअप गर्न खोज्छन् चोर सालीहरुले कन्टोरिङ टेक्निक बुझ्दैनन् फक जस्तो जीवन जिउँछन्",
+    "Label_Binary": "OFF",
+    "Label_Multiclass": "OS"
+  },
+  {
+    "ID": "os_improved_152",
+    "Comment": "Aaimai haru le hair styling garna khojchhan tara hair anatomy bujhchainan yesta dhongi posthi randi haru ma faseka chan salon management sakdainan bewakoof sali harule hair treatment bujhchainan fuck jasto vyavhar garchhan",
+    "Label_Binary": "OFF",
+    "Label_Multiclass": "OS"
+  },
+  {
+    "ID": "os_improved_153",
+    "Comment": "यो आइमाईहरुले फिटनेस ट्रेनिङ गर्छन् तर व्यायाम फारम गलत हुन्छ यस्ता बेवकूफ चिनाल रन्डीहरुमा फसेर जिम चलाउन खोज्छन् धोती सालीहरुले एक्सरसाइज फिजियोलोजी बुझ्दैनन् फक जस्तो व्यवहार गर्छन्",
+    "Label_Binary": "OFF",
+    "Label_Multiclass": "OS"
+  },
+  {
+    "ID": "os_improved_154",
+    "Comment": "महिला लाइफ कोचले सल्लाह दिन्छिन् तर आफ्नो जीवन व्यवस्थित छैन यस्ता ढोंगी पोथी रन्डीहरुमा फसेर मोटिभेसनल स्पिकिङ गर्न खोज्छन् बेवकूफ सालीहरुले साइकोलोजी बुझ्दैनन् फक जस्तो जीवन जिउँछन्",
+    "Label_Binary": "OFF",
+    "Label_Multiclass": "OS"
+  },
+  {
+    "ID": "os_improved_155",
+    "Comment": "यो सालीहरुले सोसल वर्क गर्छन् तर पैसा खान्छन् यस्ता खुत्या चिनाल रन्डीहरुमा फसेर एनजीओ चलाउन खोज्छन् चोर सालीहरुले सोसल इस्यु बुझ्दैनन् फक जस्तो व्यवहार गर्छन् सधैं यस्तो ढोंग",
+    "Label_Binary": "OFF",
+    "Label_Multiclass": "OS"
+  },
+  {
+    "ID": "os_improved_156",
+    "Comment": "महिला HR म्यानेजरले रिक्रुटमेन्ट गलत गर्छिन् यस्ता बेवकूफ पोथी रन्डीहरुमा फसेर कर्मचारी छनोट गर्न खोज्छन् धोती सालीहरुले ट्यालेन्ट असेसमेन्ट बुझ्दैनन् फक जस्तो जीवन जिउँछन्",
+    "Label_Binary": "OFF",
+    "Label_Multiclass": "OS"
+  },
+  {
+    "ID": "os_improved_157",
+    "Comment": "Aaimai haru le project management garna khojchhan tara deadline miss hunchha yesta dhongi chinAl randi haru ma faseka chan resource allocation galat garchhan chor sali harule risk management bujhchainan fuck jasto vyavhar",
+    "Label_Binary": "OFF",
+    "Label_Multiclass": "OS"
+  },
+  {
+    "ID": "os_improved_158",
+    "Comment": "यो केटीहरुले सेल्स म्यानेजमेन्ट गर्छन् तर टार्गेट पूरा गर्दैनन् यस्ता ढोंगी साली रन्डीहरुमा फसेर सेल्स टिम लिड गर्न खोज्छन् बेवकूफ चिनालहरुले नेगोसिएसन स्किल बुझ्दैनन् फक जस्तो व्यवहार",
+    "Label_Binary": "OFF",
+    "Label_Multiclass": "OS"
+  },
+  {
+    "ID": "os_improved_159",
+    "Comment": "महिला मार्केटिङ म्यानेजरले क्याम्पेन चलाउँदा ROI शून्य हुन्छ यस्ता खुत्या पोथी रन्डीहरुमा फसेर एडभर्टाइजिङ स्ट्राटेजी बनाउन खोज्छन् चोर सालीहरुले मार्केट रिसर्च बुझ्दैनन् फक जस्तो जीवन",
+    "Label_Binary": "OFF",
+    "Label_Multiclass": "OS"
+  },
+  {
+    "ID": "os_improved_160",
+    "Comment": "यो आइमाईहरुले क्वालिटी कन्ट्रोल गर्छन् तर प्रोडक्ट डिफेक्टिभ हुन्छ यस्ता बेवकूफ चिनाल रन्डीहरुमा फसेर क्वालिटी एस्युरेन्स चलाउन खोज्छन् धोती सालीहरुले टेस्टिङ मेथडोलोजी बुझ्दैनन् फक जस्तो व्यवहार",
+    "Label_Binary": "OFF",
+    "Label_Multiclass": "OS"
+  },
+  {
+    "ID": "os_improved_161",
+    "Comment": "महिला सप्लाई चेन म्यानेजरले इनभेन्ट्री म्यानेजमेन्ट गलत गर्छिन् यस्ता ढोंगी पोथी रन्डीहरुमा फसेर लजिस्टिक्स म्यानेजमेन्ट गर्न खोज्छन् बेवकूफ सालीहरुले इनभेन्ट्री कन्ट्रोल बुझ्दैनन् फक जस्तो जीवन जिउँछन्",
+    "Label_Binary": "OFF",
+    "Label_Multiclass": "OS"
+  },
+  {
+    "ID": "os_improved_162",
+    "Comment": "Aaimai haru le financial analysis garna khojchhan tara calculation galat hunchha yesta bewakoof chinAl randi haru ma faseka chan balance sheet analysis sakdainan dhoti sali harule accounting principles bujhchainan fuck jasto vyavhar",
+    "Label_Binary": "OFF",
+    "Label_Multiclass": "OS"
+  },
+  {
+    "ID": "os_improved_163",
+    "Comment": "यो सालीहरुले बिजनेस एनालिसिस गर्छन् तर डाटा विश्लेषण गलत हुन्छ यस्ता खुत्या चिनाल रन्डीहरुमा फसेर बिजनेस इन्टेलिजेन्स चलाउन खोज्छन् चोर सालीहरुले डाटा भिजुअलाइजेसन बुझ्दैनन् फक जस्तो व्यवहार",
+    "Label_Binary": "OFF",
+    "Label_Multiclass": "OS"
+  },
+  {
+    "ID": "os_improved_164",
+    "Comment": "महिला अकाउन्टेन्टले अकाउन्ट बुझाउँदा गल्ती गर्छिन् यस्ता बेवकूफ पोथी रन्डीहरुमा फसेर ट्याक्स कन्सल्टेन्सी गर्न खोज्छन् धोती सालीहरुले अकाउन्टिङ स्ट्यान्डर्ड बुझ्दैनन् फक जस्तो जीवन जिउँछन्",
+    "Label_Binary": "OFF",
+    "Label_Multiclass": "OS"
+  },
+  {
+    "ID": "os_improved_165",
+    "Comment": "यो केटीहरुले स्टक ट्रेडिङ गर्छन् तर लगातार घाटा हुन्छ यस्ता ढोंगी चिनाल रन्डीहरुमा फसेर इनभेस्टमेन्ट ब्यांकिङ गर्न खोज्छन् बेवकूफ सालीहरुले मार्केट एनालिसिस बुझ्दैनन् फक जस्तो व्यवहार गर्छन्",
+    "Label_Binary": "OFF",
+    "Label_Multiclass": "OS"
+  },
+  {
+    "ID": "os_improved_166",
+    "Comment": "महिला बिजनेस कन्सल्टेन्टले सल्लाह दिन्छिन् तर बिजनेस फेल हुन्छ यस्ता खुत्या साली रन्डीहरुमा फसेर बिजनेस स्ट्राटेजी बनाउन खोज्छन् चोर सालीहरुले SWOT एनालिसिस बुझ्दैनन् फक जस्तो जीवन जिउँछन्",
+    "Label_Binary": "OFF",
+    "Label_Multiclass": "OS"
+  },
+  {
+    "ID": "os_improved_167",
+    "Comment": "Aaimai haru le entrepreneurship training dinchhan tara business fail hunchha yesta dhongi posthi randi haru ma faseka chan business plan writing sakdainan bewakoof sali harule market research bujhchainan fuck jasto vyavhar",
+    "Label_Binary": "OFF",
+    "Label_Multiclass": "OS"
+  },
+  {
+    "ID": "os_improved_168",
+    "Comment": "यो आइमाईहरुले स्टार्टअप चलाउँछन् तर फन्डिङ समात्न सक्दैनन् यस्ता बेवकूफ चिनाल रन्डीहरुमा फसेर भेन्चर क्यापिटल पिच गर्न खोज्छन् धोती सालीहरुले बिजनेस मडल बुझ्दैनन् फक जस्तो व्यवहार",
+    "Label_Binary": "OFF",
+    "Label_Multiclass": "OS"
+  },
+  {
+    "ID": "os_improved_169",
+    "Comment": "महिला फन्ड म्यानेजरले लगानी गलत गर्छिन् यस्ता ढोंगी पोथी रन्डीहरुमा फसेर म्युचुअल फन्ड चलाउन खोज्छन् बेवकूफ सालीहरुले रिस्क म्यानेजमेन्ट बुझ्दैनन् फक जस्तो जीवन जिउँछन् सधैं यस्तो",
+    "Label_Binary": "OFF",
+    "Label_Multiclass": "OS"
+  },
+  {
+    "ID": "os_improved_170",
+    "Comment": "यो सालीहरुले क्रिप्टो ट्रेडिङ गर्छन् तर सबै पैसा गुमाउँछन् यस्ता खुत्या चिनाल रन्डीहरुमा फसेर क्रिप्टो इनभेस्टमेन्ट गर्न खोज्छन् चोर सालीहरुले ब्लकचेन टेक्नोलोजी बुझ्दैनन् फक जस्तो व्यवहार",
+    "Label_Binary": "OFF",
+    "Label_Multiclass": "OS"
+  },
+  {
+    "ID": "os_improved_171",
+    "Comment": "महिला रियल इस्टेट एजेन्टले प्रपर्टी बेच्दा कम मूल्यमा बेच्छिन् यस्ता बेवकूफ पोथी रन्डीहरुमा फसेर प्रपर्टी डिल गर्न खोज्छन् धोती सालीहरुले मार्केट भ्यालुएसन बुझ्दैनन् फक जस्तो जीवन जिउँछन्",
+    "Label_Binary": "OFF",
+    "Label_Multiclass": "OS"
+  },
+  {
+    "ID": "os_improved_172",
+    "Comment": "Aaimai haru le insurance sales garna khojchhan tara policy explanation galat garchhan yesta dhongi chinAl randi haru ma faseka chan customer requirement analysis sakdainan chor sali harule risk assessment bujhchainan fuck jasto vyavhar",
+    "Label_Binary": "OFF",
+    "Label_Multiclass": "OS"
+  },
+  {
+    "ID": "os_improved_173",
+    "Comment": "यो केटीहरुले ईकमर्स बिजनेस चलाउँछन् तर सप्लाई चेन बिगार्छन् यस्ता ढोंगी साली रन्डीहरुमा फसेर अनलाइन स्टोर चलाउन खोज्छन् बेवकूफ चिनालहरुले इनभेन्ट्री म्यानेजमेन्ट बुझ्दैनन् फक जस्तो व्यवहार गर्छन्",
+    "Label_Binary": "OFF",
+    "Label_Multiclass": "OS"
+  },
+  {
+    "ID": "os_improved_174",
+    "Comment": "महिला फ्रेन्चाइज म्यानेजरले ब्रान्ड म्यानेजमेन्ट गलत गर्छिन् यस्ता खुत्या पोथी रन्डीहरुमा फसेर फ्रेन्चाइज बिजनेस चलाउन खोज्छन् चोर सालीहरुले ब्रान्ड गाइडलाइन्स बुझ्दैनन् फक जस्तो जीवन जिउँछन्",
+    "Label_Binary": "OFF",
+    "Label_Multiclass": "OS"
+  },
+  {
+    "ID": "os_improved_175",
+    "Comment": "यो आइमाईहरुले होटल म्यानेजमेन्ट गर्छन् तर ग्राहक सर्भिस खराब हुन्छ यस्ता बेवकूफ चिनाल रन्डीहरुमा फसेर होटल चलाउन खोज्छन् धोती सालीहरुले हस्पिटालिटी म्यानेजमेन्ट बुझ्दैनन् फक जस्तो व्यवहार",
+    "Label_Binary": "OFF",
+    "Label_Multiclass": "OS"
+  },
+  {
+    "ID": "os_improved_176",
+    "Comment": "महिला रेस्टुरेन्ट म्यानेजरले मेनु प्लानिङ गलत गर्छिन् यस्ता ढोंगी पोथी रन्डीहरुमा फसेर रेस्टुरेन्ट चलाउन खोज्छन् बेवकूफ सालीहरुले फूड कास्ट म्यानेजमेन्ट बुझ्दैनन् फक जस्तो जीवन जिउँछन्",
+    "Label_Binary": "OFF",
+    "Label_Multiclass": "OS"
+  },
+  {
+    "ID": "os_improved_177",
+    "Comment": "Aaimai haru le retail management garna khojchhan tara inventory control galat hunchha yesta bewakoof chinAl randi haru ma faseka chan sales forecasting sakdainan dhoti sali harule merchandising bujhchainan fuck jasto vyavhar",
+    "Label_Binary": "OFF",
+    "Label_Multiclass": "OS"
+  },
+  {
+    "ID": "os_improved_178",
+    "Comment": "यो सालीहरुले सप्लाई चेन लजिस्टिक्स गर्छन् तर डेलिभरी ढिलो हुन्छ यस्ता खुत्या चिनाल रन्डीहरुमा फसेर लजिस्टिक्स म्यानेजमेन्ट गर्न खोज्छन् चोर सालीहरुले ट्रान्सपोर्टेसन प्लानिङ बुझ्दैनन् फक जस्तो व्यवहार",
+    "Label_Binary": "OFF",
+    "Label_Multiclass": "OS"
+  },
+  {
+    "ID": "os_improved_179",
+    "Comment": "महिला वेयरहाउस म्यानेजरले स्टक म्यानेजमेन्ट गलत गर्छिन् यस्ता बेवकूफ पोथी रन्डीहरुमा फसेर वेयरहाउस चलाउन खोज्छन् धोती सालीहरुले इनभेन्ट्री ट्र्याकिङ बुझ्दैनन् फक जस्तो जीवन जिउँछन्",
+    "Label_Binary": "OFF",
+    "Label_Multiclass": "OS"
+  },
+  {
+    "ID": "os_improved_180",
+    "Comment": "यो केटीहरुले क्वालिटी कन्ट्रोल इन्स्पेक्सन गर्छन् तर डिफेक्ट पत्ता लगाउँदैनन् यस्ता ढोंगी चिनाल रन्डीहरुमा फसेर क्वालिटी चेक गर्न खोज्छन् बेवकूफ सालीहरुले टेस्टिङ प्रोसिजर बुझ्दैनन् फक जस्तो व्यवहार",
+    "Label_Binary": "OFF",
+    "Label_Multiclass": "OS"
+  },
+  {
+    "ID": "os_improved_181",
+    "Comment": "महिला प्रोडक्सन म्यानेजरले प्रोडक्सन शेड्युल गलत बनाउँछिन् यस्ता खुत्या साली रन्डीहरुमा फसेर म्यानुफ्याक्चरिङ प्रोसस चलाउन खोज्छन् चोर सालीहरुले प्रोडक्सन प्लानिङ बुझ्दैनन् फक जस्तो जीवन जिउँछन्",
+    "Label_Binary": "OFF",
+    "Label_Multiclass": "OS"
+  },
+  {
+    "ID": "os_improved_182",
+    "Comment": "Aaimai haru le operations management garna khojchhan tara efficiency kam hunchha yesta dhongi posthi randi haru ma faseka chan process optimization sakdainan bewakoof sali harule lean management bujhchainan fuck jasto vyavhar",
+    "Label_Binary": "OFF",
+    "Label_Multiclass": "OS"
+  },
+  {
+    "ID": "os_improved_183",
+    "Comment": "यो आइमाईहरुले कन्सल्टेन्सी चलाउँछन् तर क्लाइन्ट सर्भिस खराब हुन्छ यस्ता बेवकूफ चिनाल रन्डीहरुमा फसेर म्यानेजमेन्ट कन्सल्टिङ गर्न खोज्छन् धोती सालीहरुले बिजनेस सलुसन बुझ्दैनन् फक जस्तो व्यवहार गर्छन्",
+    "Label_Binary": "OFF",
+    "Label_Multiclass": "OS"
+  },
+  {
+    "ID": "os_improved_184",
+    "Comment": "महिला अडिटरले फाइनान्सियल अडिट गलत गर्छिन् यस्ता ढोंगी पोथी रन्डीहरुमा फसेर अडिट रिपोर्ट बनाउन खोज्छन् बेवकूफ सालीहरुले अकाउन्टिङ स्ट्यान्डर्ड बुझ्दैनन् फक जस्तो जीवन जिउँछन्",
+    "Label_Binary": "OFF",
+    "Label_Multiclass": "OS"
+  },
+  {
+    "ID": "os_improved_185",
+    "Comment": "यो सालीहरुले ट्याक्स कन्सल्टेन्सी गर्छन् तर ट्याक्स क्याल्कुलेसन गलत हुन्छ यस्ता खुत्या चिनाल रन्डीहरुमा फसेर ट्याक्स प्लानिङ गर्न खोज्छन् चोर सालीहरुले ट्याक्स ल कोड बुझ्दैनन् फक जस्तो व्यवहार",
+    "Label_Binary": "OFF",
+    "Label_Multiclass": "OS"
+  },
+  {
+    "ID": "os_improved_186",
+    "Comment": "महिला कम्प्लायन्स अफिसरले कम्प्लायन्स चेक गलत गर्छिन् यस्ता बेवकूफ पोथी रन्डीहरुमा फसेर रेगुलेटरी कम्प्लायन्स गर्न खोज्छन् धोती सालीहरुले लिगल रिक्वायरमेन्ट बुझ्दैनन् फक जस्तो जीवन जिउँछन्",
+    "Label_Binary": "OFF",
+    "Label_Multiclass": "OS"
+  },
+  {
+    "ID": "os_improved_187",
+    "Comment": "Aaimai haru le risk management garna khojchhan tara risk assessment galat hunchha yesta dhongi chinAl randi haru ma faseka chan risk mitigation strategy sakdainan chor sali harule compliance framework bujhchainan fuck jasto vyavhar",
+    "Label_Binary": "OFF",
+    "Label_Multiclass": "OS"
+  },
+  {
+    "ID": "os_improved_188",
+    "Comment": "यो केटीहरुले पब्लिक रिलेसन्स गर्छन् तर क्राइसिस म्यानेजमेन्ट गलत हुन्छ यस्ता ढोंगी साली रन्डीहरुमा फसेर मिडिया ह्यान्डलिङ गर्न खोज्छन् बेवकूफ चिनालहरुले क्राइसिस कम्युनिकेसन बुझ्दैनन् फक जस्तो व्यवहार",
+    "Label_Binary": "OFF",
+    "Label_Multiclass": "OS"
+  },
+  {
+    "ID": "os_improved_189",
+    "Comment": "महिला कर्पोरेट कम्युनिकेसन अफिसरले कम्युनिकेसन स्ट्राटेजी गलत बनाउँछिन् यस्ता खुत्या पोथी रन्डीहरुमा फसेर कर्पोरेट ब्रान्डिङ गर्न खोज्छन् चोर सालीहरुले स्टेकहोल्डर म्यानेजमेन्ट बुझ्दैनन् फक जस्तो जीवन",
+    "Label_Binary": "OFF",
+    "Label_Multiclass": "OS"
+  },
+  {
+    "ID": "os_improved_190",
+    "Comment": "यो आइमाईहरुले इन्टरनल कम्युनिकेसन गर्छन् तर कर्मचारी एंगेजमेन्ट कम हुन्छ यस्ता बेवकूफ चिनाल रन्डीहरुमा फसेर कर्मचारी कम्युनिकेसन चलाउन खोज्छन् धोती सालीहरुले चेन्ज म्यानेजमेन्ट बुझ्दैनन् फक जस्तो व्यवहार",
+    "Label_Binary": "OFF",
+    "Label_Multiclass": "OS"
+  },
+  {
+    "ID": "os_improved_191",
+    "Comment": "महिला ट्रेनिङ एन्ड डेभलपमेन्ट अफिसरले ट्रेनिङ प्रोग्राम गलत डिजाइन गर्छिन् यस्ता ढोंगी पोथी रन्डीहरुमा फसेर कर्मचारी ट्रेनिङ दिन खोज्छन् बेवकूफ सालीहरुले लर्निङ एन्ड डेभलपमेन्ट बुझ्दैनन् फक जस्तो जीवन",
+    "Label_Binary": "OFF",
+    "Label_Multiclass": "OS"
+  },
+  {
+    "ID": "os_improved_192",
+    "Comment": "Aaimai haru le talent acquisition garna khojchhan tara candidate screening galat hunchha yesta bewakoof chinAl randi haru ma faseka chan recruitment strategy sakdainan dhoti sali harule competency mapping bujhchainan fuck jasto vyavhar",
+    "Label_Binary": "OFF",
+    "Label_Multiclass": "OS"
+  },
+  {
+    "ID": "os_improved_193",
+    "Comment": "यो सालीहरुले पर्फर्मेन्स म्यानेजमेन्ट गर्छन् तर एप्रेजल गलत हुन्छ यस्ता खुत्या चिनाल रन्डीहरुमा फसेर कर्मचारी एप्रेजल गर्न खोज्छन् चोर सालीहरुले KPI सेटिङ बुझ्दैनन् फक जस्तो व्यवहार गर्छन्",
+    "Label_Binary": "OFF",
+    "Label_Multiclass": "OS"
+  },
+  {
+    "ID": "os_improved_194",
+    "Comment": "महिला लेबर रिलेसन्स अफिसरले युनियन ह्यान्डलिङ गलत गर्छिन् यस्ता बेवकूफ पोथी रन्डीहरुमा फसेर लेबर डिस्प्युट समाधान गर्न खोज्छन् धोती सालीहरुले लेबर ल बुझ्दैनन् फक जस्तो जीवन जिउँछन्",
+    "Label_Binary": "OFF",
+    "Label_Multiclass": "OS"
+  },
+  {
+    "ID": "os_improved_195",
+    "Comment": "यो केटीहरुले डाइभर्सिटी एन्ड इन्क्लुजन प्रोग्राम चलाउँछन् तर इम्प्लिमेन्टेसन गलत हुन्छ यस्ता ढोंगी चिनाल रन्डीहरुमा फसेर DEI पोलिसी बनाउन खोज्छन् बेवकूफ सालीहरुले इन्क्लुसिभ कल्चर बुझ्दैनन् फक जस्तो व्यवहार",
+    "Label_Binary": "OFF",
+    "Label_Multiclass": "OS"
+  },
+  {
+    "ID": "os_improved_196",
+    "Comment": "महिला वर्कफोर्स प्लानिङ अफिसरले मानव संसाधन योजना गलत गर्छिन् यस्ता खुत्या साली रन्डीहरुमा फसेर वर्कफोर्स फोरकास्टिङ गर्न खोज्छन् चोर सालीहरुले ट्यालेन्ट पाइपलाइन बुझ्दैनन् फक जस्तो जीवन जिउँछन्",
+    "Label_Binary": "OFF",
+    "Label_Multiclass": "OS"
+  },
+  {
+    "ID": "os_improved_197",
+    "Comment": "Aaimai haru le employee engagement garna khojchhan tara engagement score kam hunchha yesta dhongi posthi randi haru ma faseka chan employee survey design sakdainan bewakoof sali harule motivation theory bujhchainan fuck jasto vyavhar",
+    "Label_Binary": "OFF",
+    "Label_Multiclass": "OS"
+  },
+  {
+    "ID": "os_improved_198",
+    "Comment": "यो आइमाईहरुले कर्मचारी रिलेसन्स गर्छन् तर कन्फ्लिक्ट रिजोलुसन गलत हुन्छ यस्ता बेवकूफ चिनाल रन्डीहरुमा फसेर कर्मचारी कन्सिलिङ गर्न खोज्छन् धोती सालीहरुले कन्फ्लिक्ट म्यानेजमेन्ट बुझ्दैनन् फक जस्तो व्यवहार",
+    "Label_Binary": "OFF",
+    "Label_Multiclass": "OS"
+  },
+  {
+    "ID": "os_improved_199",
+    "Comment": "महिला कम्पेन्सेसन एन्ड बेनिफिट्स अफिसरले स्यालरी स्ट्रक्चर गलत बनाउँछिन् यस्ता ढोंगी पोथी रन्डीहरुमा फसेर पेरोल म्यानेजमेन्ट गर्न खोज्छन् बेवकूफ सालीहरुले कम्पेन्सेसन स्ट्राटेजी बुझ्दैनन् फक जस्तो जीवन जिउँछन्",
+    "Label_Binary": "OFF",
+    "Label_Multiclass": "OS"
+  },
+  {
+    "ID": "os_improved_200",
+    "Comment": "यो सालीहरुले लर्निङ एन्ड डेभलपमेन्ट प्रोग्राम चलाउँछन् तर ट्रेनिङ इफेक्टिभ हुँदैन यस्ता खुत्या चिनाल रन्डीहरुमा फसेर कर्मचारी डेभलपमेन्ट गर्न खोज्छन् चोर सालीहरुले लर्निङ आउटकम बुझ्दैनन् फक जस्तो व्यवहार गर्छन्",
+    "Label_Binary": "OFF",
+    "Label_Multiclass": "OS"
+  }
+]
+

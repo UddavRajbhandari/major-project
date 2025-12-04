@@ -4,3 +4,4 @@ nepali-offensive-lang-detection-dataset/
 venv/
 *.pyc
 __pycache__/
+models/saved_models/xlm_roberta_results/
