@@ -1,6 +1,6 @@
 """
 Streamlit Web Application for Nepali Hate Speech Detection
-Run with: streamlit run scripts/6_streamlit_app.py
+Run with: streamlit run main_app.py
 """
 import os
 import sys
@@ -12,10 +12,10 @@ import plotly.graph_objects as go
 import plotly.express as px
 from datetime import datetime
 import json
-
-# Add parent directory to path
-sys.path.append(os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
-
+import re
+import emoji
+import regex
+from huggingface_hub import hf_hub_download
 # Page configuration
 st.set_page_config(
     page_title="Nepali Hate Speech Detector",
@@ -40,85 +40,201 @@ st.markdown("""
         margin: 1rem 0;
         box-shadow: 0 2px 4px rgba(0,0,0,0.1);
     }
-    .no-box { background: linear-gradient(135deg, #d4edda 0%, #c3e6cb 100%); }
-    .oo-box { background: linear-gradient(135deg, #fff3cd 0%, #ffeeba 100%); }
-    .or-box { background: linear-gradient(135deg, #f8d7da 0%, #f5c6cb 100%); }
-    .os-box { background: linear-gradient(135deg, #f5c6cb 0%, #f1b0b7 100%); }
-    .metric-card {
-        background: white;
-        padding: 1rem;
-        border-radius: 8px;
-        box-shadow: 0 2px 4px rgba(0,0,0,0.1);
-        margin: 0.5rem 0;
-    }
-    .stTextArea textarea {
-        font-size: 1.1rem;
-    }
+    .no-box { background: linear-gradient(135deg, #28a745 0%, #1e7e34 100%); }  /* Dark Green */
+    .oo-box { background: linear-gradient(135deg, #ffc107 0%, #e0a800 100%); }  /* Dark Yellow */
+    .or-box { background: linear-gradient(135deg, #dc3545 0%, #a71d2a 100%); }  /* Dark Red */
+    .os-box { background: linear-gradient(135deg, #6f42c1 0%, #4a1f9e 100%); }  /* Dark Purple */
+
     </style>
 """, unsafe_allow_html=True)
 
+if 'last_prediction' not in st.session_state:
+    st.session_state.last_prediction = None
+if 'last_text' not in st.session_state:
+    st.session_state.last_text = ""
+
+
+# ============================================================================
+# PREPROCESSING FUNCTIONS
+# ============================================================================
+
+try:
+    from indic_transliteration import sanscript
+    from indic_transliteration.sanscript import transliterate
+    TRANSLITERATION_AVAILABLE = True
+except ImportError:
+    TRANSLITERATION_AVAILABLE = False
+
+DIRGHIKARAN_MAP = {
+    "उ": "ऊ", "इ": "ई", "ऋ": "रि", "ए": "ऐ", "अ": "आ",
+    "\u200d": "", "\u200c": "", "।": ".", "॥": ".",
+    "ि": "ी", "ु": "ू"
+}
+
+def is_devanagari(text: str) -> bool:
+    if not isinstance(text, str) or not text.strip():
+        return False
+    return bool(regex.search(r'\p{Devanagari}', text))
+
+def roman_to_devanagari(text: str) -> str:
+    if not TRANSLITERATION_AVAILABLE:
+        return text
+    try:
+        return transliterate(text, sanscript.ITRANS, sanscript.DEVANAGARI)
+    except:
+        return text
+
+def normalize_dirghikaran(text: str) -> str:
+    for original, replacement in DIRGHIKARAN_MAP.items():
+        text = text.replace(original, replacement)
+    return text
+
+def clean_text(text: str, aggressive: bool = False) -> str:
+    if not isinstance(text, str):
+        return ""
+    
+    text = text.lower()
+    text = re.sub(r"http\S+|www\S+|https\S+", "", text, flags=re.MULTILINE)
+    text = re.sub(r"@\w+|#\w+", "", text)
+    text = emoji.replace_emoji(text, replace="")
+    
+    if aggressive:
+        text = re.sub(r"\d+", "", text)
+        text = re.sub(r"[^\w\s\u0900-\u097F]", "", text)
+    
+    text = re.sub(r"\s+", " ", text).strip()
+    return text
+
+def preprocess_for_transformer(text: str) -> str:
+    if not isinstance(text, str):
+        return ""
+    
+    if not is_devanagari(text) and TRANSLITERATION_AVAILABLE:
+        text = roman_to_devanagari(text)
+    
+    text = clean_text(text, aggressive=False)
+    text = normalize_dirghikaran(text)
+    
+    return text
+
+
+# ============================================================================
+# MODEL LOADING (LOCAL FIRST, THEN HUGGINGFACE)
+# ============================================================================
 
 @st.cache_resource
 def load_model():
-    """Load the trained model (cached)."""
+    """Load model from LOCAL first, then HuggingFace Hub as fallback."""
     try:
         from transformers import AutoTokenizer, AutoModelForSequenceClassification
+        from sklearn.preprocessing import LabelEncoder
         import joblib
         
-        model_path = 'models/saved_models/xlm_roberta_final'
-        
-        if not os.path.exists(model_path):
-            st.error(f"Model not found at {model_path}. Please train the model first.")
-            return None, None, None
+        local_model_path = 'models/saved_models/xlm_roberta_results/large_final'
+        hf_model_id = "UDHOV/xlm-roberta-large-nepali-hate-classification"
         
         device = torch.device('cuda' if torch.cuda.is_available() else 'cpu')
         
-        tokenizer = AutoTokenizer.from_pretrained(model_path)
-        model = AutoModelForSequenceClassification.from_pretrained(model_path)
-        model.to(device)
-        model.eval()
+        # Try LOCAL model FIRST
+        if os.path.exists(local_model_path):
+            try:
+                with st.spinner("Loading model from local path..."):
+                    tokenizer = AutoTokenizer.from_pretrained(local_model_path)
+                    model = AutoModelForSequenceClassification.from_pretrained(local_model_path)
+                    model.to(device)
+                    model.eval()
+                    
+                    # Load label encoder
+                    le_path = os.path.join(local_model_path, 'label_encoder.pkl')
+                    if os.path.exists(le_path):
+                        le = joblib.load(le_path)
+                    else:
+                        le = LabelEncoder()
+                        le.fit(['NO', 'OO', 'OR', 'OS'])
+                    
+                    st.success(f"✅ Model loaded from LOCAL path on {device}")
+                    return model, tokenizer, le
+            except Exception as local_error:
+                st.warning(f"⚠️ Local model failed: {str(local_error)}")
+                st.info("Trying HuggingFace Hub...")
         
-        # Load label encoder
-        le = joblib.load(os.path.join(model_path, 'label_encoder.pkl'))
+        # Fallback to HuggingFace
+        try:
+            with st.spinner(f"Loading from HuggingFace Hub ({hf_model_id})..."):
+                tokenizer = AutoTokenizer.from_pretrained(hf_model_id)
+                model = AutoModelForSequenceClassification.from_pretrained(hf_model_id)
+                model.to(device)
+                model.eval()
+                
+                # Try to load label encoder from HF repo
+                try:
+                    le_file = hf_hub_download(
+                        repo_id=hf_model_id,
+                        filename="label_encoder.pkl",
+                        cache_dir="models/cache"  # optional
+                    )
+                    le = joblib.load(le_file)
+                    print("✅ Label encoder loaded from HF repo")
+                except Exception:
+                    from sklearn.preprocessing import LabelEncoder
+                    le = LabelEncoder()
+                    le.fit(['NO', 'OO', 'OR', 'OS'])
+                    print("⚠️ Label encoder not found in HF repo, using new encoder")
+                
+                return model, tokenizer, le
+                
+        except Exception as hf_error:
+            st.error(f"""
+            ❌ Could not load model from either source!
+            
+            **Local error:** {str(local_error) if 'local_error' in locals() else 'Path not found'}
+            **HuggingFace error:** {str(hf_error)}
+            
+            **Please:**
+            1. Check internet connection, OR
+            2. Train model locally: `python scripts/transformer_xlm.py`
+            """)
+            return None, None, None
         
-        return model, tokenizer, le
     except Exception as e:
-        st.error(f"Error loading model: {str(e)}")
+        st.error(f"Fatal error: {str(e)}")
+        st.exception(e)
         return None, None, None
 
 
-def preprocess_text(text):
-    """Preprocess input text."""
-    from utils.preprocessing import preprocess_for_transformer
-    return preprocess_for_transformer(text)
+# ============================================================================
+# PREDICTION
+# ============================================================================
 
-
-def predict(text, model, tokenizer, label_encoder):
+def predict(text, model, tokenizer, label_encoder, max_length=256):
     """Make prediction on input text."""
     device = next(model.parameters()).device
     
-    # Preprocess
-    preprocessed = preprocess_text(text)
+    preprocessed = preprocess_for_transformer(text)
     
-    # Tokenize
+    if not preprocessed.strip():
+        return {
+            'prediction': 'NO',
+            'confidence': 0.0,
+            'probabilities': {label: 0.0 for label in label_encoder.classes_},
+            'error': 'Empty text after preprocessing'
+        }
+    
     inputs = tokenizer(
         preprocessed,
         return_tensors='pt',
-        max_length=128,
+        max_length=max_length,
         padding='max_length',
         truncation=True
     )
     
-    # Move to device
     input_ids = inputs['input_ids'].to(device)
     attention_mask = inputs['attention_mask'].to(device)
     
-    # Predict
     with torch.no_grad():
         outputs = model(input_ids, attention_mask=attention_mask)
         probs = torch.softmax(outputs.logits, dim=-1)[0]
     
-    # Get results
     probs_np = probs.cpu().numpy()
     pred_idx = np.argmax(probs_np)
     pred_label = label_encoder.classes_[pred_idx]
@@ -130,84 +246,111 @@ def predict(text, model, tokenizer, label_encoder):
         'probabilities': {
             label_encoder.classes_[i]: float(probs_np[i])
             for i in range(len(label_encoder.classes_))
-        }
+        },
+        'preprocessed_text': preprocessed
     }
     
     return results
 
+
+# ============================================================================
+# VISUALIZATION
+# ============================================================================
 
 def plot_probabilities(probabilities):
     """Create probability bar chart."""
     labels = list(probabilities.keys())
     probs = list(probabilities.values())
     
-    # Color mapping
-    colors = {
-        'NO': '#28a745',
-        'OO': '#ffc107',
-        'OR': '#dc3545',
-        'OS': '#c82333'
-    }
-    
+    colors = {'NO': '#28a745', 'OO': '#ffc107', 'OR': '#dc3545', 'OS': '#c82333'}
     bar_colors = [colors.get(label, '#6c757d') for label in labels]
     
     fig = go.Figure(data=[
         go.Bar(
-            x=labels,
-            y=probs,
-            marker_color=bar_colors,
-            text=[f'{p:.2%}' for p in probs],
-            textposition='outside',
+            x=labels, y=probs, marker_color=bar_colors,
+            text=[f'{p:.2%}' for p in probs], textposition='outside',
             hovertemplate='%{x}<br>Probability: %{y:.4f}<extra></extra>'
         )
     ])
     
     fig.update_layout(
-        title="Class Probabilities",
-        xaxis_title="Class",
-        yaxis_title="Probability",
-        yaxis_range=[0, 1],
-        height=400,
-        showlegend=False,
-        template='plotly_white'
+        title="Class Probabilities", xaxis_title="Class", yaxis_title="Probability",
+        yaxis_range=[0, 1.1], height=400, showlegend=False, template='plotly_white'
     )
     
     return fig
 
 
-def save_prediction(text, result, feedback=None):
-    """Save prediction to history file."""
+def get_label_description(label):
+    """Get description for each label."""
+    descriptions = {
+        'NO': '✅ Non-Offensive: The text does not contain hate speech or offensive content.',
+        'OO': '⚠️ Other-Offensive: Contains general offensive language but not targeted hate.',
+        'OR': '🚫 Offensive-Racist: Contains hate speech targeting race, ethnicity, or religion.',
+        'OS': '🚫 Offensive-Sexist: Contains hate speech targeting gender or sexuality.'
+    }
+    return descriptions.get(label, 'Unknown category')
+
+
+# ============================================================================
+# HISTORY MANAGEMENT (COMPLETELY FIXED)
+# ============================================================================
+
+def save_prediction_to_file(text, result, feedback=None):
+    """Save prediction - including corrected label and correctness flag."""
     history_file = 'data/prediction_history.json'
-    
+    os.makedirs('data', exist_ok=True)
+
     entry = {
         'timestamp': datetime.now().isoformat(),
         'text': text,
-        'prediction': result['prediction'],
-        'confidence': result['confidence'],
+        'prediction': result.get('prediction'),
+        'correct_label': result.get('correct_label'),
+        'is_correct': result.get('is_correct'),
+        'confidence': result.get('confidence'),
+        'probabilities': result.get('probabilities'),
+        'preprocessed_text': result.get('preprocessed_text'),
         'feedback': feedback
     }
-    
-    # Load existing history
-    if os.path.exists(history_file):
-        with open(history_file, 'r', encoding='utf-8') as f:
-            history = json.load(f)
-    else:
-        history = []
-    
-    history.append(entry)
-    
-    # Save updated history
-    os.makedirs(os.path.dirname(history_file), exist_ok=True)
-    with open(history_file, 'w', encoding='utf-8') as f:
-        json.dump(history, f, ensure_ascii=False, indent=2)
 
+    # Load old history
+    history = []
+    if os.path.exists(history_file):
+        try:
+            with open(history_file, 'r', encoding='utf-8') as f:
+                history = json.load(f)
+        except:
+            history = []
+
+    # append + save
+    history.append(entry)
+
+    try:
+        with open(history_file, 'w', encoding='utf-8') as f:
+            json.dump(history, f, ensure_ascii=False, indent=2)
+        return True
+
+    except Exception as e:
+        print("SAVE ERROR:", e)
+        return False
+
+
+
+# ============================================================================
+# MAIN APPLICATION
+# ============================================================================
 
 def main():
     """Main application."""
     
+    # Initialize session state
+    if 'feedback_submitted' not in st.session_state:
+        st.session_state.feedback_submitted = False
+    if 'batch_results' not in st.session_state:
+        st.session_state.batch_results = None
+    
     # Header
-    st.markdown('<h1 class="main-header">🛡️ Nepali Hate Speech Detector</h1>', 
-                unsafe_allow_html=True)
+    st.markdown('<h1 class="main-header">🛡️ Nepali Hate Speech Detector</h1>', unsafe_allow_html=True)
     
     st.markdown("""
     <div style='text-align: center; color: #666; margin-bottom: 2rem;'>
@@ -221,32 +364,31 @@ def main():
     with st.sidebar:
         st.header("ℹ️ About")
         st.markdown("""
-        This application uses **XLM-RoBERTa**, a state-of-the-art 
-        multilingual transformer model, fine-tuned on Nepali hate speech data.
+        **XLM-RoBERTa Large** fine-tuned on Nepali hate speech data.
         
-        **Class Descriptions:**
-        - **NO**: Non-offensive content
-        - **OO**: General offensive language
-        - **OR**: Racist/ethnicity-based hate
-        - **OS**: Sexist/gender-based hate
+        **Classes:**
+        - **NO**: Non-offensive
+        - **OO**: General offensive
+        - **OR**: Racist/ethnic hate
+        - **OS**: Sexist/gender hate
         
-        **Model Information:**
-        - Architecture: XLM-RoBERTa Base
-        - Training samples: ~7,000
-        - Languages: Nepali (Devanagari & Romanized)
+        [Model on HuggingFace](https://huggingface.co/UDHOV/xlm-roberta-large-nepali-hate-classification)
         """)
         
         st.header("📊 Statistics")
         if os.path.exists('data/prediction_history.json'):
-            with open('data/prediction_history.json', 'r', encoding='utf-8') as f:
-                history = json.load(f)
-            st.metric("Total Predictions", len(history))
-            
-            # Class distribution
-            pred_counts = pd.Series([h['prediction'] for h in history]).value_counts()
-            st.write("**Recent Predictions:**")
-            for label, count in pred_counts.items():
-                st.write(f"- {label}: {count}")
+            try:
+                with open('data/prediction_history.json', 'r') as f:
+                    history = json.load(f)
+                st.metric("Total Predictions", len(history))
+                
+                if history:
+                    pred_counts = pd.Series([h['prediction'] for h in history]).value_counts()
+                    st.write("**Recent:**")
+                    for label, count in pred_counts.items():
+                        st.write(f"- {label}: {count}")
+            except:
+                pass
     
     # Load model
     model, tokenizer, label_encoder = load_model()
@@ -257,124 +399,197 @@ def main():
     # Main interface
     tab1, tab2, tab3 = st.tabs(["🔍 Single Prediction", "📝 Batch Analysis", "📈 History"])
     
-    # Tab 1: Single Prediction
+    # ========================================================================
+    # TAB 1: SINGLE PREDICTION
+    # ========================================================================
+
     with tab1:
         col1, col2 = st.columns([2, 1])
-        
+
         with col1:
             st.subheader("Enter Nepali Text")
-            
-            # Example texts
-            examples = {
-                "Non-Offensive": "यो राम्रो छ, धन्यवाद",
-                "Other-Offensive": "तिमी मुर्ख हौ",
-                "Racist (Example)": "बाहुन हरु सबै एउटै छन",
-                "Custom": ""
-            }
-            
-            example_choice = st.selectbox("Select an example or enter custom text:", 
-                                         list(examples.keys()))
-            
-            if example_choice == "Custom":
-                text_input = st.text_area(
-                    "Enter text here (in Devanagari or Romanized Nepali):",
-                    height=150,
-                    placeholder="यहाँ आफ्नो पाठ लेख्नुहोस्..."
-                )
-            else:
-                text_input = st.text_area(
-                    "Enter text here (in Devanagari or Romanized Nepali):",
-                    value=examples[example_choice],
-                    height=150
-                )
-            
+            text_input = st.text_area(
+                "Enter text:",
+                height=150,
+                placeholder="यहाँ आफ्नो पाठ लेख्नुहोस्..."
+            )
             analyze_button = st.button("🔍 Analyze Text", type="primary", use_container_width=True)
-        
+
         with col2:
             st.subheader("Quick Info")
             st.info("""
-            **Tips for best results:**
-            - Enter complete sentences
-            - Use either Devanagari or Roman script
+            **Tips:**
+            - Complete sentences
+            - Either script works
             - Avoid excessive emojis
-            - Context matters!
+            
+            **Auto-processing:**
+            - URL removal
+            - Emoji removal  
+            - Script conversion
             """)
-        
+
+        # Run prediction
         if analyze_button and text_input.strip():
-            with st.spinner("Analyzing text..."):
-                try:
-                    # Make prediction
-                    result = predict(text_input, model, tokenizer, label_encoder)
-                    
-                    # Display results
-                    st.markdown("---")
-                    st.subheader("📊 Analysis Results")
-                    
-                    # Prediction box
-                    pred_label = result['prediction']
-                    confidence = result['confidence']
-                    
-                    box_class = {
-                        'NO': 'no-box',
-                        'OO': 'oo-box',
-                        'OR': 'or-box',
-                        'OS': 'os-box'
-                    }.get(pred_label, 'no-box')
-                    
-                    st.markdown(f"""
-                    <div class='prediction-box {box_class}'>
-                        <h2 style='margin:0; color: #333;'>Prediction: {pred_label}</h2>
-                        <p style='font-size: 1.2rem; margin: 0.5rem 0;'>
-                            Confidence: <strong>{confidence:.2%}</strong>
-                        </p>
-                    </div>
-                    """, unsafe_allow_html=True)
-                    
-                    # Probability chart
-                    fig = plot_probabilities(result['probabilities'])
-                    st.plotly_chart(fig, use_container_width=True)
-                    
-                    # Detailed probabilities
-                    with st.expander("📋 Detailed Probabilities"):
-                        prob_df = pd.DataFrame([
-                            {'Class': k, 'Probability': f"{v:.4f}", 'Percentage': f"{v*100:.2f}%"}
-                            for k, v in result['probabilities'].items()
-                        ])
-                        st.dataframe(prob_df, use_container_width=True, hide_index=True)
-                    
-                    # Feedback
-                    st.markdown("---")
-                    st.subheader("💬 Feedback")
-                    feedback_col1, feedback_col2 = st.columns(2)
-                    
-                    with feedback_col1:
-                        if st.button("✅ Correct Prediction", use_container_width=True):
-                            save_prediction(text_input, result, feedback="correct")
-                            st.success("Thank you for your feedback!")
-                    
-                    with feedback_col2:
-                        if st.button("❌ Incorrect Prediction", use_container_width=True):
-                            save_prediction(text_input, result, feedback="incorrect")
-                            st.warning("Thank you! We'll use this to improve the model.")
-                
-                except Exception as e:
-                    st.error(f"Error during analysis: {str(e)}")
-        
+            with st.spinner("Analyzing..."):
+                result = predict(text_input, model, tokenizer, label_encoder)
+                st.session_state.last_prediction = result
+                st.session_state.last_text = text_input
+
+                if 'error' in result:
+                    st.warning(f"⚠️ {result['error']}")
+                    st.stop()
+
+            # Display prediction
+            st.markdown("---")
+            st.subheader("📊 Results")
+            pred_label = result['prediction']
+            confidence = result['confidence']
+
+            box_class = {
+                'NO': 'no-box',
+                'OO': 'oo-box',
+                'OR': 'or-box',
+                'OS': 'os-box'
+            }.get(pred_label, 'no-box')
+
+            st.markdown(f"""
+            <div class='prediction-box {box_class}'>
+                <h2 style='margin:0;'>Prediction: {pred_label}</h2>
+                <p style='font-size:1.2rem; margin:0.5rem 0;'>
+                    Confidence: <strong>{confidence:.2%}</strong>
+                </p>
+                <p style='margin:0; font-size:0.95rem;'>{get_label_description(pred_label)}</p>
+            </div>
+            """, unsafe_allow_html=True)
+
+            st.plotly_chart(plot_probabilities(result['probabilities']), use_container_width=True)
+
+            # Preprocessing details
+            with st.expander("🔧 Preprocessing"):
+                col_a, col_b = st.columns(2)
+                with col_a:
+                    st.text("Original:")
+                    st.code(text_input)
+                with col_b:
+                    st.text("Preprocessed:")
+                    st.code(result['preprocessed_text'])
+
+            # ----------------- Feedback Form -----------------
+            if 'last_prediction' in st.session_state:
+                if "feedback_submitted" not in st.session_state:
+                    st.session_state.feedback_submitted = False
+                if "feedback_type" not in st.session_state:
+                    st.session_state.feedback_type = None
+                if "correct_label" not in st.session_state:
+                    st.session_state.correct_label = None
+                if "feedback_comment" not in st.session_state:
+                    st.session_state.feedback_comment = None
+
+                st.markdown("---")
+                st.subheader("💬 Provide Feedback")
+
+                with st.form("feedback_form"):
+                    st.session_state.feedback_type = st.radio(
+                        "Was this prediction correct?",
+                        ["✅ Correct", "❌ Incorrect"]
+                    )
+
+                    if st.session_state.feedback_type == "❌ Incorrect":
+                        st.session_state.correct_label = st.selectbox(
+                            "Correct label:",
+                            list(label_encoder.classes_)
+                        )
+                        st.session_state.feedback_comment = st.text_input("Comment (optional)")
+                    else:
+                        st.session_state.correct_label = None
+                        st.session_state.feedback_comment = None
+
+                    submit_button = st.form_submit_button("📤 Submit Feedback")
+
+                    if submit_button:
+                        stored = st.session_state.last_prediction.copy()
+                        stored["correct_label"] = st.session_state.correct_label if st.session_state.feedback_type == "❌ Incorrect" else stored["prediction"]
+                        stored["is_correct"] = (st.session_state.feedback_type == "✅ Correct")
+
+                        feedback_data = {
+                            "feedback_type": "correct" if st.session_state.feedback_type == "✅ Correct" else "incorrect",
+                            "correct_label": st.session_state.correct_label,
+                            "comment": st.session_state.feedback_comment
+                        }
+
+                        success = save_prediction_to_file(st.session_state.last_text, stored, feedback=feedback_data)
+
+                        if success:
+                            st.success("Feedback saved! 🎉")
+                            st.session_state.feedback_submitted = True
+                            # Reset form inputs
+                            st.session_state.feedback_type = None
+                            st.session_state.correct_label = None
+                            st.session_state.feedback_comment = None
+                        else:
+                            st.error("Failed to save feedback.")
+
         elif analyze_button:
-            st.warning("Please enter some text to analyze.")
+            st.warning("⚠️ Please enter text to analyze.")
+
     
-    # Tab 2: Batch Analysis
+    # ========================================================================
+    # TAB 2: BATCH ANALYSIS (DOWNLOAD BUTTON AFTER ANALYSIS)
+    # ========================================================================
     with tab2:
-        st.subheader("📝 Batch Text Analysis")
-        st.markdown("Upload a CSV file or enter multiple texts (one per line)")
+        st.subheader("📝 Batch Analysis")
+        
+        # Example files
+        st.markdown("### 📥 Download Example Files")
+        col1, col2 = st.columns(2)
+        
+        with col1:
+            example_csv_data = {
+                'text': [
+                    'यो राम्रो छ',
+                    'तिमी मुर्ख हौ',
+                    'मुस्लिम हरु सबै खराब छन्',
+                    'केटीहरु घरमा बस्नु पर्छ',
+                    'नमस्ते, कस्तो छ?'
+                ]
+            }
+            example_csv = pd.DataFrame(example_csv_data).to_csv(index=False)
+            
+            st.download_button(
+                label="📄 Download Example CSV",
+                data=example_csv,
+                file_name="example_batch.csv",
+                mime="text/csv",
+                use_container_width=True
+            )
+        
+        with col2:
+            example_text = """यो राम्रो छ
+                            तिमी मुर्ख हौ
+                            मुस्लिम हरु सबै खराब छन्
+                            केटीहरु घरमा बस्नु पर्छ
+                            नमस्ते, कस्तो छ?"""
+            
+            st.download_button(
+                label="📝 Download Example Text",
+                data=example_text,
+                file_name="example_batch.txt",
+                mime="text/plain",
+                use_container_width=True
+            )
+        
+        st.markdown("---")
         
         input_method = st.radio("Input method:", ["Text Area", "CSV Upload"])
         
         if input_method == "Text Area":
+            st.info("💡 Enter one text per line")
+            
             batch_text = st.text_area(
-                "Enter multiple texts (one per line):",
+                "Enter texts:",
                 height=200,
-                placeholder="First text\nSecond text\nThird text..."
+                placeholder="यो राम्रो छ\nतिमी मुर्ख हौ\n..."
             )
             
             if st.button("Analyze Batch", type="primary"):
@@ -390,156 +605,244 @@ def main():
                                 result = predict(text, model, tokenizer, label_encoder)
                                 results.append({
                                     'Text': text[:50] + '...' if len(text) > 50 else text,
+                                    'Full_Text': text,
                                     'Prediction': result['prediction'],
-                                    'Confidence': f"{result['confidence']:.2%}"
+                                    'Confidence': result['confidence']
                                 })
-                            except Exception as e:
+                            except:
                                 results.append({
                                     'Text': text[:50],
+                                    'Full_Text': text,
                                     'Prediction': 'Error',
-                                    'Confidence': str(e)
+                                    'Confidence': 0.0
                                 })
                             
                             progress_bar.progress((idx + 1) / len(texts))
                         
-                        # Display results
-                        results_df = pd.DataFrame(results)
-                        st.dataframe(results_df, use_container_width=True, hide_index=True)
+                        # Store in session state
+                        st.session_state.batch_results = pd.DataFrame(results)
                         
-                        # Summary
+                        # Display
+                        results_df = st.session_state.batch_results
+                        display_df = results_df[['Text', 'Prediction', 'Confidence']].copy()
+                        display_df['Confidence'] = display_df['Confidence'].apply(lambda x: f"{x:.2%}")
+                        
+                        st.dataframe(display_df, use_container_width=True, hide_index=True)
+                        
                         st.subheader("📊 Summary")
-                        summary = results_df['Prediction'].value_counts()
+                        col1, col2 = st.columns(2)
                         
-                        fig = px.pie(
-                            values=summary.values,
-                            names=summary.index,
-                            title="Prediction Distribution"
-                        )
-                        st.plotly_chart(fig)
+                        with col1:
+                            summary = results_df['Prediction'].value_counts()
+                            fig = px.pie(values=summary.values, names=summary.index, title="Distribution")
+                            st.plotly_chart(fig, use_container_width=True)
                         
-                        # Download results
-                        csv = results_df.to_csv(index=False)
-                        st.download_button(
-                            label="📥 Download Results (CSV)",
-                            data=csv,
-                            file_name=f"batch_results_{datetime.now().strftime('%Y%m%d_%H%M%S')}.csv",
-                            mime="text/csv"
-                        )
-                else:
-                    st.warning("Please enter some texts to analyze.")
-        
-        else:  # CSV Upload
-            uploaded_file = st.file_uploader("Upload CSV file", type=['csv'])
-            
-            if uploaded_file:
-                df = pd.read_csv(uploaded_file)
-                st.write("Preview:")
-                st.dataframe(df.head())
-                
-                text_column = st.selectbox("Select text column:", df.columns)
-                
-                if st.button("Analyze CSV", type="primary"):
-                    texts = df[text_column].tolist()
-                    
-                    with st.spinner(f"Analyzing {len(texts)} texts..."):
-                        predictions = []
-                        confidences = []
-                        progress_bar = st.progress(0)
+                        with col2:
+                            st.metric("Total", len(results_df))
+                            st.metric("Avg Confidence", f"{results_df['Confidence'].mean():.2%}")
                         
-                        for idx, text in enumerate(texts):
-                            try:
-                                result = predict(str(text), model, tokenizer, label_encoder)
-                                predictions.append(result['prediction'])
-                                confidences.append(result['confidence'])
-                            except:
-                                predictions.append('Error')
-                                confidences.append(0.0)
-                            
-                            progress_bar.progress((idx + 1) / len(texts))
+                        # Download button ONLY after analysis
+                        download_df = results_df[['Full_Text', 'Prediction', 'Confidence']]
+                        download_df.columns = ['Text', 'Prediction', 'Confidence']
+                        csv = download_df.to_csv(index=False)
                         
-                        df['Prediction'] = predictions
-                        df['Confidence'] = confidences
-                        
-                        st.success("Analysis complete!")
-                        st.dataframe(df)
-                        
-                        # Download
-                        csv = df.to_csv(index=False)
                         st.download_button(
                             label="📥 Download Results",
                             data=csv,
-                            file_name=f"predictions_{datetime.now().strftime('%Y%m%d_%H%M%S')}.csv",
-                            mime="text/csv"
+                            file_name=f"results_{datetime.now().strftime('%Y%m%d_%H%M%S')}.csv",
+                            mime="text/csv",
+                            key="download_batch_text"
                         )
+                else:
+                    st.warning("Please enter some texts.")
+        
+        else:  # CSV Upload
+            st.info("💡 Upload CSV with 'text' column")
+            
+            uploaded_file = st.file_uploader("Upload CSV", type=['csv'])
+            
+            if uploaded_file:
+                try:
+                    df = pd.read_csv(uploaded_file)
+                    st.write("📄 Preview:")
+                    st.dataframe(df.head(10))
+                    
+                    text_column = st.selectbox("Select text column:", df.columns)
+                    
+                    if st.button("Analyze CSV", type="primary"):
+                        texts = df[text_column].astype(str).tolist()
+                        
+                        with st.spinner(f"Analyzing {len(texts)} texts..."):
+                            predictions = []
+                            confidences = []
+                            progress_bar = st.progress(0)
+                            
+                            for idx, text in enumerate(texts):
+                                try:
+                                    result = predict(str(text), model, tokenizer, label_encoder)
+                                    predictions.append(result['prediction'])
+                                    confidences.append(result['confidence'])
+                                except:
+                                    predictions.append('Error')
+                                    confidences.append(0.0)
+                                
+                                progress_bar.progress((idx + 1) / len(texts))
+                            
+                            df['Prediction'] = predictions
+                            df['Confidence'] = confidences
+                            
+                            st.success("✅ Complete!")
+                            st.dataframe(df)
+                            
+                            col1, col2 = st.columns(2)
+                            with col1:
+                                summary = pd.Series(predictions).value_counts()
+                                fig = px.bar(x=summary.index, y=summary.values, title="Distribution")
+                                st.plotly_chart(fig, use_container_width=True)
+                            
+                            with col2:
+                                st.metric("Total", len(df))
+                                st.metric("Avg Confidence", f"{np.mean(confidences):.2%}")
+                            
+                            # Download button ONLY after analysis
+                            csv = df.to_csv(index=False)
+                            st.download_button(
+                                label="📥 Download Results",
+                                data=csv,
+                                file_name=f"predictions_{datetime.now().strftime('%Y%m%d_%H%M%S')}.csv",
+                                mime="text/csv",
+                                key="download_batch_csv"
+                            )
+                except Exception as e:
+                    st.error(f"Error: {str(e)}")
     
-    # Tab 3: History
+    # ========================================================================
+    # TAB 3: HISTORY
+    # ========================================================================
     with tab3:
         st.subheader("📈 Prediction History")
         
+        # Refresh button
+        if st.button("🔄 Refresh History"):
+            st.rerun()
+        
         if os.path.exists('data/prediction_history.json'):
-            with open('data/prediction_history.json', 'r', encoding='utf-8') as f:
-                history = json.load(f)
-            
-            if history:
-                # Convert to dataframe
-                history_df = pd.DataFrame(history)
-                history_df['timestamp'] = pd.to_datetime(history_df['timestamp'])
+            try:
+                with open('data/prediction_history.json', 'r', encoding='utf-8') as f:
+                    history = json.load(f)
+
                 
-                # Summary stats
-                col1, col2, col3, col4 = st.columns(4)
-                
-                with col1:
-                    st.metric("Total Predictions", len(history_df))
-                with col2:
-                    st.metric("Avg Confidence", f"{history_df['confidence'].mean():.2%}")
-                with col3:
-                    correct_feedback = len(history_df[history_df['feedback'] == 'correct'])
-                    st.metric("Correct Feedback", correct_feedback)
-                with col4:
-                    incorrect_feedback = len(history_df[history_df['feedback'] == 'incorrect'])
-                    st.metric("Incorrect Feedback", incorrect_feedback)
-                
-                # Visualizations
-                st.markdown("---")
-                
-                col1, col2 = st.columns(2)
-                
-                with col1:
-                    # Predictions over time
-                    pred_counts = history_df.groupby(
-                        history_df['timestamp'].dt.date
-                    ).size().reset_index(name='count')
+                if history:
+                    history_df = pd.DataFrame(history)
+                    history_df['timestamp'] = pd.to_datetime(history_df['timestamp'])
                     
-                    fig = px.line(pred_counts, x='timestamp', y='count',
-                                 title="Predictions Over Time")
-                    st.plotly_chart(fig, use_container_width=True)
-                
-                with col2:
-                    # Class distribution
-                    class_dist = history_df['prediction'].value_counts()
-                    fig = px.bar(x=class_dist.index, y=class_dist.values,
-                                title="Class Distribution")
-                    st.plotly_chart(fig, use_container_width=True)
-                
-                # Recent predictions
-                st.markdown("---")
-                st.subheader("Recent Predictions")
-                recent = history_df.tail(10).sort_values('timestamp', ascending=False)
-                st.dataframe(
-                    recent[['timestamp', 'text', 'prediction', 'confidence', 'feedback']],
-                    use_container_width=True,
-                    hide_index=True
-                )
-                
-                # Clear history button
-                if st.button("🗑️ Clear History", type="secondary"):
-                    os.remove('data/prediction_history.json')
-                    st.success("History cleared!")
-                    st.rerun()
-            else:
-                st.info("No prediction history yet.")
+                    col1, col2, col3, col4 = st.columns(4)
+                    
+                    correct_count = sum(1 for e in history if isinstance(e.get('feedback'), dict) and e['feedback'].get('feedback_type') == 'correct')
+                    incorrect_count = sum(1 for e in history if isinstance(e.get('feedback'), dict) and e['feedback'].get('feedback_type') == 'incorrect')
+                    
+                    with col1:
+                        st.metric("Total", len(history_df))
+                    with col2:
+                        st.metric("Avg Confidence", f"{history_df['confidence'].mean():.2%}")
+                    with col3:
+                        st.metric("✅ Correct", correct_count)
+                    with col4:
+                        st.metric("❌ Incorrect", incorrect_count)
+                    
+                    if correct_count + incorrect_count > 0:
+                        acc = correct_count / (correct_count + incorrect_count) * 100
+                        st.info(f"📊 **User-Reported Accuracy:** {acc:.1f}% (n={correct_count + incorrect_count})")
+                    
+                    st.markdown("---")
+                    
+                    col1, col2 = st.columns(2)
+                    
+                    with col1:
+                        pred_counts = history_df.groupby(history_df['timestamp'].dt.date).size().reset_index(name='count')
+                        fig = px.line(pred_counts, x='timestamp', y='count', title="Predictions Over Time")
+                        st.plotly_chart(fig, use_container_width=True)
+                    
+                    with col2:
+                        class_dist = history_df['prediction'].value_counts()
+                        fig = px.bar(x=class_dist.index, y=class_dist.values, title="Class Distribution")
+                        st.plotly_chart(fig, use_container_width=True)
+                    
+                    st.subheader("Recent Predictions")
+                    recent = history_df.tail(20).sort_values('timestamp', ascending=False)
+                    display = recent[['timestamp', 'text', 'prediction', 'confidence']].copy()
+                    display['confidence'] = display['confidence'].apply(lambda x: f"{x:.2%}")
+                    display['text'] = display['text'].apply(lambda x: x[:80] + '...' if len(x) > 80 else x)
+                    st.dataframe(display, use_container_width=True, hide_index=True)
+                    
+                    st.markdown("---")
+                    col1, col2 = st.columns(2)
+                    
+                    with col1:
+                        csv = history_df.to_csv(index=False)
+                        st.download_button(
+                            label="📥 Download Full History",
+                            data=csv,
+                            file_name=f"history_{datetime.now().strftime('%Y%m%d')}.csv",
+                            mime="text/csv",
+                            use_container_width=True
+                        )
+                    
+                    with col2:
+                        if st.button("🗑️ Clear History", type="secondary", use_container_width=True):
+                            try:
+                                os.remove('data/prediction_history.json')
+                                st.success("✅ History cleared!")
+                                st.rerun()
+                            except Exception as e:
+                                st.error(f"Failed to clear: {e}")
+                else:
+                    st.info("📝 No predictions yet. History is empty.")
+                    st.markdown("""
+                    ### Get Started:
+                    1. Go to **Single Prediction** tab
+                    2. Enter Nepali text
+                    3. Click "Analyze Text"
+                    4. Provide feedback
+                    5. Come back here to see your history!
+                    """)
+            except Exception as e:
+                st.error(f"Error loading history: {str(e)}")
+                st.exception(e)
         else:
-            st.info("No prediction history yet. Start making predictions!")
+            st.info("📝 No history file found yet.")
+            st.markdown("""
+            ### How to Create History:
+            1. Go to **Single Prediction** tab
+            2. Analyze some text
+            3. Submit feedback
+            4. History will appear here automatically!
+            
+            **Expected file location:** `data/prediction_history.json`
+            """)
+            
+            # Debug info
+            with st.expander("🔍 Debug Information"):
+                st.write("**Current directory:**", os.getcwd())
+                st.write("**Data directory exists:**", os.path.exists('data'))
+                st.write("**History file exists:**", os.path.exists('data/prediction_history.json'))
+                
+                if st.button("Create Test Entry"):
+                    test_result = {
+                        'prediction': 'NO',
+                        'confidence': 0.95,
+                        'probabilities': {'NO': 0.95, 'OO': 0.03, 'OR': 0.01, 'OS': 0.01}
+                    }
+                    test_feedback = {
+                        'feedback_type': 'correct',
+                        'correct_label': None,
+                        'comment': None
+                    }
+                    success = save_prediction_to_file("Test entry", test_result, test_feedback)
+                    if success:
+                        st.success("✅ Test entry created! Refresh the page.")
+                    else:
+                        st.error("❌ Failed to create test entry.")
 
 
 if __name__ == "__main__":

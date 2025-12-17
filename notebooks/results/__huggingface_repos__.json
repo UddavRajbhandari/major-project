@@ -1,0 +1,1 @@
+{"repos": [{"repoId": "UDHOV/xlm-roberta-large-nepali-hate-classification", "repoType": "model", "commitHash": "0286463fac2422154e48af3f7034497742e83f0e", "filePaths": ["tokenizer_config.json", "model.safetensors", "sentencepiece.bpe.model", "tokenizer.json", "special_tokens_map.json", "label_encoder.pkl", "config.json"]}]}

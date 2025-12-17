@@ -1,426 +1,239 @@
 """
-Model Explainability using LIME and SHAP
+Nepali Hate Speech Model Explainability using LIME & SHAP
+Standalone script version for CLI or batch execution
 """
+
 import os
 import sys
+import re
+import warnings
 import numpy as np
 import pandas as pd
 import torch
-from transformers import AutoTokenizer, AutoModelForSequenceClassification
 import matplotlib.pyplot as plt
+from matplotlib.font_manager import FontProperties, fontManager
 import joblib
-import warnings
-warnings.filterwarnings('ignore')
 
+warnings.filterwarnings("ignore")
+
+# ------------------------- Optional libraries -------------------------------
 try:
-    import lime
     from lime.lime_text import LimeTextExplainer
     LIME_AVAILABLE = True
 except ImportError:
     LIME_AVAILABLE = False
-    print("Warning: LIME not installed. Install with: pip install lime")
+    print("⚠️ LIME not installed. Run: pip install lime")
 
 try:
     import shap
     SHAP_AVAILABLE = True
 except ImportError:
     SHAP_AVAILABLE = False
-    print("Warning: SHAP not installed. Install with: pip install shap")
+    print("⚠️ SHAP not installed. Run: pip install shap")
 
-sys.path.append(os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
-from utils.preprocessing import preprocess_for_transformer
+# ------------------------- Local utils import -------------------------------
+sys.path.append(os.path.join(os.path.dirname(__file__), "utils"))
+from utils.preprocessing import preprocess_for_transformer, is_devanagari, roman_to_devanagari, normalize_dirghikaran
 
+# ------------------------- Nepali Font --------------------------------------
+FONT_PATH = "fonts/Kalimati.ttf"  # Adjust path
+def load_nepali_font(path=FONT_PATH):
+    if not os.path.exists(path):
+        print(f"⚠️ Nepali font not found: {path}")
+        return None
+    fontManager.addfont(path)
+    fp = FontProperties(fname=path)
+    print(f"✓ Loaded Nepali font: {fp.get_name()}")
+    return fp
 
+NEPALI_FONT = load_nepali_font()
+plt.rcParams["axes.unicode_minus"] = False
+
+OUT_DIR = "explanations"
+os.makedirs(OUT_DIR, exist_ok=True)
+
+# ------------------------- Model Loader -------------------------------------
+from transformers import AutoTokenizer, AutoModelForSequenceClassification
+from huggingface_hub import hf_hub_download
+
+DEVICE = torch.device("cuda" if torch.cuda.is_available() else "cpu")
+
+def load_model(local_model_path=None, hf_model_id=None):
+    if local_model_path and os.path.exists(local_model_path):
+        tokenizer = AutoTokenizer.from_pretrained(local_model_path)
+        model = AutoModelForSequenceClassification.from_pretrained(local_model_path)
+        le = joblib.load(os.path.join(local_model_path, "label_encoder.pkl"))
+        print("✅ Model loaded locally")
+    else:
+        tokenizer = AutoTokenizer.from_pretrained(hf_model_id)
+        model = AutoModelForSequenceClassification.from_pretrained(hf_model_id)
+        le_path = hf_hub_download(hf_model_id, "label_encoder.pkl")
+        le = joblib.load(le_path)
+        print("✅ Model loaded from HuggingFace")
+    model.to(DEVICE).eval()
+    return model, tokenizer, le
+
+# ------------------------- Token Alignment / Reconstruction -----------------
+import regex
+def build_token_alignment(text):
+    original_tokens = text.split()
+    model_tokens, display_tokens = [], []
+    for tok in original_tokens:
+        norm_tok = re.sub(r"[\u200d\u200c]", "", tok)
+        if regex.search(r"\p{Devanagari}", norm_tok) or re.search(r"\w+", norm_tok):
+            model_tokens.append(norm_tok)
+            display_tokens.append(tok)
+    return model_tokens, display_tokens
+
+def apply_nepali_font(ax, nepali_font=NEPALI_FONT, texts=None, is_tick_labels=True):
+    if nepali_font is None:
+        return
+    if is_tick_labels or texts is None:
+        for txt in ax.get_yticklabels():
+            label_text = txt.get_text()
+            if regex.search(r'\p{Devanagari}', label_text):
+                txt.set_fontproperties(nepali_font)
+    else:
+        for txt in texts:
+            if regex.search(r'\p{Devanagari}', txt.get_text()):
+                txt.set_fontproperties(nepali_font)
+
+# ------------------------- Model Explainer Wrapper --------------------------
 class XLMRobertaExplainer:
-    """Wrapper for XLM-RoBERTa model with explainability."""
-    
-    def __init__(self, model_path, device='cuda'):
-        """
-        Initialize explainer.
-        
-        Args:
-            model_path: Path to saved model directory
-            device: 'cuda' or 'cpu'
-        """
-        self.device = torch.device(device if torch.cuda.is_available() else 'cpu')
-        
-        # Load model and tokenizer
-        print(f"Loading model from {model_path}...")
-        self.tokenizer = AutoTokenizer.from_pretrained(model_path)
-        self.model = AutoModelForSequenceClassification.from_pretrained(model_path)
-        self.model.to(self.device)
-        self.model.eval()
-        
-        # Load label encoder
-        le_path = os.path.join(model_path, 'label_encoder.pkl')
-        self.label_encoder = joblib.load(le_path)
-        self.class_names = self.label_encoder.classes_.tolist()
-        
-        print(f"Model loaded successfully!")
-        print(f"Classes: {self.class_names}")
+    def __init__(self, model, tokenizer, label_encoder):
+        self.model = model
+        self.tokenizer = tokenizer
+        self.class_names = label_encoder.classes_.tolist()
     
     def predict_proba(self, texts):
-        """
-        Predict probabilities for a list of texts.
-        
-        Args:
-            texts: List of text strings
-            
-        Returns:
-            Numpy array of shape (n_samples, n_classes)
-        """
         if isinstance(texts, str):
             texts = [texts]
-        
-        # Preprocess
-        preprocessed = [preprocess_for_transformer(t) for t in texts]
-        
-        # Tokenize
-        encodings = self.tokenizer(
-            preprocessed,
-            padding=True,
-            truncation=True,
-            max_length=128,
-            return_tensors='pt'
-        )
-        
-        # Move to device
-        input_ids = encodings['input_ids'].to(self.device)
-        attention_mask = encodings['attention_mask'].to(self.device)
-        
-        # Predict
+        texts = [preprocess_for_transformer(t) for t in texts]
+        enc = self.tokenizer(texts, padding=True, truncation=True, max_length=256, return_tensors="pt").to(DEVICE)
         with torch.no_grad():
-            outputs = self.model(input_ids, attention_mask=attention_mask)
-            probas = torch.softmax(outputs.logits, dim=-1)
-        
-        return probas.cpu().numpy()
+            probs = torch.softmax(self.model(**enc).logits, dim=-1)
+        return probs.cpu().numpy()
     
-    def predict(self, texts):
-        """Predict class labels."""
-        probas = self.predict_proba(texts)
-        return np.argmax(probas, axis=1)
-    
-    def get_prediction_details(self, text):
-        """Get detailed prediction information."""
-        proba = self.predict_proba([text])[0]
-        pred_class_idx = np.argmax(proba)
-        pred_class = self.class_names[pred_class_idx]
-        confidence = proba[pred_class_idx]
-        
+    def predict_with_analysis(self, text):
+        probs = self.predict_proba(text)[0]
+        pred_idx = int(np.argmax(probs))
         return {
-            'text': text,
-            'predicted_class': pred_class,
-            'confidence': float(confidence),
-            'probabilities': {
-                self.class_names[i]: float(proba[i])
-                for i in range(len(self.class_names))
-            }
+            "predicted_label": self.class_names[pred_idx],
+            "confidence": float(probs[pred_idx]),
+            "probabilities": {label: float(prob) for label, prob in zip(self.class_names, probs)}
         }
 
-
+# ------------------------- LIME Explainer ----------------------------------
 class LIMEExplainer:
-    """LIME explainer for hate speech model."""
-    
-    def __init__(self, model_explainer):
-        """
-        Initialize LIME explainer.
-        
-        Args:
-            model_explainer: XLMRobertaExplainer instance
-        """
-        if not LIME_AVAILABLE:
-            raise ImportError("LIME is not installed")
-        
+    def __init__(self, model_explainer, nepali_font=NEPALI_FONT):
         self.model_explainer = model_explainer
-        self.explainer = LimeTextExplainer(
-            class_names=model_explainer.class_names,
-            random_state=42
-        )
+        self.nepali_font = nepali_font
+        self.explainer = LimeTextExplainer(class_names=model_explainer.class_names, random_state=42)
     
-    def explain_instance(self, text, num_features=10, num_samples=1000):
-        """
-        Explain a single prediction using LIME.
-        
-        Args:
-            text: Input text to explain
-            num_features: Number of features to show
-            num_samples: Number of samples for LIME
-            
-        Returns:
-            LIME explanation object
-        """
-        # Get prediction
-        pred_details = self.model_explainer.get_prediction_details(text)
-        print(f"\nPredicted: {pred_details['predicted_class']} "
-              f"(Confidence: {pred_details['confidence']:.4f})")
-        
-        # Generate explanation
-        explanation = self.explainer.explain_instance(
-            text,
-            self.model_explainer.predict_proba,
-            num_features=num_features,
-            num_samples=num_samples
-        )
-        
-        return explanation
-    
-    def visualize_explanation(self, explanation, save_path=None):
-        """Visualize LIME explanation."""
-        fig = explanation.as_pyplot_figure()
+    def explain_and_visualize(self, text):
+        exp = self.explainer.explain_instance(text, self.model_explainer.predict_proba, num_samples=200)
+        token_weights = dict(exp.as_list())
+        model_tokens, display_tokens = build_token_alignment(text)
+        word_scores = [(disp, sum(val for tok, val in token_weights.items() if tok in mod))
+                       for mod, disp in zip(model_tokens, display_tokens)]
+        if not word_scores:
+            print("⚠️ No explainable words found")
+            return
+        features, weights = zip(*word_scores)
+        y_pos = range(len(features))
+        fig, ax = plt.subplots(figsize=(8, 6))
+        ax.barh(y_pos, weights)
+        ax.set_yticks(y_pos)
+        ax.set_yticklabels(features, fontsize=11)
+        ax.invert_yaxis()
+        ax.set_xlabel("Contribution")
+        apply_nepali_font(ax, self.nepali_font)
         plt.tight_layout()
-        
-        if save_path:
-            plt.savefig(save_path, dpi=300, bbox_inches='tight')
-            print(f"Explanation saved to: {save_path}")
-        
+        out_path = os.path.join(OUT_DIR, f"lime_explanation_{abs(hash(text)) % 10**8}.png")
+        plt.savefig(out_path, dpi=300, bbox_inches="tight")
         plt.show()
-    
-    def explain_and_visualize(self, text, save_path=None):
-        """Convenience method to explain and visualize."""
-        explanation = self.explain_instance(text)
-        self.visualize_explanation(explanation, save_path)
-        return explanation
+        print(f"✅ LIME image saved to: {out_path}")
 
-
+# ------------------------- SHAP Explainer ----------------------------------
 class SHAPExplainer:
-    """SHAP explainer for hate speech model."""
-    
-    def __init__(self, model_explainer, background_texts=None):
-        """
-        Initialize SHAP explainer.
-        
-        Args:
-            model_explainer: XLMRobertaExplainer instance
-            background_texts: Sample texts for background distribution
-        """
-        if not SHAP_AVAILABLE:
-            raise ImportError("SHAP is not installed")
-        
+    def __init__(self, model_explainer, nepali_font=NEPALI_FONT):
         self.model_explainer = model_explainer
-        
-        # Use a small background dataset
-        if background_texts is None:
-            background_texts = ["यो राम्रो छ", "यो नराम्रो छ"]
-        
-        # Create SHAP explainer
-        self.explainer = shap.Explainer(
-            self.model_explainer.predict_proba,
-            shap.maskers.Text(self.model_explainer.tokenizer)
-        )
+        self.nepali_font = nepali_font
+        self.explainer = shap.Explainer(model_explainer.predict_proba,
+                                        shap.maskers.Text(model_explainer.tokenizer))
     
-    def explain_instance(self, text):
-        """
-        Explain a single prediction using SHAP.
-        
-        Args:
-            text: Input text to explain
-            
-        Returns:
-            SHAP explanation object
-        """
-        # Get prediction
-        pred_details = self.model_explainer.get_prediction_details(text)
-        print(f"\nPredicted: {pred_details['predicted_class']} "
-              f"(Confidence: {pred_details['confidence']:.4f})")
-        
-        # Generate SHAP values
-        shap_values = self.explainer([text])
-        
-        return shap_values
-    
-    def visualize_explanation(self, shap_values, save_path=None):
-        """Visualize SHAP explanation."""
-        shap.plots.text(shap_values[0])
-        
-        if save_path:
-            plt.savefig(save_path, dpi=300, bbox_inches='tight')
-            print(f"SHAP explanation saved to: {save_path}")
-    
-    def explain_and_visualize(self, text, save_path=None):
-        """Convenience method to explain and visualize."""
-        shap_values = self.explain_instance(text)
-        self.visualize_explanation(shap_values, save_path)
-        return shap_values
+    def explain_and_visualize(self, text):
+        sv = self.explainer([text])[0]
+        tokens = list(sv.data)
+        values_array = np.array(sv.values)
+        pred_probs = self.model_explainer.predict_proba([text])[0]
+        class_idx = int(np.argmax(pred_probs))
+        token_values = values_array if values_array.ndim == 1 else values_array[:, class_idx] if values_array.ndim == 2 else values_array[0, :, class_idx]
+        max_len = min(len(tokens), len(token_values))
+        tokens = tokens[:max_len]
+        token_values = token_values[:max_len]
+        model_tokens, display_tokens = build_token_alignment(text)
+        word_scores, token_ptr = [], 0
+        for model_tok, disp_tok in zip(model_tokens, display_tokens):
+            score, consumed = 0.0, ""
+            while token_ptr < max_len and len(consumed) < len(model_tok):
+                score += float(token_values[token_ptr])
+                consumed += tokens[token_ptr].replace("▁", "")
+                token_ptr += 1
+            word_scores.append((disp_tok, score))
+        if not word_scores:
+            print("⚠️ Empty SHAP attribution")
+            return
+        max_val = max(abs(v) for _, v in word_scores) + 1e-6
+        fig, ax = plt.subplots(figsize=(max(8, 0.45 * len(word_scores)), 2.4))
+        ax.axis("off")
+        x, y, text_objs = 0.01, 0.5, []
+        for word, val in word_scores:
+            intensity = min(abs(val) / max_val, 1.0)
+            color = (1.0, 1.0 - intensity, 1.0 - intensity)
+            txt = ax.text(x, y, f" {word} ", fontsize=13,
+                          bbox=dict(facecolor=color, edgecolor="none", alpha=0.85, boxstyle="round,pad=0.3"))
+            text_objs.append(txt)
+            x += 0.04 + 0.028 * len(word)
+            if x > 0.95:
+                x, y = 0.01, y - 0.45
+        apply_nepali_font(ax, self.nepali_font, texts=text_objs, is_tick_labels=False)
+        out_path = os.path.join(OUT_DIR, f"shap_explanation_{self.model_explainer.class_names[class_idx]}_{abs(hash(text)) % 10**8}.png")
+        plt.tight_layout()
+        plt.savefig(out_path, dpi=300, bbox_inches="tight")
+        plt.show()
+        print(f"✅ SHAP image saved to: {out_path}")
 
-
-def explain_predictions(model_path, test_samples, save_dir='results/explanations'):
-    """
-    Generate explanations for test samples.
-    
-    Args:
-        model_path: Path to saved model
-        test_samples: List of (text, true_label) tuples
-        save_dir: Directory to save explanations
-    """
-    os.makedirs(save_dir, exist_ok=True)
-    
-    print("\n" + "="*60)
-    print(" Generating Model Explanations")
-    print("="*60 + "\n")
-    
-    # Initialize model explainer
-    model_explainer = XLMRobertaExplainer(model_path)
-    
-    # Initialize LIME explainer
-    if LIME_AVAILABLE:
-        print("Initializing LIME explainer...")
-        lime_explainer = LIMEExplainer(model_explainer)
-    else:
-        lime_explainer = None
-        print("LIME not available. Skipping LIME explanations.")
-    
-    # Process each sample
-    for idx, (text, true_label) in enumerate(test_samples):
-        print(f"\n{'='*60}")
-        print(f" Sample {idx + 1}/{len(test_samples)}")
-        print(f"{'='*60}")
-        print(f"Text: {text[:100]}...")
-        print(f"True Label: {true_label}")
-        
-        # Get prediction
-        pred_details = model_explainer.get_prediction_details(text)
-        print(f"\nPrediction Details:")
-        print(f"  Predicted: {pred_details['predicted_class']}")
-        print(f"  Confidence: {pred_details['confidence']:.4f}")
-        print(f"  All Probabilities:")
-        for class_name, prob in pred_details['probabilities'].items():
-            print(f"    {class_name}: {prob:.4f}")
-        
-        # LIME explanation
-        if lime_explainer:
-            print("\nGenerating LIME explanation...")
-            try:
-                lime_save_path = os.path.join(save_dir, f'lime_sample_{idx+1}.png')
-                explanation = lime_explainer.explain_and_visualize(text, lime_save_path)
-                
-                # Print top features
-                print("\nTop contributing features (LIME):")
-                for feature, weight in explanation.as_list()[:5]:
-                    print(f"  '{feature}': {weight:.4f}")
-            except Exception as e:
-                print(f"Error generating LIME explanation: {str(e)}")
-        
-        print("\n" + "-"*60)
-
-
-def batch_explain(model_path, test_df, num_samples=10, save_dir='results/explanations'):
-    """
-    Generate explanations for a batch of samples from each class.
-    
-    Args:
-        model_path: Path to saved model
-        test_df: Test dataframe
-        num_samples: Number of samples per class
-        save_dir: Directory to save explanations
-    """
-    os.makedirs(save_dir, exist_ok=True)
-    
-    # Sample from each class
-    samples = []
-    for label in test_df['Label_Multiclass'].unique():
-        class_df = test_df[test_df['Label_Multiclass'] == label]
-        sampled = class_df.sample(min(num_samples, len(class_df)), random_state=42)
-        
-        for _, row in sampled.iterrows():
-            samples.append((row['Comment'], row['Label_Multiclass']))
-    
-    print(f"Selected {len(samples)} samples for explanation")
-    
-    # Generate explanations
-    explain_predictions(model_path, samples, save_dir)
-
-
-def interactive_explainer(model_path):
-    """
-    Interactive explainer for user input.
-    
-    Args:
-        model_path: Path to saved model
-    """
-    print("\n" + "="*60)
-    print(" Interactive Hate Speech Explainer")
-    print("="*60 + "\n")
-    
-    # Initialize explainers
-    model_explainer = XLMRobertaExplainer(model_path)
-    
-    if LIME_AVAILABLE:
-        lime_explainer = LIMEExplainer(model_explainer)
-    else:
-        lime_explainer = None
-        print("LIME not available.")
-    
-    print("\nEnter Nepali text to analyze (or 'quit' to exit):")
-    print("Example: यो राम्रो छैन")
-    
-    while True:
-        print("\n" + "-"*60)
-        text = input("\nEnter text: ").strip()
-        
-        if text.lower() in ['quit', 'exit', 'q']:
-            print("Exiting...")
-            break
-        
-        if not text:
-            print("Please enter some text.")
-            continue
-        
-        try:
-            # Get prediction
-            print("\n" + "="*60)
-            pred_details = model_explainer.get_prediction_details(text)
-            
-            print(f"Prediction: {pred_details['predicted_class']}")
-            print(f"Confidence: {pred_details['confidence']:.4f}")
-            print(f"\nAll Class Probabilities:")
-            for class_name, prob in pred_details['probabilities'].items():
-                bar = "█" * int(prob * 50)
-                print(f"  {class_name}: {prob:.4f} {bar}")
-            
-            # LIME explanation
-            if lime_explainer:
-                explain = input("\nGenerate LIME explanation? (y/n): ").strip().lower()
-                if explain == 'y':
-                    print("\nGenerating explanation...")
-                    explanation = lime_explainer.explain_instance(text, num_features=8)
-                    
-                    print("\nTop Contributing Features:")
-                    for feature, weight in explanation.as_list()[:8]:
-                        direction = "↑" if weight > 0 else "↓"
-                        print(f"  {direction} '{feature}': {weight:.4f}")
-                    
-                    viz = input("\nShow visualization? (y/n): ").strip().lower()
-                    if viz == 'y':
-                        lime_explainer.visualize_explanation(explanation)
-        
-        except Exception as e:
-            print(f"Error: {str(e)}")
-
-
+# ------------------------- Execution ---------------------------------------
 if __name__ == "__main__":
     import argparse
-    
-    parser = argparse.ArgumentParser(description='Explain hate speech predictions')
-    parser.add_argument('--model_path', type=str, 
-                       default='models/saved_models/xlm_roberta_final',
-                       help='Path to saved model')
-    parser.add_argument('--mode', type=str, choices=['interactive', 'batch'],
-                       default='interactive',
-                       help='Explanation mode')
-    parser.add_argument('--test_data', type=str,
-                       default='data/test.json',
-                       help='Path to test data (for batch mode)')
-    parser.add_argument('--num_samples', type=int, default=5,
-                       help='Number of samples per class (batch mode)')
-    parser.add_argument('--save_dir', type=str,
-                       default='results/explanations',
-                       help='Directory to save explanations')
-    
+
+    parser = argparse.ArgumentParser(description="Nepali Hate Speech Explainability")
+    parser.add_argument("--local_model_path", type=str, default=None, help="Local model path")
+    parser.add_argument("--hf_model_id", type=str, default="UDHOV/xlm-roberta-large-nepali-hate-classification", help="HuggingFace model ID")
+    parser.add_argument("--test_data", type=str, default="test.json", help="Path to test data")
     args = parser.parse_args()
-    
-    if args.mode == 'interactive':
-        interactive_explainer(args.model_path)
-    else:
-        # Load test data
-        test_df = pd.read_json(args.test_data)
-        batch_explain(args.model_path, test_df, args.num_samples, args.save_dir)
+
+    model, tokenizer, le = load_model(args.local_model_path, args.hf_model_id)
+    explainer = XLMRobertaExplainer(model, tokenizer, le)
+
+    df = pd.read_json(args.test_data)
+    sampled_df = df.groupby("Label_Multiclass", group_keys=False).apply(lambda x: x.sample(n=min(len(x), 3), random_state=42))
+
+    for i, (_, row) in enumerate(sampled_df.iterrows(), start=1):
+        text = str(row["Comment"])
+        true_label = row.get("Label_Multiclass", "N/A")
+        analysis = explainer.predict_with_analysis(text)
+        print(f"\nSample {i}/{len(sampled_df)}")
+        print(f"Text: {text}")
+        print(f"True Label: {true_label}")
+        print(f"Prediction: {analysis['predicted_label']}")
+        print(f"Confidence: {analysis['confidence']:.4f}")
+
+        if LIME_AVAILABLE:
+            print("\n--- LIME Explanation ---")
+            LIMEExplainer(explainer).explain_and_visualize(text)
+
+        if SHAP_AVAILABLE:
+            print("\n--- SHAP Explanation ---")
+            SHAPExplainer(explainer).explain_and_visualize(text)

@@ -1,1 +1,4 @@
-python scripts/explainability.py --model_path models/saved_models/xlm_roberta_results/large_final --mode batch --test_data data/test.json --num_samples 5
+python scripts/explainability.py \
+    --local_model_path models/saved_models/xlm_roberta_results/large_final \
+    --hf_model_id UDHOV/xlm-roberta-large-nepali-hate-classification \
+    --test_data data/test.json
