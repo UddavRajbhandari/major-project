@@ -18,7 +18,7 @@ import regex
 from huggingface_hub import hf_hub_download
 # Page configuration
 st.set_page_config(
-    page_title="Nepali Hate Speech Detector",
+    page_title="Nepali Hate Content Detector",
     page_icon="🛡️",
     layout="wide",
     initial_sidebar_state="expanded"
@@ -124,82 +124,68 @@ def preprocess_for_transformer(text: str) -> str:
 
 @st.cache_resource
 def load_model():
-    """Load model from LOCAL first, then HuggingFace Hub as fallback."""
-    try:
-        from transformers import AutoTokenizer, AutoModelForSequenceClassification
-        from sklearn.preprocessing import LabelEncoder
-        import joblib
-        
-        local_model_path = 'models/saved_models/xlm_roberta_results/large_final'
-        hf_model_id = "UDHOV/xlm-roberta-large-nepali-hate-classification"
-        
-        device = torch.device('cuda' if torch.cuda.is_available() else 'cpu')
-        
-        # Try LOCAL model FIRST
-        if os.path.exists(local_model_path):
-            try:
-                with st.spinner("Loading model from local path..."):
-                    tokenizer = AutoTokenizer.from_pretrained(local_model_path)
-                    model = AutoModelForSequenceClassification.from_pretrained(local_model_path)
-                    model.to(device)
-                    model.eval()
-                    
-                    # Load label encoder
-                    le_path = os.path.join(local_model_path, 'label_encoder.pkl')
-                    if os.path.exists(le_path):
-                        le = joblib.load(le_path)
-                    else:
-                        le = LabelEncoder()
-                        le.fit(['NO', 'OO', 'OR', 'OS'])
-                    
-                    st.success(f"✅ Model loaded from LOCAL path on {device}")
-                    return model, tokenizer, le
-            except Exception as local_error:
-                st.warning(f"⚠️ Local model failed: {str(local_error)}")
-                st.info("Trying HuggingFace Hub...")
-        
-        # Fallback to HuggingFace
+    """Load model from LOCAL first, then HuggingFace Hub as fallback without stopping."""
+    from transformers import AutoTokenizer, AutoModelForSequenceClassification
+    from sklearn.preprocessing import LabelEncoder
+    import joblib
+    import torch
+
+    local_model_path = 'models/saved_models/xlm_roberta_results/large_final'
+    hf_model_id = "UDHOV/xlm-roberta-large-nepali-hate-classification"
+    device = torch.device('cuda' if torch.cuda.is_available() else 'cpu')
+
+    # Initialize label encoder
+    le = LabelEncoder()
+    le.fit(['NO', 'OO', 'OR', 'OS'])
+
+    # Try loading LOCAL model
+    if os.path.exists(local_model_path):
         try:
-            with st.spinner(f"Loading from HuggingFace Hub ({hf_model_id})..."):
-                tokenizer = AutoTokenizer.from_pretrained(hf_model_id)
-                model = AutoModelForSequenceClassification.from_pretrained(hf_model_id)
+            with st.spinner("Loading model from local path..."):
+                tokenizer = AutoTokenizer.from_pretrained(local_model_path)
+                model = AutoModelForSequenceClassification.from_pretrained(local_model_path)
                 model.to(device)
                 model.eval()
-                
-                # Try to load label encoder from HF repo
-                try:
-                    le_file = hf_hub_download(
-                        repo_id=hf_model_id,
-                        filename="label_encoder.pkl",
-                        cache_dir="models/cache"  # optional
-                    )
-                    le = joblib.load(le_file)
-                    print("✅ Label encoder loaded from HF repo")
-                except Exception:
-                    from sklearn.preprocessing import LabelEncoder
-                    le = LabelEncoder()
-                    le.fit(['NO', 'OO', 'OR', 'OS'])
-                    print("⚠️ Label encoder not found in HF repo, using new encoder")
-                
+
+                # Load label encoder if exists
+                le_path = os.path.join(local_model_path, 'label_encoder.pkl')
+                if os.path.exists(le_path):
+                    le = joblib.load(le_path)
+
+                st.success(f"✅ Model loaded from LOCAL path on {device}")
                 return model, tokenizer, le
-                
-        except Exception as hf_error:
-            st.error(f"""
-            ❌ Could not load model from either source!
-            
-            **Local error:** {str(local_error) if 'local_error' in locals() else 'Path not found'}
-            **HuggingFace error:** {str(hf_error)}
-            
-            **Please:**
-            1. Check internet connection, OR
-            2. Train model locally: `python scripts/transformer_xlm.py`
-            """)
-            return None, None, None
-        
-    except Exception as e:
-        st.error(f"Fatal error: {str(e)}")
-        st.exception(e)
-        return None, None, None
+        except Exception as e:
+            st.warning(f"⚠️ Local model failed: {e}")
+            st.info("Trying HuggingFace Hub...")
+
+    # Fallback to HuggingFace
+    try:
+        with st.spinner(f"Loading from HuggingFace Hub ({hf_model_id})..."):
+            tokenizer = AutoTokenizer.from_pretrained(hf_model_id)
+            model = AutoModelForSequenceClassification.from_pretrained(hf_model_id)
+            model.to(device)
+            model.eval()
+
+            # Try to load label encoder from HF repo
+            try:
+                from huggingface_hub import hf_hub_download
+                le_file = hf_hub_download(
+                    repo_id=hf_model_id,
+                    filename="label_encoder.pkl",
+                    cache_dir="models/cache"
+                )
+                le = joblib.load(le_file)
+                st.success("✅ Label encoder loaded from HF repo")
+            except Exception:
+                st.info("⚠️ Label encoder not found in HF repo, using default encoder")
+
+            st.success(f"✅ Model loaded from HuggingFace Hub on {device}")
+            return model, tokenizer, le
+
+    except Exception as hf_error:
+        st.error(f"❌ Could not load model from HuggingFace Hub: {hf_error}")
+        return None, None, le
+
 
 
 # ============================================================================
