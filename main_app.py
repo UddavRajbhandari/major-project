@@ -336,7 +336,7 @@ def main():
         st.session_state.batch_results = None
     
     # Header
-    st.markdown('<h1 class="main-header">🛡️ Nepali Hate Speech Detector</h1>', unsafe_allow_html=True)
+    st.markdown('<h1 class="main-header">🛡️ Nepali Hate Content Detector</h1>', unsafe_allow_html=True)
     
     st.markdown("""
     <div style='text-align: center; color: #666; margin-bottom: 2rem;'>
