@@ -1,0 +1,4 @@
+split,total_texts,texts_with_emoji,percentage_with_emoji,total_emojis,avg_emojis_per_text,max_emojis_in_text
+train,5577,703,12.61,1879,0.337,44
+validation,620,69,11.13,208,0.335,18
+test,1450,182,12.55,487,0.336,11
